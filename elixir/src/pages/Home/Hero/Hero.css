@@ -1,0 +1,22 @@
+.carousel{
+    margin-top: -10% !important;
+}
+.carousel-item > img { 
+    height: 112vh !important;
+    filter: brightness(70%);
+  }
+  .carousel-caption {
+    top: 50%;
+    transform: translateY(-30%);
+}
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #f85359 !important;
+    border-color: #f85359 !important;
+}
+.btn-primary:hover{
+    background-color: #fc7b80 !important;
+}
+.btn-primary:focus,.btn-primary:active {
+    outline: none !important;
+    box-shadow: none !important;
+ }
