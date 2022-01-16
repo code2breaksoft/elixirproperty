@@ -21,7 +21,7 @@ const Services = () => {
             <ServiceCard
                 image="/images/elixir/service3.png"
                 title="Specialized Services"
-                text="We as professionals provide specialized services to manage any break downs and repair works in concern to electrical, mechanical and plumbing areas."
+                text="We as professionals provide specialized services to manage any break downs and repair works in concern to electrical, mechanical and plumbing areas.It’s the simpler things that make the difference."
             />
         </Row>
         </>

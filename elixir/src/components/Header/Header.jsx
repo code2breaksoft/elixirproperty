@@ -9,7 +9,7 @@ const Header = () => {
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
-                <Nav className="ms-auto">
+                <Nav className="ms-auto" >
                     <Nav.Link href="#home">Home</Nav.Link>
                     <NavDropdown title="Our services" id="navbarScrollingDropdown">
                     <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
