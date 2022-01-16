@@ -10,7 +10,7 @@ const Hero = () => {
                 alt="First slide"
                 />
                 <Carousel.Caption>
-                <h1>The uae's leading 
+                <h1>The UAE's leading 
                               snagging & handover
                               company.</h1>
                 <p>Best snagging, inspection & maintenance services in UAE</p>
