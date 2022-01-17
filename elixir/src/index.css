@@ -1,6 +1,6 @@
 /* width */
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 8px;
 }
 
 /* Track */
@@ -21,4 +21,9 @@
 :root{
   --hFont:'dm serif display',serif;
   --pink:#f85359; 
+  --bFont:'Assistant',sans-serif;;
+}
+*{
+  scroll-behavior: smooth !important;
+  font-family: var(--bFont); 
 }

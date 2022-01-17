@@ -1,6 +1,15 @@
+import { useEffect } from "react";
 import { Button, Carousel } from "react-bootstrap";
 import './Hero.css';
 const Hero = () => {
+    useEffect(()=>{
+        if(window.innerWidth>786){
+            document.getElementById("hero-wrapper").style.marginTop = "-10%";
+        }
+        else{
+            document.getElementById("hero-wrapper").style.marginTop = "-50%";
+        }
+    },[]);
     return ( 
         <Carousel id="hero-wrapper">
             <Carousel.Item id="r" >
@@ -25,7 +34,7 @@ const Hero = () => {
                 />
                 <Carousel.Caption>
                 <h1>We see beyond visual inspection</h1>
-                <p>UAE”s most trusted Property Snagging and maintenance services provider and to be investors and Tenants first choice for Property Services</p>
+                <p>UAE's most trusted Property Snagging and maintenance services provider.</p>
                 <Button variant="primary" size="lg">Enquire now</Button>
                 </Carousel.Caption>
             </Carousel.Item>

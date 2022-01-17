@@ -1,10 +1,7 @@
-.carousel {
-    margin-top: -10% !important;
-}
 
 .carousel-item>img {
     height: 113vh !important;
-    filter: brightness(70%);
+    filter: brightness(65%);
 }
 
 .carousel-caption {
@@ -37,4 +34,7 @@
 .carousel-caption>h1{
     font-family: var(--hFont) !important;
     font-size: 3.5rem;
+}
+.carousel-caption>p{
+    font-size: 1.5rem;
 }

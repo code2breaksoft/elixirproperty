@@ -8,27 +8,20 @@ const Header = () => {
     const changeNavbarColor = () =>{
        if(window.scrollY >= 80){
             setColor("light");
-            setFontColor("var(--pink)");
-            let x = document.getElementsByClassName("nav-link")
-            for(let item of x){
-                item.style.color="var(--pink)";
-            }
+            setFontColor("#f85359");
             setShadow("0px 2px 4px 0px rgba(0,0,0,0.2)");
        }
        else{
            setColor("none");
-           setFontColor("white");
-           let x = document.getElementsByClassName("nav-link")
-           for(let item of x){
-               item.style.color="white";
+           if(window.innerWidth>786){
+                setFontColor("white");
            }
            setShadow("none");
        }
     };
     useEffect(()=>{
-        let x = document.getElementsByClassName("nav-link")
-        for(let item of x){
-            item.style.color="white";
+        if(window.innerWidth<=786){
+            setFontColor("#f85359");
         }
     },[]);
     window.addEventListener('scroll', changeNavbarColor);
@@ -41,14 +34,11 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                 <Nav className="ms-auto">
-                    <Nav.Link href="#home" >Home</Nav.Link>
-                    <NavDropdown     title="Our services" id="navbarScrollingDropdown">
-                    <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
-                    </NavDropdown>
-                    <Nav.Link  href="#about">About us</Nav.Link>
-                    <Nav.Link   href="#reviews">Reviews</Nav.Link>
-                    <Nav.Link   href="#contact">Contact</Nav.Link>
+                    <Nav.Link href="#home" style={{color:fontColor}}>Home</Nav.Link>
+                    <Nav.Link  style={{color:fontColor}} href="#about">Our services</Nav.Link>
+                    <Nav.Link  style={{color:fontColor}} href="#about">About us</Nav.Link>
+                    <Nav.Link  style={{color:fontColor}} href="#reviews">Reviews</Nav.Link>
+                    <Nav.Link  style={{color:fontColor}} href="#contact">Contact</Nav.Link>
                 </Nav>
                 </Navbar.Collapse>
             </Container>
