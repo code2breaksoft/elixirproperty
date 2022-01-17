@@ -5,7 +5,7 @@ const Book = () => {
     return ( 
         <section style={{overflowX:"hidden"}}>
         <Row style={{height:"50vh"}}>
-                <Parallax className="border d-flex align-items-center justify-content-center" bgImageStyle={{width:"100vw",height:"50rem", filter: "brightness(60%)"}}	 blur={0} bgImage="/images/book/widehome.jpg" bgImageAlt="the cat" strength={500}>
+                <Parallax className="border d-flex align-items-center justify-content-center" bgImageStyle={{width:"100vw",height:"50rem", filter: "brightness(60%)"}}	 blur={0} bgImage="/images/book/widehome.jpg" bgImageAlt="the cat" strength={400}>
                 <Container fluid  className="text-center book-wrap" >
                     <Row>
                         <Col>
