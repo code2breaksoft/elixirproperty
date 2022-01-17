@@ -1,7 +1,10 @@
-
+.carousel{
+    margin-top: -10% !important;
+}
 .carousel-item>img {
     height: 113vh !important;
     filter: brightness(65%);
+
 }
 
 .carousel-caption {
@@ -37,4 +40,18 @@
 }
 .carousel-caption>p{
     font-size: 1.5rem;
+}
+@media only screen and (max-width: 768px) {
+    .hero-wrapper{
+        height: 100rem !important;
+    }
+    .carousel-caption>h1{
+        font-size: 2.5rem;
+    }
+    .carousel-caption>p{
+        font-size: 1rem;
+    }
+    .carousel{
+        margin-top: -50% !important;
+    }
 }
