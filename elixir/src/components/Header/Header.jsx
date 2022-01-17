@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Navbar,Nav,Container ,NavDropdown} from "react-bootstrap";
 import './Header.css';
 const Header = () => {
@@ -25,6 +25,12 @@ const Header = () => {
            setShadow("none");
        }
     };
+    useEffect(()=>{
+        let x = document.getElementsByClassName("nav-link")
+        for(let item of x){
+            item.style.color="white";
+        }
+    },[]);
     window.addEventListener('scroll', changeNavbarColor);
     return ( 
         <Navbar bg={color} expand="lg" sticky="top" id="navbar" style={{boxShadow:shadow}}>
