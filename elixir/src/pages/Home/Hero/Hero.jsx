@@ -3,7 +3,7 @@ import './Hero.css';
 const Hero = () => {
     return ( 
         <Carousel id="hero-wrapper">
-            <Carousel.Item id="r">
+            <Carousel.Item id="r" interval={3000}>
                 <img
                 className="d-block w-100"
                 src="/images/hero/slider-1.jpg"
