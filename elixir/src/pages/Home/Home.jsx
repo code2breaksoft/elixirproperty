@@ -1,4 +1,5 @@
 import { Container } from "react-bootstrap";
+import Footer from "../../components/footer/footer";
 import Header from "../../components/Header/Header";
 import About from "./about/about";
 import Achievements from "./achievements/achievements";
@@ -25,6 +26,7 @@ const Home = () => {
             </Container>
             <Achievements/>
             <Reviews/>
+            <Footer/>
         </>
      );
 }

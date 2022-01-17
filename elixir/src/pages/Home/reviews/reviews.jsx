@@ -56,6 +56,23 @@ const data = [
         comment:"The team inspected all the floor and the report is upto the point and team is polite and also explained me through my doubts.",
     },
 ];
+const Item = ({data})=>{
+    return(
+        <div>
+        <Container>
+            <Row>
+                <p>{data.name}</p>
+            </Row>
+            <Row>
+                <p>{data.company}</p>
+            </Row>
+            <Row>
+                <p>{data.comment}</p>
+            </Row>
+        </Container>
+    </div>
+    );
+}
 const Reviews = () => {
     return ( 
         <Container>
@@ -66,8 +83,12 @@ const Reviews = () => {
                 <p>Listen to our clients</p>
             </Row>
             <Row>
-                <Carousel responsive={responsive}>
-
+            <Carousel responsive={responsive}>
+                    {
+                        data.map((dataItem)=>
+                            <Item data={dataItem}/>
+                        )
+                    }
                 </Carousel>
             </Row>
         </Container>
