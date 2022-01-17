@@ -1,5 +1,6 @@
 import { Container } from "react-bootstrap";
 import Header from "../../components/Header/Header";
+import About from "./about/about";
 import Book from "./book/book";
 import Hero from "./Hero/Hero";
 import Services from "./services/services";
@@ -17,6 +18,9 @@ const Home = () => {
                 <Services/>
             </Container>
             <Book/>
+            <Container>
+                <About/>
+            </Container>
         </>
      );
 }
