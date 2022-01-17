@@ -8,10 +8,10 @@ const Header = () => {
     const changeNavbarColor = () =>{
        if(window.scrollY >= 80){
             setColor("light");
-            setFontColor("#f85359");
+            setFontColor("var(--pink)");
             let x = document.getElementsByClassName("nav-link")
             for(let item of x){
-                item.style.color="#f85359";
+                item.style.color="var(--pink)";
             }
             setShadow("0px 2px 4px 0px rgba(0,0,0,0.2)");
        }
