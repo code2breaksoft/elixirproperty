@@ -67,18 +67,30 @@ const About = () => {
                     <p>Learn More About Inspection & Snagging Today!</p>
                     <Form.Group className="mb-3">
                         <Form.Control value={formik.values.name} onChange={formik.handleChange} type="text" placeholder="Enter name" />
+                        <Form.Control.Feedback type="invalid">
+                        {formik.errors.name ? formik.errors.name : null}
+
+                        </Form.Control.Feedback>
                     </Form.Group>
                     <Form.Group className="mb-3">
                         <Form.Control  value={formik.values.email} onChange={formik.handleChange}  type="email" placeholder="Enter email" />
-                        <Form.Text className="text-muted">
-                        We'll never share your email with anyone else.
-                        </Form.Text>
+                        <Form.Control.Feedback type="invalid">
+                        {formik.errors.email ? formik.errors.email : null}
+ 
+                        </Form.Control.Feedback>
                     </Form.Group>
                     <Form.Group className="mb-3">
                         <Form.Control value={formik.values.phone} onChange={formik.handleChange}  type="tel" placeholder="Enter phone" />
+                        <Form.Control.Feedback type="invalid">
+                        {formik.errors.phone ? formik.errors.phone : null}
+ 
+                        </Form.Control.Feedback>
                     </Form.Group>
                     <Form.Group className="mb-3">
                         <Form.Control  value={formik.values.message} onChange={formik.handleChange}  as="textarea" placeholder="Enter phone" />
+                        <Form.Control.Feedback type="invalid">
+                        {formik.errors.message ? formik.errors.message : null}
+                         </Form.Control.Feedback>
                     </Form.Group>
                     <Button variant="primary" type="submit">
                         Submit
