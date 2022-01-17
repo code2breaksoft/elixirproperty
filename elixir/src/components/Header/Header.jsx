@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Navbar,Nav,Container ,NavDropdown} from "react-bootstrap";
 import './Header.css';
+import { List } from "react-bootstrap-icons";
 const Header = () => {
     const [color,setColor] = useState("none");
     const [fontColor,setFontColor] = useState("white");
@@ -16,6 +17,7 @@ const Header = () => {
            if(window.innerWidth>786){
                 setFontColor("white");
            }
+
            setShadow("none");
        }
     };
@@ -31,7 +33,7 @@ const Header = () => {
                 <Navbar.Brand href="#home">
                     <img src="/images/common/logo.png" width="100" height="20"/>
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="navbarScroll" />
+                <Navbar.Toggle aria-controls="navbarScroll"><List style={{color:"white"}}/></Navbar.Toggle>
                 <Navbar.Collapse id="navbarScroll">
                 <Nav className="ms-auto">
                     <Nav.Link href="#home" style={{color:fontColor}}>Home</Nav.Link>

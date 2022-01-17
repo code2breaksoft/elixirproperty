@@ -8,6 +8,8 @@
 #navbar{
     padding: 1rem;
 }
-.navbar-light .navbar-toggler-icon {
+.navbar-toggler{
     border-color: var(--pink) !important;
+    border-width: 2px !important;
+    background-color: var(--pink) !important;
 }
