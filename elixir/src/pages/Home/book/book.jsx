@@ -1,11 +1,26 @@
 import { Parallax } from "react-parallax";
 import { Button, Container, Row,Col } from "react-bootstrap";
 import './book.css';
+import { useEffect, useState } from "react";
 const Book = () => {
+    const [paralaxProp,setParallaxProp] = useState({
+        width:"100vw",
+        height:"50rem",
+        strength:"350"
+    });
+    useEffect(()=>{
+        if(window.innerWidth<786){
+            setParallaxProp({
+                width:"200vw",
+                height:"25rem",
+                strength:65
+            });
+        }
+    },[]);
     return ( 
         <section style={{overflowX:"hidden"}}>
-        <Row style={{height:"50vh"}}>
-                <Parallax className="border d-flex align-items-center justify-content-center" bgImageStyle={{width:"100vw",height:"50rem", filter: "brightness(60%)"}}	 blur={0} bgImage="/images/book/widehome.jpg" bgImageAlt="the cat" strength={400}>
+        <Row style={{height:"60vh"}}>
+                <Parallax className="border d-flex align-items-center justify-content-center par" bgImageStyle={{width:paralaxProp.width,height:paralaxProp.height, filter: "brightness(80%)"}}	 blur={0} bgImage="/images/book/widehome.jpg" bgImageAlt="the cat" strength={paralaxProp.strength}>
                 <Container fluid  className="text-center book-wrap" >
                     <Row>
                         <Col>
@@ -21,7 +36,7 @@ const Book = () => {
                     </Row>
                     <Row>
                         <Col>
-                        <h5>Call now: 808526533666</h5>
+                        <h5>Call now: +971 4 3302605</h5>
 
                         </Col>
                     </Row>
