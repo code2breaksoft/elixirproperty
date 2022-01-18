@@ -53,7 +53,7 @@ const About = () => {
                 <Row className="gx-5">
             <Col lg={6} xs={12} className="about-outer-wrap">
                 <h2>About us</h2>
-                <p>Our Professional Snagging Surveyors have an excellent insight into the mindset of developers. We have the in-depth knowledge and experience gained from over 15 years in the construction / property industry.</p>
+                <p>Our Professional Snagging Surveyors have an excellent insight into the mindset of developers. We have the in-depth knowledge and experience gained from over 15 years in the construction & property industry.</p>
                 <Row className="about-inner-wrap">
                     <Col>
                         <h2>100%</h2>
