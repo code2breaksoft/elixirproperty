@@ -21,7 +21,7 @@ const Home = () => {
                 <Services/>
             </Container>
             <Book/>
-            <Container>
+            <Container fluid>
                 <About/>
             </Container>
             <Achievements/>

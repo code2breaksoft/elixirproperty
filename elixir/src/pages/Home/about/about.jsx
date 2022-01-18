@@ -1,5 +1,6 @@
 import { Col, Row,Form,Button } from "react-bootstrap";
 import { useFormik } from 'formik';
+import "./about.css";
 const validate = values => {
     const errors = {};
     if (!values.name) {
@@ -47,11 +48,12 @@ const About = () => {
         },
       });
     return ( 
-        <Row>
-            <Col lg={6} xs={12}>
+      <section id="about">
+                <Row>
+            <Col lg={6} xs={12} className="about-outer-wrap">
                 <h2>About us</h2>
                 <p>Our Professional Snagging Surveyors have an excellent insight into the mindset of developers. We have the in-depth knowledge and experience gained from over 15 years in the construction / property industry.</p>
-                <Row>
+                <Row className="about-inner-wrap">
                     <Col>
                         <h2>100%</h2>
                         <h6>Client satisfaction</h6>
@@ -99,6 +101,7 @@ const About = () => {
                 </Form>
             </Col>
         </Row>
+      </section>
      );
 }
  

@@ -6,7 +6,7 @@ const Book = () => {
     const [paralaxProp,setParallaxProp] = useState({
         width:"100vw",
         height:"50rem",
-        strength:"350"
+        strength:"300"
     });
     useEffect(()=>{
         if(window.innerWidth<786){
