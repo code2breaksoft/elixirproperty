@@ -1,0 +1,49 @@
+.reviews-wrapper{
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+.reviews-wrapper>.row>h2{
+    font-size: 3rem;
+    font-family: var(--hFont);
+    text-align: center;
+    color: var(--fColor);
+}
+.reviews-header-description{
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--fColor);
+}
+.item-wrapper{
+    height: 20rem;
+    margin-bottom: 3rem;
+    background-color: var(--pink);
+    color: white;
+    border-left: 1rem solid white !important;
+    padding: 1rem 0rem;
+}
+.client-name{
+    font-family: var(--hFont);
+    font-size: 1.5rem;
+}
+.client-company{
+    font-size: 1.2rem;
+}
+.client-comment{
+    font-size: 1.1rem;
+}
+.divider{
+    background-color: white;
+    width: 80% !important;
+    height: 0.5rem;
+    margin-top: 5% !important;
+    margin-left: 7%;
+    display: none;
+}
+@media only screen and (max-width: 786px) {
+    .divider{
+        display: block;
+    }
+    .reviews-wrapper{
+        padding: 0.5rem;
+    }
+}

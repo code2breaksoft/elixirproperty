@@ -1,6 +1,7 @@
 import { Row ,Container} from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import "./reviews.css";
 
 const responsive = {
   desktop: {
@@ -33,7 +34,7 @@ const data = [
     {
         name:"Sameer",
         company:"Akoya Mimosa",
-        comment:"The team was able to do the thorough inspection of my Townhouse and to my surprise it was found that,there was not float valve installed in water tank;I would never have been able to check it myself which would have cost be thousand in utility bills",
+        comment:"The team was able to do the thorough inspection of my Townhouse and to my surprise it was found that,there was not float valve installed in water tank.",
     },
     {
         name:"Yuvi",
@@ -59,15 +60,18 @@ const data = [
 const Item = ({data})=>{
     return(
         <div>
-        <Container>
+        <Container className="item-wrapper" >
             <Row>
-                <p>{data.name}</p>
+                <p className="client-name">{data.name}</p>
             </Row>
             <Row>
-                <p>{data.company}</p>
+                <p className="client-company">{data.company}</p>
             </Row>
             <Row>
-                <p>{data.comment}</p>
+                <p className="client-comment">{data.comment}</p>
+            </Row>
+            <Row>
+                <div className="divider"></div>
             </Row>
         </Container>
     </div>
@@ -75,15 +79,20 @@ const Item = ({data})=>{
 }
 const Reviews = () => {
     return ( 
-        <Container>
+        <Container className="reviews-wrapper">
             <Row>
                 <h2>Our Client Reviews</h2>
             </Row>
             <Row>
-                <p>Listen to our clients</p>
+                <p className="reviews-header-description">Listen to our clients</p>
             </Row>
             <Row>
-            <Carousel responsive={responsive}>
+            <Carousel responsive={responsive}
+                                  infinite={true}
+                                  removeArrowOnDeviceType={["tablet", "mobile","desktop"]}
+                                  dotListClass="custom-dot-list-style"
+                                  showDots={true}
+            >
                     {
                         data.map((dataItem)=>
                             <Item data={dataItem}/>

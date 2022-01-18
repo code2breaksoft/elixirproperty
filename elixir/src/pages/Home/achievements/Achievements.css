@@ -10,10 +10,12 @@
     text-align: center;
     font-family: var(--hFont);
     font-size: 3rem;
+    color: var(--fColor);
 }
 #ach-wrapper>div>p{
     text-align: center;
     font-size: 1.3rem;
+    color: var(--fColor);
 }
 
 @media only screen and (max-width: 786px) {
