@@ -79,7 +79,7 @@ const Item = ({data})=>{
 }
 const Reviews = () => {
     return ( 
-        <Container className="reviews-wrapper">
+        <Container className="reviews-wrapper" id="reviews">
             <Row>
                 <h2>Our Client Reviews</h2>
             </Row>

@@ -18,11 +18,11 @@ const Home = () => {
             <Snag/>
             <Container>
                 <Tools/>
-                <Services/>
+                <Services id="services"/>
             </Container>
             <Book/>
             <Container fluid>
-                <About/>
+                <About id="about"/>
             </Container>
             <Container fluid>
             <Achievements/>

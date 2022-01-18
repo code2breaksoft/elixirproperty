@@ -26,7 +26,7 @@ const Footer = () => {
             <Row>
                 <section className="copyright-wrapper">
                     <p>Copyright © 2022 Elixir Property Snagging. All rights reserved.</p>
-                    <a href="code2break.com">Developed by Code2Break solutions</a>
+                    <a href="https://code2break.com">Developed by Code2Break solutions</a>
                 </section>
             </Row>
         </footer>
