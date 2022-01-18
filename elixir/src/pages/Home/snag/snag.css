@@ -6,6 +6,7 @@
     padding: 5rem !important;
     text-align: justify;
     text-justify: inter-word;
+    color:var(--fColor);
 }
 .snag-content>h2{
     font-family: var(--hFont);
@@ -25,5 +26,8 @@
     }
     #snag>.row{
         margin-bottom: 2rem !important;
+    }
+    .snag-content>h2{
+        font-size: 1.8rem;
     }
 }
