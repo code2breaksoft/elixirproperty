@@ -5,6 +5,11 @@
     text-align: justify;
     text-justify: inter-word;
 }
-#serviceCard-btn{
-    box-shadow: none;
+#serviceCard{
+
+}
+.card-title{
+    text-align: center;
+    font-size: 1.7rem !important;
+    font-family: var(--hFont);
 }

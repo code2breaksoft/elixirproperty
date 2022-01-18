@@ -13,17 +13,20 @@ const Header = () => {
             setShadow("0px 2px 4px 0px rgba(0,0,0,0.2)");
        }
        else{
-           setColor("none");
            if(window.innerWidth>786){
                 setFontColor("white");
+                setColor("none");
            }
-
+           else{
+            setColor("light");
+           }
            setShadow("none");
        }
     };
     useEffect(()=>{
         if(window.innerWidth<=786){
             setFontColor("#f85359");
+            setColor("light");
         }
     },[]);
     window.addEventListener('scroll', changeNavbarColor);
