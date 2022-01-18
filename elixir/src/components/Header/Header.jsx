@@ -39,8 +39,8 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="navbarScroll"><List style={{color:"white"}}/></Navbar.Toggle>
                 <Navbar.Collapse id="navbarScroll">
                 <Nav className="ms-auto">
-                    <Nav.Link href="#home" style={{color:fontColor}}>Home</Nav.Link>
-                    <Nav.Link  style={{color:fontColor}} href="#about">Our services</Nav.Link>
+                    <Nav.Link href="#hero-wrapper" style={{color:fontColor}}>Home</Nav.Link>
+                    <Nav.Link  style={{color:fontColor}} href="#services">Our services</Nav.Link>
                     <Nav.Link  style={{color:fontColor}} href="#about">About us</Nav.Link>
                     <Nav.Link  style={{color:fontColor}} href="#reviews">Reviews</Nav.Link>
                     <Nav.Link  style={{color:fontColor}} href="#contact">Contact</Nav.Link>

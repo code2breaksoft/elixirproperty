@@ -65,7 +65,7 @@ const About = () => {
                     </Col>
                 </Row>
             </Col>
-            <Col lg={6} xs={12}>
+            <Col lg={6} xs={12} id="contact">
               <section id="form-section">
               <div id="form-header">
                       <h2>Get in touch with us</h2>
