@@ -14,6 +14,7 @@
 }
 .about-outer-wrap{
     padding-right: 5.3rem;
+    padding-top: 5rem;
 }
 .about-inner-wrap>.col>h2{
     color: #ff5722;
@@ -87,5 +88,9 @@
     }
     #form-warning{
         font-size: 0.8rem;
+    }
+    .about-outer-wrap{
+        padding-right: 5.3rem;
+        padding-top: 0rem;
     }
 }

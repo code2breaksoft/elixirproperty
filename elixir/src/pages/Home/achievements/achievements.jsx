@@ -12,7 +12,6 @@ const Achievements = () => {
     const image = [1,2,3,4,5,6,7,8,9,10,11,12,13];
     const responsive = {
         superLargeDesktop: {
-          // the naming can be any, depends on you.
           breakpoint: { max: 4000, min: 3000 },
           items: 5
         },
@@ -31,17 +30,21 @@ const Achievements = () => {
       };
     return ( 
         <>
-            <h2>Our Achievements</h2>
-            <p>We have proudly worked and consistently delivered high quality inspections in leadings communities and luxury properties; We act as Investor eyes and make sure the property is received in immaculate condition.</p>
-            <Carousel responsive={responsive}
-                  infinite={true}
-                  autoPlay={true}
-                  autoPlaySpeed={1500}
-            >
-            {
-                image.map((item)=><ItemCarousel image={item}/>)
-            }
-            </Carousel>
+          <section id="ach-wrapper">
+                <div id="ach-header">
+                  <h2>Our Achievements</h2>
+                   <p>We have proudly worked and consistently delivered high quality inspections in leadings communities and luxury properties; We act as Investor eyes and make sure the property is received in immaculate condition.</p>
+                </div>
+                <Carousel responsive={responsive}
+                      infinite={true}
+                      autoPlay={true}
+                      autoPlaySpeed={1500}
+                >
+                {
+                    image.map((item)=><ItemCarousel image={item}/>)
+                }
+                </Carousel>
+          </section>
         </>
      );
 }
