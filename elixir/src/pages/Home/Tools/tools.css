@@ -1,3 +1,28 @@
 .card> img{
     width: 100% !important;
 }
+#tools>.row{
+    text-align: center;
+    color: var(--fColor);
+}
+#tools>.row>h2{
+    font-family: var(--hFont);
+    font-size: 3em;
+}
+#tools>.row>p{
+    font-size: 1.2em;
+}
+.card-text{
+    color: var(--fColor);
+}
+@media only screen and (max-width: 786px) {
+    #tools{
+        margin-top: 5rem;
+    }
+    #tools>.row>h2{
+        font-size: 2.5em;
+    }
+    #tools>.row>p{
+        font-size: 1em;
+    }
+}

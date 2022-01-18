@@ -21,9 +21,10 @@ const ToolCard = ({text,image}) => {
 const Tools = () => {
     return ( 
         <>
-        <Row>
+            <section id="tools">
+            <Row>
             <h2>Tools used</h2>
-            <p>We apply latest techniiques and updated tools for property snagging to know each and every detail.</p>
+            <p>We apply latest techniques and updated tools for property snagging to know each and every detail.</p>
         </Row>
         <Row xs={1} md={4} className="g-4">
             <ToolCard image="/images/tools/1.jpg" text="Voltage detector"/>
@@ -39,6 +40,7 @@ const Tools = () => {
             <ToolCard image="/images/tools/11.jpg" text="Thermal camera"/>
             <ToolCard image="/images/tools/12.jpg" text="Endoscope camera"/>
         </Row>
+            </section>
         </>
      );
 }
