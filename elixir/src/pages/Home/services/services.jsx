@@ -1,13 +1,15 @@
 import { Row } from "react-bootstrap";
 import ServiceCard from "./serviceCard/serviceCard";
 
+import "./services.css";
 const Services = () => {
     return ( 
         <>
-        <Row>
+            <section id="services">
+            <Row>
             <h2>Our services</h2>
             <p>Elixir Property Management is a team of young dynamic people with a fresh Mindset, Promoting agility, convenience and quality Property Snagging, Inspections and Maintenance services.
-</p>
+            </p>
         </Row>
         <Row  xs={1} md={3} className="g-4">
             <ServiceCard image="/images/elixir/service2.png"
@@ -24,6 +26,7 @@ const Services = () => {
                 text="We as professionals provide specialized services to manage any break downs and repair works in concern to electrical, mechanical and plumbing areas.It’s the simpler things that make the difference."
             />
         </Row>
+            </section>
         </>
      );
 }

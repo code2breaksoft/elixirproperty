@@ -13,7 +13,7 @@ const ServiceCard = ({image,title,text}) => {
                         text
                     }
                 </Card.Text>
-                <Button variant="primary">Know more</Button>
+                <Button variant="primary" classNae="serviceCard-btn">Know more</Button>
                 </Card.Body>
             </Card>
         </Col>
