@@ -1,4 +1,4 @@
-import { Col,Card, Button } from "react-bootstrap";
+import { Col,Card, Button, Row } from "react-bootstrap";
 import './ServiceCard.css';
 
 const ServiceCard = ({image,title,text}) => {
@@ -13,7 +13,7 @@ const ServiceCard = ({image,title,text}) => {
                         text
                     }
                 </Card.Text>
-                <Button variant="primary" classNae="serviceCard-btn">Know more</Button>
+                        <Button variant="primary" className="serviceCard-btn">Know more</Button>
                 </Card.Body>
             </Card>
         </Col>

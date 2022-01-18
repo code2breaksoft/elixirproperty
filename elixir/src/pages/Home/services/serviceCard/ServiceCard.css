@@ -4,6 +4,7 @@
 .card-text{
     text-align: justify;
     text-justify: inter-word;
+    font-size: 1.1rem;
 }
 #serviceCard{
 
@@ -12,4 +13,7 @@
     text-align: center;
     font-size: 1.7rem !important;
     font-family: var(--hFont);
+}
+@media only screen and (max-width: 768px) {
+
 }
