@@ -1,0 +1,40 @@
+.footer{
+    background-color: #0a2233;
+    overflow-x: hidden;
+    height: 23rem;
+    color: white;
+    padding: 5rem;
+    overflow: hidden;
+}
+.company-wrapper>p{
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+.footer-contact-wrapper>h4{
+    font-family: var(--hFont);
+}
+.footer-social>h4{
+    font-family: var(--hFont);
+}
+.footer-social>a{
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+.copyright-wrapper{
+    border-top: 1px solid white;
+    padding-top: 1rem;
+    text-align: center;
+    margin-top: 3rem !important;
+}
+.copyright-wrapper>a{
+    margin-top: -5rem;
+    text-decoration: none;
+    color: white;
+}
+@media only screen and (max-width: 786px) {
+    .footer{
+        padding: 2rem;
+        padding-top: 3rem;
+        height: 35rem;
+    }
+}

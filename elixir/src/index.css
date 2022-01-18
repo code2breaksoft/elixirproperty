@@ -1,6 +1,6 @@
 /* width */
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 8px;
 }
 
 /* Track */
@@ -10,11 +10,21 @@
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #f85359; 
+  background: var(--pink); 
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #f85359; 
+  background: var(--pink); 
+}
+:root{
+  --hFont:'dm serif display',serif;
+  --pink:#f85359; 
+  --bFont:'Assistant',sans-serif;
+  --fColor:#0f2637;
+}
+*{
+  scroll-behavior: smooth !important;
+  font-family: var(--bFont); 
 }

@@ -1,3 +1,13 @@
 .nav-link{
-    color: white !important;
+    color: white;
+    font-weight: bold;
+
+}
+#navbar{
+    padding: 1rem;
+}
+.navbar-toggler{
+    border-color: var(--pink) !important;
+    border-width: 2px !important;
+    background-color: var(--pink) !important;
 }
