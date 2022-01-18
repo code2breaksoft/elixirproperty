@@ -1,6 +1,7 @@
 import { Col, Row,Form,Button } from "react-bootstrap";
 import { useFormik } from 'formik';
 import "./about.css";
+import { ShieldLockFill } from "react-bootstrap-icons";
 const validate = values => {
     const errors = {};
     if (!values.name) {
@@ -49,7 +50,7 @@ const About = () => {
       });
     return ( 
       <section id="about">
-                <Row>
+                <Row className="gx-5">
             <Col lg={6} xs={12} className="about-outer-wrap">
                 <h2>About us</h2>
                 <p>Our Professional Snagging Surveyors have an excellent insight into the mindset of developers. We have the in-depth knowledge and experience gained from over 15 years in the construction / property industry.</p>
@@ -65,9 +66,12 @@ const About = () => {
                 </Row>
             </Col>
             <Col lg={6} xs={12}>
-                <Form onSubmit={formik.handleSubmit} onKeyDown={onKeyDown}>
-                    <h2>Get in touch with us</h2>
-                    <p>Learn More About Inspection & Snagging Today!</p>
+              <section id="form-section">
+              <div id="form-header">
+                      <h2>Get in touch with us</h2>
+                      <p>Learn More About Inspection & Snagging Today!</p>
+                    </div>
+                <Form onSubmit={formik.handleSubmit} onKeyDown={onKeyDown} id="contact-form">
                     <Form.Group className="mb-3">
                         <Form.Control value={formik.values.name} onChange={formik.handleChange("name")} type="text" placeholder="Enter name" />
                         <Form.Control.Feedback type="invalid">
@@ -90,15 +94,19 @@ const About = () => {
                         </Form.Control.Feedback>
                     </Form.Group>
                     <Form.Group className="mb-3">
-                        <Form.Control  value={formik.values.message} onChange={formik.handleChange("message")}  as="textarea" placeholder="Your message" />
+                        <Form.Control id="message-area" value={formik.values.message} onChange={formik.handleChange("message")}  as="textarea" placeholder="Your message" />
                         <Form.Control.Feedback type="invalid">
                         {formik.errors.message ? formik.errors.message : null}
                          </Form.Control.Feedback>
                     </Form.Group>
-                    <Button variant="primary" type="submit">
+                    <Row>
+                    <Button variant="primary" type="submit" className="ml-auto">
                         Submit
                     </Button>
+                    </Row>
+                    <p id="form-warning"><ShieldLockFill/>&nbsp;&nbsp;We hate spam, and we respect your privacy.</p>
                 </Form>
+              </section>
             </Col>
         </Row>
       </section>
