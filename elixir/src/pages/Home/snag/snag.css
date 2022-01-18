@@ -1,0 +1,29 @@
+#snag{
+    overflow-x: hidden;
+    margin-top: 10rem !important;
+}
+.snag-content{
+    padding: 5rem !important;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.snag-content>h2{
+    font-family: var(--hFont);
+}
+.snag-content>p{
+    font-size: 1.2rem;
+}
+#snag>.row{
+    margin-bottom: 7rem !important;
+}
+@media only screen and (max-width: 786px) {
+    .snag-content{
+        padding: 2rem !important;
+    }
+    #snag{
+        margin-top: 3rem !important;
+    }
+    #snag>.row{
+        margin-bottom: 2rem !important;
+    }
+}
