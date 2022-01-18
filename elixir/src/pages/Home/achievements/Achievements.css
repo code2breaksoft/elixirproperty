@@ -1,6 +1,7 @@
 .client-img{
     height: 6rem !important;
     max-width: 20rem !important;
+    margin-bottom: 3rem;
 }
 #ach-header{
     padding: 5rem !important;
@@ -9,4 +10,8 @@
     text-align: center;
     font-family: var(--hFont);
     font-size: 3rem;
+}
+#ach-wrapper>div>p{
+    text-align: center;
+    font-size: 1.3rem;
 }

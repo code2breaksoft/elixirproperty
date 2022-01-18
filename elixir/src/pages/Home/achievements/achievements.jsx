@@ -9,7 +9,7 @@ const ItemCarousel = ({image})=>{
     );
 }
 const Achievements = () => {    
-    const image = [1,2,3,4,5,6,7,8,9,10,11,12,13];
+    const image = [1,2,3,4,5,6,7,9,10,11,12,13];
     const responsive = {
         superLargeDesktop: {
           breakpoint: { max: 4000, min: 3000 },
@@ -39,6 +39,10 @@ const Achievements = () => {
                       infinite={true}
                       autoPlay={true}
                       autoPlaySpeed={1500}
+                      removeArrowOnDeviceType={["tablet", "mobile","desktop"]}
+                      dotListClass="custom-dot-list-style"
+                      showDots={true}
+                      centerMode={true}
                 >
                 {
                     image.map((item)=><ItemCarousel image={item}/>)
