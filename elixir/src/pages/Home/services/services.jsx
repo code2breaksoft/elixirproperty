@@ -13,7 +13,7 @@ const Services = () => {
         </Row>
         <Row>
         <ServiceCardMod 
-            path="/services/snagging"
+            path="/services/property-handover-inspection"
             image="/images/services/p1.jpg"
             title="Property Handover Inspection" 
             text="Property Snagging is a service which is opted by the homeowners and investors after purchase of the any new Property i.e Villa, Townhouse, Apartment or any commercial Property."/>
@@ -21,19 +21,19 @@ const Services = () => {
                 image="/images/services/p2.jpg"
                 title="Property Resale Inspection"
                 text="All property occupants look for regular maintenance to keep their acquired premises functional and elegant. Our team of expertsare well equipped to carry out desired maintenance services"
-                path="/services/maintenence"
+                path="/services/property-resale-inpection"
             />
             <ServiceCardMod
                 image="/images/services/p3.jpg"
                 title="11 Month-Defect Liability Inspection"
                 text="We as professionals provide specialized services to manage any break downs and repair works in concern to electrical, mechanical and plumbing areas.It’s the simpler things that make the difference."
-                path="/services/specialized"
+                path="/services/11-month-defect-liablity-inspection"
             />
             <ServiceCardMod
                 image="/images/services/p4.jpeg"
                 title="Property move in/out inspection"
                 text="We as professionals provide specialized services to manage any break downs and repair works in concern to electrical, mechanical and plumbing areas.It’s the simpler things that make the difference."
-                path="/services/specialized"
+                path="/services/property-move-in-out-inspection"
             />
         </Row>
             </section>

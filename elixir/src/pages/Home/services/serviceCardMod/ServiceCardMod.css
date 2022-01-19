@@ -1,7 +1,6 @@
 .servicecard-image{
     width: 100% !important;
     height: 100% !important;
-    border-radius: 5px;
 }
 .card-text{
     text-align: justify;
@@ -38,6 +37,7 @@
         width: 100% !important;
         height: 100% !important;
         margin-top: 2rem;
+        border-radius: 5px;
     }
     .card-title{
         text-align: center;

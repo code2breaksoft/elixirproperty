@@ -1,13 +1,24 @@
-import { Row } from "react-bootstrap";
+import { Row ,Col} from "react-bootstrap";
+import "./prop.css";
 
 const Prop = () => {
     return ( 
+        <>
+                    <Row className="headerh">
+                <h2>Property handover inspection</h2>
+                <p>Property Snagging is a service which is opted by the homeowners and investors after purchase of the any new Property i.e Villa, Townhouse, Apartment or any commercial Property.</p>
+            </Row>
         <section className="snag-props-wrapper">
+
+
+            <Row>
+                    <img src="/images/services/p1.jpg" className="snag-props-image"/>
+            </Row>
             <Row className="snag-props-list">
-                <h6>Are you a New Home Owner or an Investor?</h6>
-                <ul>
-                    <li>Property Snagging is a service which is opted by the homeowners and investors after purchase of the any new Property i.e Villa, Townhouse, Apartment or any commercial Property</li>
-                </ul>
+                    <h6>Are you a New Home Owner or an Investor?</h6>
+                    <ul>
+                        <li>Property Snagging is a service which is opted by the homeowners and investors after purchase of the any new Property i.e Villa, Townhouse, Apartment or any commercial Property</li>
+                    </ul>
             </Row>
             <Row  className="snag-props-list">
                 <h6>Few Major issues which cannot be Traced by Homeowners/Investors without Our Engineers Inspection</h6>
@@ -26,6 +37,7 @@ const Prop = () => {
                 </ul>
             </Row>
         </section>
+        </>
      );
 }
  

@@ -2,10 +2,11 @@ import Footer from "../../components/footer/footer";
 import Header from "../../components/Header/Header";
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import { Container } from "react-bootstrap";
-import Snagging from "./snagging/snagging";
-import Maintenence from "./maintenance/maintenence";
-import Special from "./sepecial/special";
 import { useEffect } from "react";
+import Prop from "./snagging/prop/prop";
+import "./snagging/snagging.css";
+import MoveIn from "./snagging/movein/movein";
+
 const Services = () => {
     useEffect(()=>{
         window.scrollTo({
@@ -18,9 +19,10 @@ const Services = () => {
         <Header/>
         <Container>
             <Routes>
-                <Route path="/snagging" element={<Snagging/>}></Route>
-                <Route path="/maintenence" element={<Maintenence/>}></Route>
-                <Route path="/specialized" element={<Special/>}></Route>
+                <Route path="/property-handover-inspection" element={<Prop/>}></Route>
+                <Route path="/property-resale-inpection" element={<Prop/>}></Route>
+                <Route path="/11-month-defect-liablity-inspection" element={<Prop/>}></Route>
+                <Route path="/property-move-in-out-inspection" element={<MoveIn/>}></Route>
             </Routes>
         </Container>
         <Footer/>

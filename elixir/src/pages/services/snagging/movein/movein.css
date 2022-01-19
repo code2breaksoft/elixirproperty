@@ -1,0 +1,51 @@
+.headerh{
+    text-align: center;
+    margin-top: 1.7rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+}
+.headerh>h2{
+    font-family: var(--hFont);
+    font-size: 2.5rem;
+}
+.headerh>p{
+    font-size: 1.2rem;
+}
+.snag-props-wrapper{
+    margin-bottom: 3rem;
+    padding:0rem;
+}
+.snag-props-image{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+.snag-side>h6{
+    font-family: var(--hFont);
+    font-size: 1.5rem;
+}
+@media only screen and (max-width: 1200px) {
+    .headerh>p{
+        font-size: 1.2rem;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    .headerh>h2{
+        font-family: var(--hFont);
+        font-size: 2rem;
+    }
+    ul>li{
+        font-size: 1.2rem;
+    }
+    .snag-props-image{
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin-left: -1rem;
+        margin-right: auto;
+        margin-bottom: 2rem;
+    }
+}
