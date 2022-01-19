@@ -2,8 +2,8 @@ import { Row } from "react-bootstrap";
 
 const MoveOut = () => {
     return ( 
-        <section>
-                        <Row>
+        <section  className="snag-props-wrapper">
+                        <Row  className="snag-props-list">
                 <h6>Are you a Landlord and Requires Sign Acceptance of Property by Tenant/Guest?
 </h6>
                 <ul>
@@ -11,7 +11,7 @@ const MoveOut = () => {
                     <li>This Professional Signed and Recorded Report acts as a proof and Helps Landlord/Tenant and Saves time and argument and helps is ease of release of security deposit cheque at the End of Tenancy.</li>
                 </ul>
             </Row>
-            <Row>
+            <Row  className="snag-props-list">
                 <h6>Why Move IN Inspection is Essential?
 </h6>
                 <ul>
@@ -20,7 +20,7 @@ const MoveOut = () => {
                     <li>To Make sure there is hassle free Move out and the Tenant knows exactly how he is supposed to deliver the Property at the End of Tenancy.</li>
                 </ul>
             </Row>
-            <Row>
+            <Row  className="snag-props-list">
                 <h6>Why you should always Employ Professional Snagging Company?
 </h6>
                 <ul>
@@ -28,7 +28,7 @@ const MoveOut = () => {
                     <li>Making sure all the Mechanical Systems such as Air condition Units,Water Tank System and Pump system are Tested to make sure systems are in healthy condition and therby protect your investment.</li>
                 </ul>
             </Row>
-            <Row>
+            <Row  className="snag-props-list">
                 <h6>
                 Are you a Landlord and Require a Move Out Report?
                 </h6>
@@ -37,7 +37,7 @@ const MoveOut = () => {
                     <li>Inspection Service ensure the condition of the property at the Time of Move Out which will be couter signed by the tenant;The Tenant is expected to deliver the Property in the same condition as he Took Over at the time of Move IN of the Property.</li>
                 </ul>
             </Row>
-            <Row>
+            <Row  className="snag-props-list">
                 <h6>
                 Why Move OUT Inspection is Essential?
 
@@ -48,7 +48,7 @@ const MoveOut = () => {
                     <li>Knowing the required maintenance helps Landlord to Fix the issues immediately after Moveout and the Unit will be immediately ready for viewings in Good condition and therby increases ROI.</li>
                 </ul>
             </Row>
-            <Row>
+            <Row  className="snag-props-list">
                 <h6>
                 Why you should always Employ Professional Snagging Company?
 

@@ -28,3 +28,17 @@
     color: white !important;
     background-color: var(--pink) !important;
   }
+  .snag-props-wrapper{
+      padding-left: 2rem !important;
+  }
+
+.snag-props-list>h6{
+    font-size: 1.5rem;
+    font-family: var(--hFont);
+}
+.snag-props-wrapper>.row{
+    margin-bottom: 0.2rem;
+}
+.service-snag-wrapper{
+    margin-bottom: 5rem;
+}
