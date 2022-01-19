@@ -9,8 +9,8 @@ const Special = () => {
     return ( 
         <section className="maint">
             <Row className="maint-header">
-                <h2>
-                specialized-services
+                <h2 style={{fontSize:"2rem"}}>
+                Specialized services
                 </h2>
                 <p>
                 We as professionals provide specialized services to manage any break downs and repair works in concern to electrical, mechanical and plumbing areas.

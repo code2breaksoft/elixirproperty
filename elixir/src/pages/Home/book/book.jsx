@@ -13,7 +13,7 @@ const Book = () => {
             setParallaxProp({
                 width:"200vw",
                 height:"25rem",
-                strength:50
+                strength:0
             });
         }
     },[]);

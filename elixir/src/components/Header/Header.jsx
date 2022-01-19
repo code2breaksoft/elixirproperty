@@ -53,7 +53,7 @@ const Header = ({home}) => {
             <Container fluid>
                 <Navbar.Brand onClick={()=>{changePage("/")}} style={{color:logo,fontWeight:"bold"}}>
                     <img src="/images/common/elixir_logo.png" width="50" height="40"/>
-                    &nbsp;&nbsp;Elixir Property Inspect
+                    &nbsp;&nbsp;Elixir
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll"><List style={{color:"white"}}/></Navbar.Toggle>
                 <Navbar.Collapse id="navbarScroll">

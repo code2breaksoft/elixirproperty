@@ -4,17 +4,16 @@
 
 }
 #navbar{
-    padding: 1rem;
+    padding: 0.5rem;
 }
 .navbar-toggler{
     border-color: var(--pink) !important;
     border-width: 2px !important;
     background-color: var(--pink) !important;
 }
-.menu-toggle.on {
-	border-top-color:#ff0;
-	border-bottom-color:#ff0
-}
-.nav-toggle.on:before {
-	border-top-color:#ff0;
+@media only screen and (max-width: 786px) {
+    #navbar{
+        padding: 0.5rem;
+        padding-top: 1;
+    }
 }
