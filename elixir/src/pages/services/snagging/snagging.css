@@ -1,7 +1,7 @@
 .service-snag-wrapper>.header{
     text-align: center;
     margin-top: 1.7rem;
-    margin-bottom: 1.7rem;
+    margin-bottom: 1rem;
 }
 .service-snag-wrapper>.header>h2{
     font-family: var(--hFont);
@@ -10,3 +10,21 @@
 .service-snag-wrapper>.header>p{
     font-size: 1.2rem;
 }
+#tab-nav>.nav-item>.nav-link{
+    color: var(--pink);
+}
+#tab-nav>.nav-item>:active{
+    color: white;
+}
+#tab-nav>.nav-item>.nav-link:focus{
+    color: white;
+    background-color: var(--pink);
+}
+#tab-nav>.nav-item>.nav-link:hover{
+    color: white !important;
+    background-color: var(--pink);
+}
+#tab-nav>.nav-item>.nav-link.active {
+    color: white !important;
+    background-color: var(--pink) !important;
+  }

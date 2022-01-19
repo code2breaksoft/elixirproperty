@@ -15,7 +15,7 @@ const Snagging = () => {
             <Tab.Container id="left-tabs-example" defaultActiveKey="first">
                 <Row>
                     <Col sm={3}>
-                    <Nav variant="pills" className="flex-column">
+                    <Nav variant="pills" className="flex-column" id="tab-nav">
                         <Nav.Item>
                         <Nav.Link eventKey="first">Property Handover Inspection</Nav.Link>
                         </Nav.Item>
