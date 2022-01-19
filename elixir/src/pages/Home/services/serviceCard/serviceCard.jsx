@@ -1,7 +1,13 @@
+import { useCallback } from "react";
 import { Col,Card, Button, Row } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import './ServiceCard.css';
 
-const ServiceCard = ({image,title,text}) => {
+const ServiceCard = ({image,title,text,path}) => {
+    const nav = useNavigate();
+    const changePage = useCallback((path)=>{
+        nav(path);
+    },[]);
     return ( 
         <Col>
             <Card className="h-100" id="serviceCard">
@@ -13,7 +19,7 @@ const ServiceCard = ({image,title,text}) => {
                         text
                     }
                 </Card.Text>
-                        <Button variant="primary" className="serviceCard-btn">Know more</Button>
+                        <Button onClick={()=>{changePage(path)}} variant="primary" className="serviceCard-btn">Know more</Button>
                 </Card.Body>
             </Card>
         </Col>

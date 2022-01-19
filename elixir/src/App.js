@@ -9,7 +9,6 @@ function App() {
               <Routes>
                 <Route path="/" element={<Home/>}></Route>
                 <Route path="/services/*" element={<Services/>}>
-             
                 </Route>
               </Routes>
             </Router>

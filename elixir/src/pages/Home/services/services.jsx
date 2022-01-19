@@ -12,18 +12,23 @@ const Services = () => {
             </p>
         </Row>
         <Row  xs={1} md={3} className="g-4">
-            <ServiceCard image="/images/elixir/service2.png"
+            <ServiceCard 
+                                path="/services/snagging"
+
+                image="/images/elixir/service2.png"
              title="Property Snagging" 
              text="Property Snagging is a service which is opted by the homeowners and investors after purchase of the any new Property i.e Villa, Townhouse, Apartment or any commercial Property."/>
             <ServiceCard
                 image="/images/elixir/service1.png"
                 title="Property Maintenance"
                 text="All property occupants look for regular maintenance to keep their acquired premises functional and elegant. Our team of expertsare well equipped to carry out desired maintenance services"
+                path="/services/maintenence"
             />
             <ServiceCard
                 image="/images/elixir/service3.png"
                 title="Specialized Services"
                 text="We as professionals provide specialized services to manage any break downs and repair works in concern to electrical, mechanical and plumbing areas.It’s the simpler things that make the difference."
+                path="/services/specialized"
             />
         </Row>
             </section>

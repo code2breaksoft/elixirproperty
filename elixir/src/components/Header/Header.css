@@ -11,3 +11,10 @@
     border-width: 2px !important;
     background-color: var(--pink) !important;
 }
+.menu-toggle.on {
+	border-top-color:#ff0;
+	border-bottom-color:#ff0
+}
+.nav-toggle.on:before {
+	border-top-color:#ff0;
+}

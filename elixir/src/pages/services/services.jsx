@@ -5,7 +5,14 @@ import { Container } from "react-bootstrap";
 import Snagging from "./snagging/snagging";
 import Maintenence from "./maintenance/maintenence";
 import Special from "./sepecial/special";
+import { useEffect } from "react";
 const Services = () => {
+    useEffect(()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    },[]);
     return ( 
         <>
         <Header/>
