@@ -48,8 +48,9 @@ const Header = ({home}) => {
     return ( 
         <Navbar bg={color} expand="lg" sticky="top" id="navbar" style={{boxShadow:shadow}}>
             <Container fluid>
-                <Navbar.Brand href="#home">
-                    <img src="/images/common/logo.png" width="100" height="20"/>
+                <Navbar.Brand href="#home" style={{color:fontColor,fontWeight:"bold"}}>
+                    <img src="/images/common/elixir_logo.png" width="50" height="40"/>
+                    &nbsp;&nbsp;Exlixir Property Inspect
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll"><List style={{color:"white"}}/></Navbar.Toggle>
                 <Navbar.Collapse id="navbarScroll">
