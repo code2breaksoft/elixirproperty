@@ -10,12 +10,12 @@ const ServiceCardMod = ({image,title,text,path}) => {
     return ( 
         <Col lg={12} style={{marginBottom:"3rem"}}>
         <Card className="h-100" id="serviceCard">
-            <Container fluid className="service-container">
+            <Container className="service-container">
                 <Row>
-                    <Col>
+                    <Col xs={12} lg={4}>
                         <Card.Img variant="top" src={image} className="servicecard-image" />
                     </Col>
-                    <Col>
+                    <Col xs={12} lg={8}>
                     <Card.Body>
             <Card.Title>{title}</Card.Title>
             <Card.Text>
