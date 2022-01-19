@@ -6,6 +6,7 @@ import Achievements from "./achievements/achievements";
 import Book from "./book/book";
 import Hero from "./Hero/Hero";
 import Reviews from "./reviews/reviews";
+import Sample from "./sample/sample";
 import Services from "./services/services";
 import Snag from "./snag/snag";
 import Tools from "./Tools/Tools";
@@ -13,7 +14,7 @@ import Tools from "./Tools/Tools";
 const Home = () => {
     return ( 
         <>
-            <Header/>
+            <Header home={true}/>
             <Hero/>
             <Snag/>
             <Container>
@@ -28,6 +29,9 @@ const Home = () => {
             <Achievements/>
             </Container>
             <Reviews/>
+            <Container>
+                <Sample/>
+            </Container>
             <Footer/>
         </>
      );

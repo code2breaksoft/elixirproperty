@@ -39,8 +39,8 @@ const Snag = () => {
                     <img src="/images/snag/s3.webp" alt="is-snagging-necessary"  width={"100%"}/>
                 </Col>
                 <Col lg={8}  className="snag-content" xs={{ span: 12, order: 1 }} lg={{ span: 8, order: 2 }}>
-                    <h2>Is snagging necessary?</h2>
-                    <p>"Snagging" is a necessary process of identifying issues with your property. Snagging issues range from leaks, plumbing faults, un-level ceilings, floors and walls, damaged units, missing insulation, poor joinery and structural issues. For landlords, it is a notoriously stressful and time-consuming process.​ The importance of hiring a snagging company is that we are experts in identifying issues with specialist equipment, and provide one comprehensive snag list for your developer to easily follow.</p>
+                    <h2>Why elixir snagging?</h2>
+                    <p>Our Property Snagging service is at par where we focus on quality of our Snagging Report as per Engineering standards which differentiates us from the other players in the market who only focus on number of snags; We always believe is quality which in turns generates us a referral client.Our Team with extensive knowledge in Property Handover Snagging, Property Maintenance, Contracting, and customer service understands that every situation is unique which is why we work closely with our clients to make sure the job is completed to their specification and always to a high quality.</p>
                 </Col>
             </Row>
         </section>

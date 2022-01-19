@@ -2,31 +2,39 @@ import { useEffect, useState } from "react";
 import { Navbar,Nav,Container ,NavDropdown} from "react-bootstrap";
 import './Header.css';
 import { List } from "react-bootstrap-icons";
-const Header = () => {
+const Header = ({home}) => {
     const [color,setColor] = useState("none");
     const [fontColor,setFontColor] = useState("white");
     const [shadow,setShadow] = useState("none");
+
     const changeNavbarColor = () =>{
-       if(window.scrollY >= 80){
-            setColor("light");
-            setFontColor("#f85359");
-            setShadow("0px 2px 4px 0px rgba(0,0,0,0.2)");
-       }
-       else{
-           if(window.innerWidth>786){
-                setFontColor("white");
-                setColor("none");
+        if(home){
+            if(window.scrollY >= 80){
+                setColor("light");
+                setFontColor("#f85359");
+                setShadow("0px 2px 4px 0px rgba(0,0,0,0.2)");
            }
            else{
-            setColor("light");
+               if(window.innerWidth>786){
+                    setFontColor("white");
+                    setColor("none");
+               }
+               else{
+                setColor("light");
+               }
+               setShadow("none");
            }
-           setShadow("none");
-       }
+        }
     };
     useEffect(()=>{
         if(window.innerWidth<=786){
             setFontColor("#f85359");
             setColor("light");
+        }
+        if(!home){
+            setColor("light");
+            setFontColor("#f85359");
+            setShadow("0px 2px 4px 0px rgba(0,0,0,0.2)");
         }
     },[]);
     window.addEventListener('scroll', changeNavbarColor);

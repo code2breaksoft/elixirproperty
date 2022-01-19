@@ -1,0 +1,12 @@
+.sample>h2{
+    font-size: 3rem;
+    font-family: var(--hFont);
+    text-align: center;
+}
+.sample>.col>p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.sample{
+    margin-bottom: 5rem;
+}

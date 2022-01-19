@@ -16,13 +16,16 @@ const Snagging = () => {
                     <Col sm={3}>
                     <Nav variant="pills" className="flex-column">
                         <Nav.Item>
-                        <Nav.Link eventKey="first">Property snagging</Nav.Link>
+                        <Nav.Link eventKey="first">Property Handover Inspection</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                        <Nav.Link eventKey="second">Property move in inspection</Nav.Link>
+                        <Nav.Link eventKey="second">Property Resale Inspection</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                        <Nav.Link eventKey="third">Property move out inspection</Nav.Link>
+                        <Nav.Link eventKey="third">11 Month-Defect Liability Inspection</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                        <Nav.Link eventKey="forth">Property move in/out inspection</Nav.Link>
                         </Nav.Item>
                     </Nav>
                     </Col>
@@ -35,6 +38,9 @@ const Snagging = () => {
                             <MoveIn/>
                         </Tab.Pane>
                         <Tab.Pane eventKey="third">
+                            <MoveOut/>
+                        </Tab.Pane>
+                        <Tab.Pane eventKey="forth">
                             <MoveOut/>
                         </Tab.Pane>
                     </Tab.Content>
