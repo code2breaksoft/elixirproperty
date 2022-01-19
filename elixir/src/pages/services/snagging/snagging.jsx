@@ -2,11 +2,12 @@ import { Row,Tab ,Col,Nav} from "react-bootstrap";
 import MoveIn from "./movein/in";
 import MoveOut from "./moveout/out";
 import Prop from "./prop/prop";
+import "./snagging.css";
 
 const Snagging = () => {
     return ( 
-        <section>
-            <Row>
+        <section className="service-snag-wrapper">
+            <Row className="header">
                 <h2>Property snagging</h2>
                 <p>Property Snagging is a service which is opted by the homeowners and investors after purchase of the any new Property i.e Villa, Townhouse, Apartment or any commercial Property.</p>
             </Row>
@@ -35,10 +36,8 @@ const Snagging = () => {
                             <Prop/>
                         </Tab.Pane>
                         <Tab.Pane eventKey="second">
-                            <MoveIn/>
                         </Tab.Pane>
                         <Tab.Pane eventKey="third">
-                            <MoveOut/>
                         </Tab.Pane>
                         <Tab.Pane eventKey="forth">
                             <MoveOut/>
