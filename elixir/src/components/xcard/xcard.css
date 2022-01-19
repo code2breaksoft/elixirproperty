@@ -1,0 +1,34 @@
+.xcard-image{
+    width: 70%;
+}
+.xcard-title{
+    font-family: var(--hFont) !important;
+}
+.xcard-text{
+    font-size: 1.2rem;
+    margin-top: 1.7rem;
+}
+.xcard-divider{
+    background-color: var(--pink);
+    height: 0.3rem;
+    margin-top: 2rem;
+    width: 50%;
+    margin-left: 13rem;
+    display: none;
+}
+.xcard{
+    border-left: 0.3rem solid var(--pink) !important;
+}
+.xcard>.card-header{
+    background-color: #fff5f5;
+}
+@media only screen and (max-width: 786px) {
+    .xcard-text{
+        text-align: justify;
+        text-justify: inter-word
+    }
+    .xcard-image{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+  }
