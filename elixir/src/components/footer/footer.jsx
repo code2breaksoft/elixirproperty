@@ -8,7 +8,7 @@ const Footer = () => {
             <Row>
                 <Col lg={4} className="company-wrapper" style={{fontWeight:"bold"}}>
                     <img alt="footer-logo" src="/images/common/elixir_logo.png" width="60" height="50"/>&nbsp;&nbsp;Elixir Property Inspect
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;We deliver only quality</p>
+                    <p>&nbsp;&nbsp;We deliver only quality</p>
                 </Col>  
                 <Col lg={4} className="footer-contact-wrapper">
                     <h4>Contact us</h4>

@@ -8,6 +8,7 @@ const Header = ({home}) => {
     const [fontColor,setFontColor] = useState("white");
     const [shadow,setShadow] = useState("none");
     const [basePath,setBasePath] = useState("");
+    const [logo,setLogo] = useState("white");
     const nav = useNavigate();
     const changeNavbarColor = () =>{
         if(home){
@@ -20,6 +21,7 @@ const Header = ({home}) => {
                if(window.innerWidth>786){
                     setFontColor("white");
                     setColor("none");
+                    setLogo("white");
                }
                else{
                 setColor("light");
@@ -32,6 +34,7 @@ const Header = ({home}) => {
         if(window.innerWidth<=786){
             setFontColor("#f85359");
             setColor("light");
+            setLogo("var(--fColor)")
         }
         if(!home){
             setColor("light");
@@ -48,7 +51,7 @@ const Header = ({home}) => {
     return ( 
         <Navbar bg={color} expand="lg" sticky="top" id="navbar" style={{boxShadow:shadow}}>
             <Container fluid>
-                <Navbar.Brand onClick={()=>{changePage("/")}} style={{color:fontColor,fontWeight:"bold"}}>
+                <Navbar.Brand onClick={()=>{changePage("/")}} style={{color:logo,fontWeight:"bold"}}>
                     <img src="/images/common/elixir_logo.png" width="50" height="40"/>
                     &nbsp;&nbsp;Elixir Property Inspect
                 </Navbar.Brand>
