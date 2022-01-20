@@ -18,8 +18,8 @@ const Home = () => {
             <Hero/>
             <Snag/>
             <Container>
-                <Tools/>
                 <Services id="services"/>
+                <Tools/>
             </Container>
             <Book/>
             <Container fluid>

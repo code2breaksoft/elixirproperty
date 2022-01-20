@@ -25,4 +25,11 @@
     #tools>.row>p{
         font-size: 1em;
     }
+    .tools{
+        width: 80%;
+        height: 100% !important;
+        display: block !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

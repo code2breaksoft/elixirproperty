@@ -4,6 +4,7 @@
 }
 .snag-content{
     padding: 5rem !important;
+    padding-top: 1rem !important;
     text-align: justify;
     text-justify: inter-word;
     color:var(--fColor);
