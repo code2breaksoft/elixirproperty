@@ -10,7 +10,10 @@ const Snag = () => {
                 </Col>
                 <Col lg={8} className="snag-content" xs={{ span: 12, order: 1 }}  lg={{ span: 8, order: 2 }} >
                     <h2>What is snagging?</h2>
-                    <p>Property Snagging is a service which is opted by the homeowners and investors after purchase of the any new Property i.e Villa, Townhouse, Apartment or any commercial Property.</p>
+                    <p>Property Snagging is a service which is opted by the homeowners and investors after purchase of the any new Property i.e Villa, Townhouse, Apartment or any commercial Property.
+
+                    Snagging is the process of comprehensive inspection before purchasing a New Property from the Developer.
+                    </p>
                 </Col>
             </Row>
             <Row>
