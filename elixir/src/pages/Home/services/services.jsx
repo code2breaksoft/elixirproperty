@@ -20,7 +20,7 @@ const Services = () => {
             <ServiceCardMod
                 image="/images/services/p2.jpg"
                 title="Property Resale Inspection"
-                text="All property occupants look for regular maintenance to keep their acquired premises functional and elegant. Our team of expertsare well equipped to carry out desired maintenance services"
+                text="Our Team carries out Handover Snagging,11 Month DLP Inspection and Resale Condition Inspection,we represent the owner and carryout inspections with or without the presence of investor."
                 path="/services/property-resale-inpection"
             />
             <ServiceCardMod
@@ -32,7 +32,7 @@ const Services = () => {
             <ServiceCardMod
                 image="/images/services/p4.jpeg"
                 title="Property move in/out inspection"
-                text="We as professionals provide specialized services to manage any break downs and repair works in concern to electrical, mechanical and plumbing areas.It’s the simpler things that make the difference."
+                text="An Engineer inspects the Property with use of Right Tools necessary for Snagging; With the Right Tools and Non Invasive methods our Engineers. Make sure Moisture is detected by Moisture Meter and Thermal Inspections."
                 path="/services/property-move-in-out-inspection"
             />
         </Row>
