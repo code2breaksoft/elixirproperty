@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import { Navbar,Nav,Container ,NavDropdown} from "react-bootstrap";
+import { Navbar,Nav,Container ,NavDropdown,Button} from "react-bootstrap";
 import './Header.css';
 import { List } from "react-bootstrap-icons";
 import { useNavigate } from "react-router-dom";
@@ -34,7 +34,8 @@ const Header = ({home}) => {
         </NavDropdown>                    
                     <Nav.Link onClick={()=>{changePage("/#tools")}}>Tools</Nav.Link>
                     <Nav.Link onClick={()=>{changePage("/inspection-scope")}}>Inpection scope</Nav.Link>
-                    <Nav.Link onClick={()=>{changePage("/#contact")}}>Contact</Nav.Link>
+                    <Nav.Link onClick={()=>{changePage("/#contact")}}>Contact&nbsp;&nbsp;</Nav.Link>
+                    <Button variant="primary">Sample report</Button>
                 </Nav>
                 </Navbar.Collapse>
             </Container>
