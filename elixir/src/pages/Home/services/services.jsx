@@ -5,7 +5,7 @@ import "./services.css";
 const Services = () => {
     return ( 
         <>
-            <section id="services">
+            <section id="services"  className="animate__animated animate__fadeInUp">
             <Row>
             <h2>Our Snagging Services</h2>
             <p>Elixir Property Management is a team of young dynamic people with a fresh Mindset, Promoting agility, convenience and quality Property Snagging and Inspections.

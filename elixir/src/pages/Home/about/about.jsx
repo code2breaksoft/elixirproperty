@@ -49,7 +49,7 @@ const About = () => {
         },
       });
     return ( 
-      <section id="about">
+      <section id="about" className="animate__animated animate__fadeInUp">
                 <Row className="gx-5">
             <Col lg={6} xs={12} className="about-outer-wrap">
                 <h2>About us</h2>

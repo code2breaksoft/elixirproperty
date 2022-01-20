@@ -14,8 +14,8 @@ const Hero = () => {
                 alt="Second slide"
                 />
                 <Carousel.Caption>
-                <h1>We see beyond visual inspection</h1>
-                <p>UAE's most trusted Property Snagging and maintenance services provider.</p>
+                <h1 class="animate__animated animate__bounceInDown">We see beyond visual inspection</h1>
+                <p class="animate__animated animate__bounceInDown">UAE's most trusted Property Snagging and maintenance services provider.</p>
                 <Button variant="primary" size="lg">Enquire now</Button>
                 </Carousel.Caption>
             </Carousel.Item>
@@ -26,11 +26,11 @@ const Hero = () => {
                 alt="First slide"
                 />
                 <Carousel.Caption>
-                <h1>The UAE's leading 
+                <h1 class="animate__animated animate__bounceInDown">The UAE's leading 
                               snagging
                               company.</h1>
-                <p>Best snagging, inspection & maintenance services in UAE</p>
-                <Button variant="primary" size="lg">Enquire now</Button>
+                <p class="animate__animated animate__bounceInDown">Best snagging, inspection & maintenance services in UAE</p>
+                <Button  variant="primary" size="lg">Enquire now</Button>
                 </Carousel.Caption>
             </Carousel.Item>
 

@@ -1,6 +1,9 @@
 import React from "react";
 import { Container, Row,Col } from "react-bootstrap";
 import "./snag.css";
+import Animate from 'animate.css-react'
+ 
+import 'animate.css/animate.css' 
 const Snag = () => {
     return ( 
         <section id="snag">
@@ -9,7 +12,7 @@ const Snag = () => {
                     <img src="/images/snag/a1.jpg" alt="what-is-snagging" width={"100%"}/>
                 </Col>
                 <Col lg={8} className="snag-content" xs={{ span: 12, order: 1 }}  lg={{ span: 8, order: 2 }} >
-                    <h2>What is snagging?</h2>
+                    <h2 className="animate__animated animate__bounceInLeft">What is snagging?</h2>
                     <p>Property Snagging is a service which is opted by the homeowners and investors after purchase of the any new Property i.e Villa, Townhouse, Apartment or any commercial Property.
 
                     Snagging is the process of comprehensive inspection before purchasing a New Property from the Developer.
@@ -18,7 +21,7 @@ const Snag = () => {
             </Row>
             <Row>
                 <Col lg={8} className="snag-content" xs={{ span: 12, order: 1 }}>
-                    <h2>Who needs snagging?</h2>
+                    <h2 className="animate__animated animate__bounceInLeft">Who needs snagging?</h2>
                     <p>
                     Anyone buying a new build home
                      or a home in the secondary market
@@ -41,8 +44,8 @@ const Snag = () => {
                 <Col lg={4} xs={{ span: 12, order: 2 }} lg={{ span: 4, order: 1 }}>
                     <img src="/images/snag/a3.jpeg" alt="is-snagging-necessary"  width={"100%"}/>
                 </Col>
-                <Col lg={8}  className="snag-content" xs={{ span: 12, order: 1 }} lg={{ span: 8, order: 2 }}>
-                    <h2>Why elixir snagging?</h2>
+                <Col lg={8}  className="snag-content animate__animated animate__bounceInLeft" xs={{ span: 12, order: 1 }} lg={{ span: 8, order: 2 }}>
+                    <h2 className="animate__animated animate__bounceInLeft">Why elixir snagging?</h2>
                     <p>Our Property Snagging service is at par 
                         where we focus on quality of our Snagging
                          Report as per Engineering standards which 
