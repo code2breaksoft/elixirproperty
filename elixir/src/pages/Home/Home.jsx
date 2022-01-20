@@ -1,6 +1,7 @@
 import { Container } from "react-bootstrap";
 import Footer from "../../components/footer/footer";
 import Header from "../../components/Header/Header";
+import Whatsappicon from "../../components/whatsapp/whatsapp";
 import About from "./about/about";
 import Achievements from "./achievements/achievements";
 import Book from "./book/book";
@@ -15,6 +16,7 @@ const Home = () => {
     return ( 
         <>
             <Header home={true}/>
+            <Whatsappicon/>
             <Hero/>
             <Container fluid>
                 <About id="about"/>
