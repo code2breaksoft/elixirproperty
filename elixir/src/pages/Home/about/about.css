@@ -14,7 +14,6 @@
 }
 .about-outer-wrap{
     padding-right: 5.3rem;
-    padding-top: 5rem;
 }
 .about-inner-wrap>.col>h2{
     color: #ff5722;
@@ -56,6 +55,21 @@
 }
 #about{
     overflow-x: hidden !important;
+}
+.inspect-types-img{
+    width: 30% !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.inspect-types p{
+    text-align: center;
+}
+.inspect-types h5{
+    font-family: var(--hFont);
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3rem;
 }
 @media only screen and (max-width: 786px) {
     .about-outer-wrap>h2{

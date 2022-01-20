@@ -55,7 +55,6 @@ const About = () => {
                 <h2>About us</h2>
                 <p>
                 Elixir Property Management is a team of young dynamic people with a fresh Mindset, Promoting agility, convenience and quality Property Snagging, Inspections and Maintenance services. 
-                We have developed a technical approach towards the solution and methodology that brings the best value for your investments. 
 
                 </p>
                 <Row className="about-inner-wrap">
@@ -67,6 +66,33 @@ const About = () => {
                         <h2>2,200</h2>
                         <h6>Properties snagged</h6>
                     </Col>
+                </Row>
+                <Row className="inspect-types">
+                  <h5>What do we inspect?</h5>
+                  <Col lg={4} xs={6}>
+                    <img src="/images/about/roof.png" className="inspect-types-img"/>
+                    <p>Roof Top Inspection</p>
+                  </Col>
+                  <Col lg={4} xs={6}>
+                      <img src="/images/about/therm.png"  className="inspect-types-img"/>
+                      <p>Thermal Inspection</p>
+                  </Col>
+                  <Col lg={4} xs={6}>
+                      <img src="/images/about/elec.png"  className="inspect-types-img"/>
+                      <p>Civil Electrical Inspection</p>
+                  </Col>
+                  <Col lg={4} xs={6}>
+                    <img src="/images/about/water.png"  className="inspect-types-img"/>
+                      <p>Water Tank System Inspection</p>
+                  </Col>
+                  <Col lg={4} xs={6}>
+                  <img src="/images/about/paint.png"  className="inspect-types-img"/>
+                      <p>Painting Inspection</p>
+                  </Col>
+                  <Col lg={4} xs={6}>
+                  <img src="/images/about/mech.png"  className="inspect-types-img"/>
+                      <p>Mechanical Inspection</p>
+                  </Col>
                 </Row>
             </Col>
             <Col lg={6} xs={12} id="contact">
