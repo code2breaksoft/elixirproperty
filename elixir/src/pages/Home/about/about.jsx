@@ -54,19 +54,8 @@ const About = () => {
             <Col lg={6} xs={12} className="about-outer-wrap">
                 <h2>About us</h2>
                 <p>
-                Elixir Property Management is a team of young dynamic people with a fresh Mindset, Promoting agility, convenience and quality Property Snagging, Inspections and Maintenance services. 
-
+                Elixir Property Management is a team of young dynamic people with a fresh Mindset, Promoting agility, convenience and quality Property Snagging, Inspections and Maintenance services. Our Property Snagging service is at par where we focus on quality of our Snagging Report as per Engineering standards which differentiates us from the other players in the market who only focus on number of snags. We always believe is quality which in turns generates us a referral client.
                 </p>
-                <Row className="about-inner-wrap">
-                    <Col>
-                        <h2>100%</h2>
-                        <h6>Client satisfaction</h6>
-                    </Col>
-                    <Col>
-                        <h2>2,200</h2>
-                        <h6>Properties snagged</h6>
-                    </Col>
-                </Row>
                 <Row className="inspect-types">
                   <h5>What do we inspect?</h5>
                   <Col lg={4} xs={6}>
@@ -78,16 +67,16 @@ const About = () => {
                       <p>Thermal Inspection</p>
                   </Col>
                   <Col lg={4} xs={6}>
-                      <img src="/images/about/elec.png"  className="inspect-types-img"/>
-                      <p>Civil Electrical Inspection</p>
+                      <img src="/images/about/civil.png"  className="inspect-types-img"/>
+                      <p>Civil Inspection</p>
                   </Col>
                   <Col lg={4} xs={6}>
                     <img src="/images/about/water.png"  className="inspect-types-img"/>
                       <p>Water Tank System Inspection</p>
                   </Col>
                   <Col lg={4} xs={6}>
-                  <img src="/images/about/paint.png"  className="inspect-types-img"/>
-                      <p>Painting Inspection</p>
+                  <img src="/images/about/elec.png"  className="inspect-types-img"/>
+                      <p>Electrical Inspection</p>
                   </Col>
                   <Col lg={4} xs={6}>
                   <img src="/images/about/mech.png"  className="inspect-types-img"/>

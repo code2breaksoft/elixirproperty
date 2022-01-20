@@ -16,15 +16,16 @@ const Home = () => {
         <>
             <Header home={true}/>
             <Hero/>
+            <Container fluid>
+                <About id="about"/>
+            </Container>
             <Snag/>
             <Container>
                 <Services id="services"/>
                 <Tools/>
             </Container>
             <Book/>
-            <Container fluid>
-                <About id="about"/>
-            </Container>
+
             <Container fluid>
             <Achievements/>
             </Container>

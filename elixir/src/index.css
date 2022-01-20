@@ -28,10 +28,3 @@
   scroll-behavior: smooth !important;
   font-family: var(--bFont); 
 }
-@media only screen and (max-width: 786px) {
-  *{
-
-    
-  }
-
-}
