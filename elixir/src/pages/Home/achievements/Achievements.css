@@ -40,5 +40,6 @@
     }
     #ach-wrapper{
         margin-top: 5rem;
+        overflow-x: hidden !important;
     }
 }

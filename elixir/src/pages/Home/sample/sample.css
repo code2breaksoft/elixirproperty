@@ -9,4 +9,5 @@
 }
 .sample{
     margin-bottom: 5rem;
+    overflow-x: hidden !important;
 }

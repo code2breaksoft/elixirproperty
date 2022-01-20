@@ -1,6 +1,7 @@
 #services{
     margin-top: 5rem;
     margin-bottom: 1rem;
+    overflow-x: hidden !important;
 }
 #services>.row{
     text-align: justify;

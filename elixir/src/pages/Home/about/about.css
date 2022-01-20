@@ -54,6 +54,9 @@
 #message-area{
     height: 6rem;
 }
+#about{
+    overflow-x: hidden !important;
+}
 @media only screen and (max-width: 786px) {
     .about-outer-wrap>h2{
         text-align: center;
