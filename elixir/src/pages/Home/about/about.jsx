@@ -2,6 +2,7 @@ import { Col, Row,Form,Button } from "react-bootstrap";
 import { useFormik } from 'formik';
 import "./about.css";
 import { ShieldLockFill } from "react-bootstrap-icons";
+import { useNavigate } from "react-router-dom";
 const validate = values => {
     const errors = {};
     if (!values.name) {
@@ -48,6 +49,7 @@ const About = () => {
           alert(JSON.stringify(values, null, 2));
         },
       });
+      const nav = useNavigate();
     return ( 
       <section id="about">
                 <Row className="gx-5">
@@ -85,10 +87,10 @@ const About = () => {
                 </Row>
                 <Row className="about-btn-wrapper">
                   <Col>
-                    <Button variant="primary" size="lg">FAQ</Button>
+                    <Button variant="primary" size="lg" onClick={()=>{nav("/faq")}}>FAQ</Button>
                   </Col>
                   <Col>
-                    <Button  variant="primary" size="lg">Blog</Button>
+                    <Button  variant="primary" size="lg" onClick={()=>{nav("/blog")}}>Blog</Button>
                   </Col>
                 </Row>
             </Col>
