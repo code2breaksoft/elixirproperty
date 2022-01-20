@@ -26,6 +26,7 @@
         font-size: 1.2em;
         text-align: justify;
         text-justify: inter-word;
+        padding:0rem 2rem;
     }
     #services{
         padding: 0.5rem;

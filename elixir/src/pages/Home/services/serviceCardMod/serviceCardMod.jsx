@@ -9,7 +9,7 @@ const ServiceCardMod = ({image,title,text,path}) => {
     },[]);
     return ( 
         <Col lg={12} style={{marginBottom:"3rem"}}>
-        <Card className="h-100" id="serviceCard">
+        <Card className="h-100 serviceCard-container " id="serviceCard">
             <Container className="service-container">
                 <Row>
                     <Col xs={12} lg={4}>
