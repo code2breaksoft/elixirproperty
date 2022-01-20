@@ -2,6 +2,7 @@ import { Col, Row,Form,Button } from "react-bootstrap";
 import { useFormik } from 'formik';
 import "./about.css";
 import { ShieldLockFill } from "react-bootstrap-icons";
+import { useNavigate } from "react-router-dom";
 const validate = values => {
     const errors = {};
     if (!values.name) {
@@ -48,21 +49,49 @@ const About = () => {
           alert(JSON.stringify(values, null, 2));
         },
       });
+      const nav = useNavigate();
     return ( 
       <section id="about">
                 <Row className="gx-5">
             <Col lg={6} xs={12} className="about-outer-wrap">
                 <h2>About us</h2>
-                <p>Our Professional Snagging Surveyors have an excellent insight into the mindset of developers. We have the in-depth knowledge and experience gained from over 15 years in the construction & property industry.</p>
-                <Row className="about-inner-wrap">
-                    <Col>
-                        <h2>100%</h2>
-                        <h6>Client satisfaction</h6>
-                    </Col>
-                    <Col>
-                        <h2>2,200</h2>
-                        <h6>Properties snagged</h6>
-                    </Col>
+                <p>
+                Elixir Property Management is a team of young dynamic people with a fresh Mindset, Promoting agility, convenience and quality Property Snagging, Inspections and Maintenance services. Our Property Snagging service is at par where we focus on quality of our Snagging Report as per Engineering standards which differentiates us from the other players in the market who only focus on number of snags. We always believe is quality which in turns generates us a referral client.
+                </p>
+                <Row className="inspect-types">
+                  <h5>What do we inspect?</h5>
+                  <Col lg={4} xs={6}>
+                    <img src="/images/about/roof.png" className="inspect-types-img"/>
+                    <p>Roof Top Inspection</p>
+                  </Col>
+                  <Col lg={4} xs={6}>
+                      <img src="/images/about/therm.png"  className="inspect-types-img"/>
+                      <p>Thermal Inspection</p>
+                  </Col>
+                  <Col lg={4} xs={6}>
+                      <img src="/images/about/civil.png"  className="inspect-types-img"/>
+                      <p>Civil Inspection</p>
+                  </Col>
+                  <Col lg={4} xs={6}>
+                    <img src="/images/about/water.png"  className="inspect-types-img"/>
+                      <p>Water Tank System Inspection</p>
+                  </Col>
+                  <Col lg={4} xs={6}>
+                  <img src="/images/about/elec.png"  className="inspect-types-img"/>
+                      <p>Electrical Inspection</p>
+                  </Col>
+                  <Col lg={4} xs={6}>
+                  <img src="/images/about/mech.png"  className="inspect-types-img"/>
+                      <p>Mechanical Inspection</p>
+                  </Col>
+                </Row>
+                <Row className="about-btn-wrapper">
+                  <Col>
+                    <Button variant="primary" size="lg" onClick={()=>{nav("/faq")}}>FAQ</Button>
+                  </Col>
+                  <Col>
+                    <Button  variant="primary" size="lg" onClick={()=>{nav("/blog")}}>Blog</Button>
+                  </Col>
                 </Row>
             </Col>
             <Col lg={6} xs={12} id="contact">

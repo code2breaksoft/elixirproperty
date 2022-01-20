@@ -14,7 +14,6 @@
 }
 .about-outer-wrap{
     padding-right: 5.3rem;
-    padding-top: 5rem;
 }
 .about-inner-wrap>.col>h2{
     color: #ff5722;
@@ -53,6 +52,34 @@
 }
 #message-area{
     height: 6rem;
+}
+#about{
+    overflow-x: hidden !important;
+}
+.inspect-types-img{
+    width: 30% !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.inspect-types{
+    margin-top: -3rem !important;
+}
+.inspect-types p{
+    text-align: center;
+}
+.inspect-types h5{
+    font-family: var(--hFont);
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+.about-btn-wrapper button{
+    width: 13rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
 }
 @media only screen and (max-width: 786px) {
     .about-outer-wrap>h2{

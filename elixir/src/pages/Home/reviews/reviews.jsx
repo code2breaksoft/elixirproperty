@@ -21,11 +21,7 @@ const responsive = {
   }
 };
 const data = [
-    {
-        name:"Amar",
-        company:"Serena Casa Viva Client",
-        comment:"Sahal and team were through with inspection and I am happy to recommend their services.",
-    },
+
     {
         name:"Simon",
         company:"Emaar 52 42",
@@ -41,11 +37,7 @@ const data = [
         company:"Akoya Janusia",
         comment:"All the minute details were recorded and the finishing and cracks were noted;including rooftop inspection and inspection of the rooftop",
     },
-    {
-        name:"Bhatia",
-        company:"Akoya Mimosa",
-        comment:"The team was on time and waited for me ahead in the community centre and explained me the working of the water pump systems and educated me about the materials and systems.",
-    },
+
     {
         name:"Adel",
         company:"Creekside",
@@ -68,7 +60,12 @@ const Item = ({data})=>{
                 <p className="client-company">{data.company}</p>
             </Row>
             <Row>
-                <p className="client-comment">{data.comment}</p>
+                <p></p>
+            </Row>
+            <Row>
+            <blockquote>
+                {data.comment}
+            </blockquote>
             </Row>
             <Row>
                 <div className="divider"></div>
@@ -81,7 +78,7 @@ const Reviews = () => {
     return ( 
         <Container className="reviews-wrapper" id="reviews">
             <Row>
-                <h2>Our Client Reviews</h2>
+                <h2 id="client-review-h">Our Client Reviews</h2>
             </Row>
             <Row>
                 <p className="reviews-header-description">Listen to our clients</p>

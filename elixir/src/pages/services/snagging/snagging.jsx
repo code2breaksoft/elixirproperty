@@ -2,11 +2,12 @@ import { Row,Tab ,Col,Nav} from "react-bootstrap";
 import MoveIn from "./movein/in";
 import MoveOut from "./moveout/out";
 import Prop from "./prop/prop";
+import "./snagging.css";
 
 const Snagging = () => {
     return ( 
-        <section>
-            <Row>
+        <section className="service-snag-wrapper">
+            <Row className="header">
                 <h2>Property snagging</h2>
                 <p>Property Snagging is a service which is opted by the homeowners and investors after purchase of the any new Property i.e Villa, Townhouse, Apartment or any commercial Property.</p>
             </Row>
@@ -14,15 +15,18 @@ const Snagging = () => {
             <Tab.Container id="left-tabs-example" defaultActiveKey="first">
                 <Row>
                     <Col sm={3}>
-                    <Nav variant="pills" className="flex-column">
+                    <Nav variant="pills" className="flex-column" id="tab-nav">
                         <Nav.Item>
-                        <Nav.Link eventKey="first">Property snagging</Nav.Link>
+                        <Nav.Link eventKey="first">Property Handover Inspection</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                        <Nav.Link eventKey="second">Property move in inspection</Nav.Link>
+                        <Nav.Link eventKey="second">Property Resale Inspection</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                        <Nav.Link eventKey="third">Property move out inspection</Nav.Link>
+                        <Nav.Link eventKey="third">11 Month-Defect Liability Inspection</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                        <Nav.Link eventKey="forth">Property move in/out inspection</Nav.Link>
                         </Nav.Item>
                     </Nav>
                     </Col>
@@ -32,9 +36,10 @@ const Snagging = () => {
                             <Prop/>
                         </Tab.Pane>
                         <Tab.Pane eventKey="second">
-                            <MoveIn/>
                         </Tab.Pane>
                         <Tab.Pane eventKey="third">
+                        </Tab.Pane>
+                        <Tab.Pane eventKey="forth">
                             <MoveOut/>
                         </Tab.Pane>
                     </Tab.Content>

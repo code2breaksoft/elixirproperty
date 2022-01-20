@@ -1,0 +1,47 @@
+.service-snag-wrapper>.header{
+    text-align: center;
+    margin-top: 1.7rem;
+    margin-bottom: 1rem;
+}
+.service-snag-wrapper>.header>h2{
+    font-family: var(--hFont);
+    font-size: 2.5rem;
+}
+.service-snag-wrapper>.header>p{
+    font-size: 1.2rem;
+}
+#tab-nav>.nav-item>.nav-link{
+    color: var(--pink);
+}
+#tab-nav>.nav-item>:active{
+    color: white;
+}
+#tab-nav>.nav-item>.nav-link:focus{
+    color: white;
+    background-color: var(--pink);
+}
+#tab-nav>.nav-item>.nav-link:hover{
+    color: white !important;
+    background-color: var(--pink);
+}
+#tab-nav>.nav-item>.nav-link.active {
+    color: white !important;
+    background-color: var(--pink) !important;
+  }
+  .snag-props-wrapper{
+      padding-left: 2rem !important;
+  }
+
+.snag-props-list>h6{
+    font-size: 1.5rem;
+    font-family: var(--hFont);
+}
+.snag-props-wrapper>.row{
+    margin-bottom: 0.2rem;
+}
+.service-snag-wrapper{
+    margin-bottom: 5rem;
+}
+ul>li{
+    font-size: 1.2rem;
+}

@@ -6,9 +6,9 @@ const Footer = () => {
     return ( 
         <footer className="footer">
             <Row>
-                <Col lg={4} className="company-wrapper">
-                    <img alt="footer-logo" src="/images/common/logo-footer.png"/>
-                    <p>We deliver only quality</p>
+                <Col lg={4} className="company-wrapper" style={{fontWeight:"bold"}}>
+                    <img alt="footer-logo" src="/images/common/elixir_logo.png" width="60" height="50"/>&nbsp;&nbsp;Elixir Property Inspect
+                    <p>&nbsp;&nbsp;We deliver only quality</p>
                 </Col>  
                 <Col lg={4} className="footer-contact-wrapper">
                     <h4>Contact us</h4>
@@ -26,7 +26,7 @@ const Footer = () => {
             <Row>
                 <section className="copyright-wrapper">
                     <p>Copyright © 2022 Elixir Property Snagging. All rights reserved.</p>
-                    <a href="https://code2break.com">Developed by Code2Break solutions</a>
+                    <a href="https://code2break.com">Developed by Code2Break software solutions</a>
                 </section>
             </Row>
         </footer>

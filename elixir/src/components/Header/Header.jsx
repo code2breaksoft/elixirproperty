@@ -1,49 +1,41 @@
-import { useEffect, useState } from "react";
-import { Navbar,Nav,Container ,NavDropdown} from "react-bootstrap";
+import { useCallback, useEffect, useState } from "react";
+import { Navbar,Nav,Container ,NavDropdown,Button} from "react-bootstrap";
 import './Header.css';
 import { List } from "react-bootstrap-icons";
-const Header = () => {
-    const [color,setColor] = useState("none");
-    const [fontColor,setFontColor] = useState("white");
-    const [shadow,setShadow] = useState("none");
-    const changeNavbarColor = () =>{
-       if(window.scrollY >= 80){
-            setColor("light");
-            setFontColor("#f85359");
-            setShadow("0px 2px 4px 0px rgba(0,0,0,0.2)");
-       }
-       else{
-           if(window.innerWidth>786){
-                setFontColor("white");
-                setColor("none");
-           }
-           else{
-            setColor("light");
-           }
-           setShadow("none");
-       }
-    };
-    useEffect(()=>{
-        if(window.innerWidth<=786){
-            setFontColor("#f85359");
-            setColor("light");
-        }
+import { useNavigate } from "react-router-dom";
+const Header = ({home}) => {
+    const nav = useNavigate();
+    const changePage = useCallback((path)=>{
+        nav(path);
+        var elmnt = document.getElementById(path.split('#').pop());
+        elmnt.scrollIntoView();
     },[]);
-    window.addEventListener('scroll', changeNavbarColor);
     return ( 
-        <Navbar bg={color} expand="lg" sticky="top" id="navbar" style={{boxShadow:shadow}}>
+        <Navbar bg={"light"} expand="lg" id="navbar" sticky="top">
             <Container fluid>
-                <Navbar.Brand href="#home">
-                    <img src="/images/common/logo.png" width="100" height="20"/>
+                <Navbar.Brand onClick={()=>{changePage("/")}}>
+                    <img src="/images/common/elixir_logo.png" width="50" height="40"/>
+                    &nbsp;&nbsp;Elixir
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll"><List style={{color:"white"}}/></Navbar.Toggle>
                 <Navbar.Collapse id="navbarScroll">
                 <Nav className="ms-auto">
-                    <Nav.Link href="#hero-wrapper" style={{color:fontColor}}>Home</Nav.Link>
-                    <Nav.Link  style={{color:fontColor}} href="#services">Our services</Nav.Link>
-                    <Nav.Link  style={{color:fontColor}} href="#about">About us</Nav.Link>
-                    <Nav.Link  style={{color:fontColor}} href="#reviews">Reviews</Nav.Link>
-                    <Nav.Link  style={{color:fontColor}} href="#contact">Contact</Nav.Link>
+                    <Nav.Link onClick={()=>{changePage("/#home")}} >Home</Nav.Link>
+                    <Nav.Link onClick={()=>{changePage("/#about")}}>About us</Nav.Link>
+                    <NavDropdown title="Our services" id="basic-nav-dropdown">
+          <NavDropdown.Item  onClick={()=>{changePage("/services/property-handover-inspection")}}>Property Handover Inspection
+</NavDropdown.Item>
+          <NavDropdown.Item  onClick={()=>{changePage("/services/property-resale-inpection")}}>Property Resale Inspection
+</NavDropdown.Item>
+          <NavDropdown.Item  onClick={()=>{changePage("/services/11-month-defect-liablity-inspection")}} >11 Month-Defect Liability Inspection
+</NavDropdown.Item>
+          <NavDropdown.Item  onClick={()=>{changePage("/services/property-move-in-out-inspection")}}>Property move in/out inspection
+</NavDropdown.Item>
+        </NavDropdown>                    
+                    <Nav.Link onClick={()=>{changePage("/#tools")}}>Tools</Nav.Link>
+                    <Nav.Link onClick={()=>{changePage("/inspection-scope")}}>Inpection scope</Nav.Link>
+                    <Nav.Link onClick={()=>{changePage("/#contact")}}>Contact&nbsp;&nbsp;</Nav.Link>
+                    <Button variant="primary">Sample report</Button>
                 </Nav>
                 </Navbar.Collapse>
             </Container>

@@ -1,9 +1,10 @@
 #snag{
     overflow-x: hidden;
-    margin-top: 10rem !important;
+    margin-top: 1rem !important;
 }
 .snag-content{
     padding: 5rem !important;
+    padding-top: 1rem !important;
     text-align: justify;
     text-justify: inter-word;
     color:var(--fColor);
@@ -15,7 +16,7 @@
     font-size: 1.2rem;
 }
 #snag>.row{
-    margin-bottom: 7rem !important;
+    margin-bottom: 5rem !important;
 }
 @media only screen and (max-width: 786px) {
     .snag-content{

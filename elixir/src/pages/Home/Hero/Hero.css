@@ -1,14 +1,14 @@
 .carousel{
-    margin-top: -10% !important;
+    margin-top: 0% !important;
 }
 .carousel-item>img {
-    height: 113vh !important;
-    filter: brightness(65%);
+    height: 100% !important;
+    filter: brightness(70%);
 
 }
 
 .carousel-caption {
-    top: 50%;
+    top: 35%;
     transform: translateY(-20%);
 }
 
@@ -49,8 +49,21 @@
     }
     .carousel-caption>p{
         font-size: 1.2rem;
+        font-weight: 500;
     }
     .carousel{
-        margin-top: -50% !important;
+        margin-top: -55% !important;
     }
+    .carousel-item>img {
+        height: 110vh !important;
+        width: 50rem !important;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .carousel-caption {
+        top: 50%;
+        transform: translateY(-20%);
+    }
+
 }

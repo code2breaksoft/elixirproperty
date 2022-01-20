@@ -1,0 +1,30 @@
+.inspection-wrapper h2{
+    font-family: var(--hFont);
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.inspection-wrapper p{
+    font-family: var(--hFont);
+    font-size: 1.1rem;
+}
+.inspection-wrapper{
+    margin-bottom: 5rem;
+    padding: 0rem 2rem;
+}
+.inspection-snag{
+    background-color: var(--pink);
+    color: white;
+    padding: 1.5rem 2rem !important;
+    margin-bottom: 2rem;
+}
+.inspection-snag>p{
+    font-family: var(--bFont);
+    text-align: justify;
+    word-wrap: break-word;
+}
+.inspection-snag>h4{
+    font-family: var(--hFont);
+    text-align: center;
+}

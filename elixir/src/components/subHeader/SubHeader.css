@@ -1,0 +1,18 @@
+.bookNow{
+    width: 6rem;
+    margin-right: 2rem !important;
+}
+#navbarSub{
+    padding: 0.7rem 0.5rem !important;
+    padding-right: 3rem !important;
+    color: var(--fColor) !important;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2) !important;
+}
+@media only screen and (max-width: 786px) {
+    #navbarSub{
+        padding: 0.7rem 0.5rem !important;
+        padding-right: 1.2rem !important;
+        color: var(--fColor) !important;
+        box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2) !important;
+    }
+}
