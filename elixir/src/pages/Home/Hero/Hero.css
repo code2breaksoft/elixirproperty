@@ -49,14 +49,17 @@
     }
     .carousel-caption>p{
         font-size: 1.2rem;
+        font-weight: 500;
     }
     .carousel{
-        margin-top: -60% !important;
+        margin-top: -55% !important;
     }
     .carousel-item>img {
+        height: 110vh !important;
         width: 50rem !important;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
+
 }

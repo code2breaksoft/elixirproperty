@@ -6,7 +6,7 @@ const Hero = () => {
     const [imgB,setimgB] = useState("/images/hero/slider-2.jpg");
 
     return ( 
-        <Carousel id="hero-wrapper" controls={false} >
+        <Carousel id="hero-wrapper">
                         <Carousel.Item interval={3000}>
                 <img
                 className="d-block w-100"
