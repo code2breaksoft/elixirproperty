@@ -1,6 +1,6 @@
 #snag{
     overflow-x: hidden;
-    margin-top: 10rem !important;
+    margin-top: 5rem !important;
 }
 .snag-content{
     padding: 5rem !important;
@@ -16,7 +16,7 @@
     font-size: 1.2rem;
 }
 #snag>.row{
-    margin-bottom: 7rem !important;
+    margin-bottom: 5rem !important;
 }
 @media only screen and (max-width: 786px) {
     .snag-content{
