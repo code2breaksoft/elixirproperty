@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import Prop from "./snagging/prop/prop";
 import "./snagging/snagging.css";
 import MoveIn from "./snagging/movein/movein";
+import SubHeader from "../../components/subHeader/subheader";
 
 const Services = () => {
     useEffect(()=>{
@@ -16,7 +17,7 @@ const Services = () => {
     },[]);
     return ( 
         <>
-        <Header/>
+        <SubHeader/>
         <Container>
             <Routes>
                 <Route path="/property-handover-inspection" element={<Prop/>}></Route>
