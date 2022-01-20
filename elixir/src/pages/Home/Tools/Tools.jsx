@@ -21,7 +21,7 @@ const ToolCard = ({text,image}) => {
 const Tools = () => {
     return ( 
         <>
-            <section id="tools" className="animate__animated animate__fadeInUp">
+            <section id="tools">
             <Row>
             <h2>Tools used</h2>
             <p>We apply latest techniques and updated tools for property snagging to know each and every detail.</p>
