@@ -83,6 +83,14 @@ const About = () => {
                       <p>Mechanical Inspection</p>
                   </Col>
                 </Row>
+                <Row className="about-btn-wrapper">
+                  <Col>
+                    <Button variant="primary" size="lg">FAQ</Button>
+                  </Col>
+                  <Col>
+                    <Button  variant="primary" size="lg">Blog</Button>
+                  </Col>
+                </Row>
             </Col>
             <Col lg={6} xs={12} id="contact">
               <section id="form-section">
