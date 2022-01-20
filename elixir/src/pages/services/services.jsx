@@ -7,6 +7,7 @@ import Prop from "./snagging/prop/prop";
 import "./snagging/snagging.css";
 import MoveIn from "./snagging/movein/movein";
 import SubHeader from "../../components/subHeader/subheader";
+import Whatsappicon from "../../components/whatsapp/whatsapp";
 
 const Services = () => {
     useEffect(()=>{
@@ -18,6 +19,7 @@ const Services = () => {
     return ( 
         <>
         <SubHeader/>
+        <Whatsappicon/>
         <Container>
             <Routes>
                 <Route path="/property-handover-inspection" element={<Prop/>}></Route>

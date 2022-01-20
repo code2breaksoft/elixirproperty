@@ -1,12 +1,14 @@
 import { Container, Row,Col } from "react-bootstrap";
 import Footer from "../../components/footer/footer";
 import SubHeader from "../../components/subHeader/subheader";
+import Whatsappicon from "../../components/whatsapp/whatsapp";
 import "./inspection.css";
 
 const InspectionScope = () => {
     return ( 
         <>
             <SubHeader/>
+            <Whatsappicon/>
             <section className="inspection-wrapper">
             <Container>
                 <Row>
