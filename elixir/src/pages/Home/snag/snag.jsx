@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row,Col } from "react-bootstrap";
+import { Container, Row,Col, Button } from "react-bootstrap";
 import "./snag.css";
 import Animate from 'animate.css-react'
 import { isInViewport } from "../../../common/common";
@@ -17,6 +17,7 @@ const Snag = () => {
 
                     Snagging is the process of comprehensive inspection before purchasing a New Property from the Developer.
                     </p>
+                    <Button variant="primary" size="lg">Book now</Button>
                 </Col>
             </Row>
             <Row>
@@ -35,6 +36,7 @@ const Snag = () => {
                            developer then a professional snagging 
                            report can help give weight to your case.
                     </p>
+                    <Button variant="primary" size="lg">Enquire now</Button>
                 </Col>
                 <Col lg={4} xs={{ span: 12, order: 2 }}>
                     <img src="/images/snag/a2.jpg" alt="who-needs-snagging"  width={"100%"}/>
@@ -53,6 +55,7 @@ const Snag = () => {
                           the market who only focus on number of snags;
                            We always believe is quality which in turns 
                            generates us a referral client..</p>
+                           <Button variant="primary" size="lg">Get free consultation</Button>
                 </Col>
             </Row>
         </section>

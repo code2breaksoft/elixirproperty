@@ -21,6 +21,7 @@ const Header = ({home}) => {
                 <Navbar.Collapse id="navbarScroll">
                 <Nav className="ms-auto">
                     <Nav.Link onClick={()=>{changePage("/#home")}} >Home</Nav.Link>
+                    <Nav.Link onClick={()=>{changePage("/#about")}}>About us</Nav.Link>
                     <NavDropdown title="Our services" id="basic-nav-dropdown">
           <NavDropdown.Item  onClick={()=>{changePage("/services/property-handover-inspection")}}>Property Handover Inspection
 </NavDropdown.Item>
@@ -30,12 +31,10 @@ const Header = ({home}) => {
 </NavDropdown.Item>
           <NavDropdown.Item  onClick={()=>{changePage("/services/property-move-in-out-inspection")}}>Property move in/out inspection
 </NavDropdown.Item>
-        </NavDropdown>                    <Nav.Link   onClick={()=>{changePage("/#tools")}}>Tools</Nav.Link>
-                    <Nav.Link  onClick={()=>{changePage("/#about")}}>About us</Nav.Link>
-                    <Nav.Link   onClick={()=>{changePage("/#reviews")}}>Reviews</Nav.Link>
-                    <Nav.Link   onClick={()=>{changePage("/#contact")}}>Contact</Nav.Link>
-                    <Nav.Link   onClick={()=>{changePage("/faq")}}>Faq</Nav.Link>
-                    <Nav.Link  onClick={()=>{changePage("/blog")}}>Blog</Nav.Link>
+        </NavDropdown>                    
+                    <Nav.Link onClick={()=>{changePage("/#tools")}}>Tools</Nav.Link>
+                    <Nav.Link onClick={()=>{changePage("/inspection-scope")}}>Inpection scope</Nav.Link>
+                    <Nav.Link onClick={()=>{changePage("/#contact")}}>Contact</Nav.Link>
                 </Nav>
                 </Navbar.Collapse>
             </Container>
