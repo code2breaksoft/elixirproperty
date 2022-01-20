@@ -6,16 +6,16 @@ const Hero = () => {
     const [imgB,setimgB] = useState("/images/hero/slider-2.jpg");
     useEffect(()=>{
         if(window.innerWidth>786){
-            document.getElementById("hero-wrapper").style.marginTop = "-10%";
+            document.getElementById("home").style.marginTop = "-10%";
         }
         else{
-            document.getElementById("hero-wrapper").style.marginTop = "-50%";
+            document.getElementById("home").style.marginTop = "-50%";
             setimgA("/images/hero/2.jpg");
             setimgB("/images/hero/3.jpg");
         }
     },[]);
     return ( 
-        <Carousel id="hero-wrapper">
+        <Carousel id="home">
             <Carousel.Item id="r" >
                 <img
                 className="d-block w-100"
