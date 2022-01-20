@@ -17,6 +17,12 @@ const InspectionScope = () => {
                     </Col>
                 </Row>
                 <Row>
+                    <Col className="inspection-snag">
+                    <h4>Why Property snagging?</h4>
+                        <p>Many experts will say that snagging is more important now than ever before. New house building is at record levels – and developers are under pressure to complete every house quickly – but there’s a shortage of many skilled trades. So there’s more potential for things to go wrong. Snagging is the process of comprehensive inspection before purchasing a New Property from the Developer.</p>
+                    </Col>
+                </Row>
+                <Row>
                 <p>Check for Paint, wall covering, and paneling in good condition</p>
                 <ul>
                     <li>    Check for wall undulation and straightness</li>
