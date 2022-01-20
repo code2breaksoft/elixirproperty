@@ -4,6 +4,7 @@ import "./prop.css";
 const Prop = () => {
     return ( 
         <>
+        <section className=" animate__animated animate__lightSpeedInRight">
                     <Row className="headerh">
                 <h2>Property handover inspection</h2>
                 <p>Property Snagging is a service which is opted by the homeowners and investors after purchase of the any new Property i.e Villa, Townhouse, Apartment or any commercial Property.</p>
@@ -53,6 +54,7 @@ const Prop = () => {
             <Row className="snag-props-list">
                 <h6></h6>
             </Row>
+            </section>
         </section>
         </>
      );
