@@ -3,7 +3,7 @@
 }
 .carousel-item>img {
     height: 113vh !important;
-    filter: brightness(65%);
+    filter: brightness(70%);
 
 }
 
@@ -51,6 +51,12 @@
         font-size: 1.2rem;
     }
     .carousel{
-        margin-top: -50% !important;
+        margin-top: -60% !important;
+    }
+    .carousel-item>img {
+        width: 50rem !important;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
