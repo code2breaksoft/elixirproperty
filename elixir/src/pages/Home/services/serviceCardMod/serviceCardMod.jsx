@@ -23,7 +23,7 @@ const ServiceCardMod = ({image,title,text,path}) => {
                     text
                 }
             </Card.Text>
-            <Button onClick={()=>{changePage(path)}} variant="primary" className="serviceCard-btn">Know more</Button>
+            <Button onClick={()=>{changePage(path)}} variant="primary" className="serviceCard-btn">Know what's inspected</Button>
             </Card.Body>
                     </Col>
                 </Row>

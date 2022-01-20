@@ -11,7 +11,7 @@ const Header = ({home}) => {
         elmnt.scrollIntoView();
     },[]);
     return ( 
-        <Navbar bg={"light"} expand="lg" sticky="top" id="navbar">
+        <Navbar bg={"light"} expand="lg" id="navbar" sticky="top">
             <Container fluid>
                 <Navbar.Brand onClick={()=>{changePage("/")}}>
                     <img src="/images/common/elixir_logo.png" width="50" height="40"/>

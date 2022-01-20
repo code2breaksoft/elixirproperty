@@ -1,8 +1,8 @@
 .carousel{
-    margin-top: -10% !important;
+    margin-top: 0% !important;
 }
 .carousel-item>img {
-    height: 113vh !important;
+    height: 100% !important;
     filter: brightness(70%);
 
 }

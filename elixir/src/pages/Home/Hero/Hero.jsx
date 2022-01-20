@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { Button, Carousel } from "react-bootstrap";
 import './Hero.css';
 const Hero = () => {
-    const [imgA,setimgA] = useState("/images/hero/slider-1.jpg");
-    const [imgB,setimgB] = useState("/images/hero/slider-2.jpg");
+    const [imgA,setimgA] = useState("/images/hero/h3.jpg");
+    const [imgB,setimgB] = useState("/images/hero/h2.jpg");
 
     return ( 
         <Carousel id="hero-wrapper">
