@@ -36,6 +36,9 @@ const Prop = () => {
                 <li>Rooftop Inspection of Civil Finishes,Electrical and Mechanical Equipments.</li>
                 </ul>
             </Row>
+            <Row className="snag-props-list">
+                <h6></h6>
+            </Row>
         </section>
         </>
      );

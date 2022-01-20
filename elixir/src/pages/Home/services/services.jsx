@@ -8,7 +8,7 @@ const Services = () => {
             <section id="services">
             <Row>
             <h2>Our Snagging Services</h2>
-            <p>Elixir Property Management is a team of young dynamic people with a fresh Mindset, Promoting agility, convenience and quality Property Snagging, Inspections and Maintenance services.
+            <p>Elixir Property Management is a team of young dynamic people with a fresh Mindset, Promoting agility, convenience and quality Property Snagging and Inspections.
             </p>
         </Row>
         <Row>
