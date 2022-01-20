@@ -9,33 +9,42 @@ const Header = ({home}) => {
     const [shadow,setShadow] = useState("none");
     const [basePath,setBasePath] = useState("");
     const [logo,setLogo] = useState("white");
+    const [navOpen,setNavOpen] = useState(false);
+    const [scroll,setScroll] = useState(false);
     const nav = useNavigate();
     const changeNavbarColor = () =>{
         if(home){
-            if(window.scrollY >= 80){
+            if(window.scrollY >= 20){
                 setColor("light");
                 setFontColor("#f85359");
                 setShadow("0px 2px 4px 0px rgba(0,0,0,0.2)");
+                setLogo("var(--fColor)");
+                setScroll(true);
            }
            else{
-               if(window.innerWidth>786){
-                    setFontColor("white");
-                    setColor("none");
-                    setLogo("white");
-               }
-               else{
+            if(navOpen){
                 setColor("light");
-               }
-               setShadow("none");
+                setFontColor("var(--fColor)");
+                setShadow("0px 2px 4px 0px rgba(0,0,0,0.2)");
+                setLogo("var(--fColor)")
+            }
+            else{
+                if(window.innerWidth<786){
+                    setFontColor("var(--fColor)");
+                   }
+                   else{
+                    setFontColor("white");
+                   }
+                   setLogo("white");
+                    setColor("none");
+                    setShadow("none");
+                    setScroll(false);
+            }
            }
         }
     };
     useEffect(()=>{
-        if(window.innerWidth<=786){
-            setFontColor("#f85359");
-            setColor("light");
-            setLogo("var(--fColor)")
-        }
+
         if(!home){
             setColor("light");
             setFontColor("#f85359");
@@ -44,10 +53,26 @@ const Header = ({home}) => {
     },[]);
     const changePage = useCallback((path)=>{
         nav(path);
-        var elmnt = document.getElementById(path.split('#').pop());
-        elmnt.scrollIntoView();
     },[]);
     window.addEventListener('scroll', changeNavbarColor);
+    const openNav = ()=>{
+        if(!scroll){
+            if(!navOpen){
+                setColor("light");
+                setFontColor("var(--fColor)");
+                setShadow("0px 2px 4px 0px rgba(0,0,0,0.2)");
+                setNavOpen(true);
+                setLogo("var(--fColor)")
+            }
+            else{
+                setColor("none");
+                setFontColor("white");
+                setShadow("none");
+                setLogo("white")
+                setNavOpen(false);
+            }
+        }
+    }
     return ( 
         <Navbar bg={color} expand="lg" sticky="top" id="navbar" style={{boxShadow:shadow}}>
             <Container fluid>
@@ -55,9 +80,9 @@ const Header = ({home}) => {
                     <img src="/images/common/elixir_logo.png" width="50" height="40"/>
                     &nbsp;&nbsp;Elixir
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="navbarScroll"><List style={{color:"white"}}/></Navbar.Toggle>
-                <Navbar.Collapse id="navbarScroll">
-                <Nav className="ms-auto">
+                <Navbar.Toggle aria-controls="navbarScroll" onClick={openNav}><List style={{color:"white"}}/></Navbar.Toggle>
+                <Navbar.Collapse id="navbarScroll drop">
+                <Nav className="ms-auto drop" >
                     <Nav.Link onClick={()=>{changePage("/")}} style={{color:fontColor}}>Home</Nav.Link>
                     <Nav.Link  style={{color:fontColor}} onClick={()=>{changePage("/#services")}}>Our services</Nav.Link>
                     <Nav.Link  style={{color:fontColor}} onClick={()=>{changePage("/#about")}}>About us</Nav.Link>

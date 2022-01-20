@@ -11,9 +11,20 @@
     border-width: 2px !important;
     background-color: var(--pink) !important;
 }
+.navbar-default {
+    /*background-color: transparent;*/
+    border: 0px;
+    z-index:100000 !important;
+  }
+ 
 @media only screen and (max-width: 786px) {
     #navbar{
         padding: 0.5rem;
         padding-top: 1;
     }
+    .navbar-default {
+        /*background-color: transparent;*/
+        border: 0px;
+        z-index:100000 !important;
+      }
 }
