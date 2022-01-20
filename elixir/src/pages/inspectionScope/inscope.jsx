@@ -1,6 +1,7 @@
 import { Container, Row,Col } from "react-bootstrap";
 import Footer from "../../components/footer/footer";
 import SubHeader from "../../components/subHeader/subheader";
+import "./inspection.css";
 
 const InspectionScope = () => {
     return ( 
@@ -10,7 +11,7 @@ const InspectionScope = () => {
             <Container>
                 <Row>
                     <Col>
-                        <h6>Property Inspection scope</h6>
+                        <h2>Property Inspection scope</h2>
                     </Col>
                 </Row>
                 <Row>

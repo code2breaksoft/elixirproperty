@@ -1,0 +1,13 @@
+.inspection-wrapper h2{
+    font-family: var(--hFont);
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+.inspection-wrapper p{
+    font-family: var(--hFont);
+    font-size: 1.5rem;
+}
+.inspection-wrapper{
+    margin-bottom: 5rem;
+}
