@@ -51,6 +51,10 @@
     margin-bottom: 1rem;
     padding-left: 1rem;
 }
+.snag-props-list p{
+    font-family: var(--hFont);
+    font-size: 1.2rem !important;
+}
 @media only screen and (max-width: 1200px) {
     .headerh>p{
         font-size: 1.2rem;

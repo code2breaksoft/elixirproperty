@@ -4,7 +4,7 @@ const MoveIn = () => {
     return (  
 
         <>
-        <section className=" animate__animated animate__lightSpeedInRight">
+        <section className=" animate__animated animate__fadeIn">
         <Row className="headerh">
     <h2>Property move in/out inspection</h2>
     <p>Property Snagging is a service which is opted by the homeowners and investors after purchase of the any new Property i.e Villa, Townhouse, Apartment or any commercial Property.</p>

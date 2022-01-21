@@ -24,17 +24,7 @@ const Snag = () => {
                 <Col lg={8} className="snag-content" xs={{ span: 12, order: 1 }}>
                     <h2 >Who needs snagging?</h2>
                     <p>
-                    Anyone buying a new build home
-                     or a home in the secondary market
-                      should consider a snagging inspection. 
-                      You could argue that if you’re spending
-                       anything it’s crazy not to!
-                        A snagging inspection can also be useful for
-                         buying ready built homes or at the 11 month
-                          warranty period. Also, if you’ve already moved 
-                          in and are having snagging issues with your
-                           developer then a professional snagging 
-                           report can help give weight to your case.
+                    Individuals or institutions buying a brand new construct home or a home within the secondary marketplace have to bear in mind a snagging inspection. you can argue that if you’re spending some thing it’s loopy no longer to! A snagging inspection also can be useful for buying geared up built houses or on the 11 month assurance duration. additionally, if you’ve already moved in and are having snagging issues with your developer then a expert snagging record can assist provide weight on your case.
                     </p>
                     <Button variant="primary" size="lg">Enquire now</Button>
                 </Col>
