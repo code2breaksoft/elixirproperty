@@ -1,8 +1,9 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 import { Navbar,Nav,Container ,NavDropdown,Button} from "react-bootstrap";
 import './Header.css';
 import { List } from "react-bootstrap-icons";
 import { useNavigate } from "react-router-dom";
+import SampleModal from "../sample/sample";
 const Header = ({home}) => {
     const nav = useNavigate();
     const changePage = useCallback((path)=>{
@@ -10,8 +11,17 @@ const Header = ({home}) => {
         var elmnt = document.getElementById(path.split('#').pop());
         elmnt.scrollIntoView();
     },[]);
+    const [showM,setShow] = useState(false);
+    const showModal = ()=>{
+        setShow(true);
+    }
+    const hideModal = ()=>{
+        setShow(false);
+    }
     return ( 
-        <Navbar bg={"light"} expand="lg" id="navbar" sticky="top" collapseOnSelect>
+        <>
+        <SampleModal show={showM} handleClose={hideModal}/>
+                    <Navbar bg={"light"} expand="lg" id="navbar" sticky="top" collapseOnSelect>
             <Container fluid>
                 <Navbar.Brand onClick={()=>{changePage("/")}}>
                     <img src="/images/common/elixir_logo.png" width="50" height="40"/>
@@ -35,11 +45,12 @@ const Header = ({home}) => {
                     <Nav.Link  eventKey="6" onClick={()=>{changePage("/#tools")}}>Tools</Nav.Link>
                     <Nav.Link  eventKey="7" onClick={()=>{changePage("/inspection-scope")}}>Inpection scope</Nav.Link>
                     <Nav.Link  eventKey="8" onClick={()=>{changePage("/#contact")}}>Contact&nbsp;&nbsp;</Nav.Link>
-                    <Button variant="primary">Sample report</Button>
+                    <Button variant="primary" onClick={showModal}>Sample report</Button>
                 </Nav>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
+        </>
      );
 }
  
