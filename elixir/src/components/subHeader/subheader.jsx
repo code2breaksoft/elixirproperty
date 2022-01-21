@@ -3,6 +3,8 @@ import { Navbar,Nav,Container ,NavDropdown, Button,Row,Col} from "react-bootstra
 import './SubHeader.css';
 import { Arrow90degLeft } from "react-bootstrap-icons";
 import { useNavigate } from "react-router-dom";
+import FormModal from "../modal/modal";
+import React from "react";
 const SubHeader = () => {
     const nav = useNavigate();
     const changePage = useCallback((path)=>{
@@ -10,8 +12,17 @@ const SubHeader = () => {
         var elmnt = document.getElementById(path.split('#').pop());
         elmnt.scrollIntoView();
     },[]);
+    const [showM,setShow] = React.useState(false);
+    const showModal = ()=>{
+        setShow(true);
+    }
+    const hideModal = ()=>{
+        setShow(false);
+    }
     return (  
-        <Navbar bg={"light"} expand="lg" sticky="top" id="navbarSub">
+        <>
+            <FormModal show={showM} handleClose={hideModal}/>
+                    <Navbar bg={"light"} expand="lg" sticky="top" id="navbarSub">
         <Container fluid>
             <Navbar.Brand onClick={()=>{changePage("/")}}>
                 <img src="/images/common/elixir_logo.png" width="50" height="40"/>
@@ -20,7 +31,7 @@ const SubHeader = () => {
             <Nav className="ms-auto">
                 <Row>
                     <Col xs={9}>
-                    <Button variant="primary">Get free quote</Button>
+                    <Button variant="primary" onClick={showModal}>Get free quote</Button>
 
                     </Col>
                     <Col xs={3}>
@@ -31,6 +42,7 @@ const SubHeader = () => {
             </Nav>
         </Container>
         </Navbar>
+        </>
     );
 }
  

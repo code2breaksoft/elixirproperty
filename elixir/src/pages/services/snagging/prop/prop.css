@@ -41,6 +41,7 @@
 }
 .box-content>p{
     font-size: 1.2rem !important;
+    font-family: var(--bFont) !important;
 }
 .box-ul{
     list-style-type:none;
