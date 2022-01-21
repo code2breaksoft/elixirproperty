@@ -24,7 +24,7 @@ const SubHeader = () => {
             <FormModal show={showM} handleClose={hideModal}/>
                     <Navbar bg={"light"} expand="lg" sticky="top" id="navbarSub">
         <Container fluid>
-            <Navbar.Brand onClick={()=>{changePage("/")}}>
+            <Navbar.Brand onClick={()=>{changePage("/")}} style={{cursor: "all-scroll"}}>
                 <img src="/images/common/elixir_logo.png" width="50" height="40"/>
                 &nbsp;&nbsp;Elixir
             </Navbar.Brand>

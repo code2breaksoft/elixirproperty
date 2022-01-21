@@ -20,8 +20,9 @@ const Hero = () => {
     },[])
     return ( 
         <>
-            <FormModal show={showM} handleClose={hideModal} />
-        <Carousel id="hero-wrapper" fade controls={!mobView}>
+        <section id="home">
+        <FormModal show={showM} handleClose={hideModal} />
+        <Carousel  fade controls={!mobView}>
                         <Carousel.Item interval={3000}>
                 <img
                 className="d-block w-100"
@@ -49,6 +50,7 @@ const Hero = () => {
             </Carousel.Item>
 
             </Carousel>
+        </section>
             </>
      );
 }

@@ -23,8 +23,8 @@ const Header = ({home}) => {
         <SampleModal show={showM} handleClose={hideModal}/>
                     <Navbar bg={"light"} expand="lg" id="navbar" sticky="top" collapseOnSelect>
             <Container fluid>
-                <Navbar.Brand onClick={()=>{changePage("/")}}>
-                    <img src="/images/common/elixir_logo.png" width="50" height="40"/>
+                <Navbar.Brand onClick={()=>{changePage("/#home")}} style={{cursor: "all-scroll"}}>
+                    <img style={{cursor: "all-scroll"}} src="/images/common/elixir_logo.png" width="50" height="40"/>
                     &nbsp;&nbsp;Elixir
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll"><List style={{color:"white"}}/></Navbar.Toggle>
