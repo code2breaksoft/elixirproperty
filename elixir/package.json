@@ -5,7 +5,9 @@
   "engines": {
     "node": "14.x"
   },
-  "dependencies": {
+  "homepage": "https://code2break.com/el",
+  "build_staging": "PUBLIC_URL=https://code2break.com/el react-scripts build",
+    "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",

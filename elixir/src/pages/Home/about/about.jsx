@@ -3,6 +3,12 @@ import { useFormik } from 'formik';
 import "./about.css";
 import { ShieldLockFill } from "react-bootstrap-icons";
 import { useNavigate } from "react-router-dom";
+import civil from "../../../images/about/civil.png";
+import mech from "../../../images/about/mech.png";
+import elec from "../../../images/about/elec.png";
+import roof from "../../../images/about/roof.png";
+import therm from "../../../images/about/therm.png";
+import water from "../../../images/about/water.png";
 const validate = values => {
     const errors = {};
     if (!values.name) {
@@ -61,27 +67,27 @@ const About = () => {
                 <Row className="inspect-types">
                   <h5>What do we inspect?</h5>
                   <Col lg={4} xs={6}>
-                    <img src="/images/about/roof.png" className="inspect-types-img"/>
+                    <img src={roof} className="inspect-types-img"/>
                     <p>Roof Top Inspection</p>
                   </Col>
                   <Col lg={4} xs={6}>
-                      <img src="/images/about/therm.png"  className="inspect-types-img"/>
+                      <img src={therm} className="inspect-types-img"/>
                       <p>Thermal Inspection</p>
                   </Col>
                   <Col lg={4} xs={6}>
-                      <img src="/images/about/civil.png"  className="inspect-types-img"/>
+                      <img src={civil} className="inspect-types-img"/>
                       <p>Civil Inspection</p>
                   </Col>
                   <Col lg={4} xs={6}>
-                    <img src="/images/about/water.png"  className="inspect-types-img"/>
+                    <img src={water}  className="inspect-types-img"/>
                       <p>Water Tank System Inspection</p>
                   </Col>
                   <Col lg={4} xs={6}>
-                  <img src="/images/about/elec.png"  className="inspect-types-img"/>
+                  <img src={elec}  className="inspect-types-img"/>
                       <p>Electrical Inspection</p>
                   </Col>
                   <Col lg={4} xs={6}>
-                  <img src="/images/about/mech.png"  className="inspect-types-img"/>
+                  <img src={mech}  className="inspect-types-img"/>
                       <p>Mechanical Inspection</p>
                   </Col>
                 </Row>

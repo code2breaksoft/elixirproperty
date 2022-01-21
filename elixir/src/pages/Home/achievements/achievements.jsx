@@ -1,15 +1,19 @@
 import Carousel from "react-multi-carousel";
 import './Achievements.css';
 import "react-multi-carousel/lib/styles.css";
+function importAll(r) {
+  return r.keys().map(r);
+}
+const images = importAll(require.context('./', false, /\.(png|jpe?g|svg)$/));
 const ItemCarousel = ({image})=>{
     return(
         <div>
-            <img className="client-img" src={`/images/cioncs/${image}.png`}/>
+            <img className="client-img" src={image}/>
         </div>
     );
 }
 const Achievements = () => {    
-    const image = [1,2,3,4,6,10,11,12,13];
+    const image = importAll(require.context('../../../images/cioncs', false, /\.(png|jpe?g|svg)$/));
     const responsive = {
         superLargeDesktop: {
           breakpoint: { max: 4000, min: 3000 },

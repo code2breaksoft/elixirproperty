@@ -2,9 +2,11 @@ import { useEffect, useState } from "react";
 import { Button, Carousel } from "react-bootstrap";
 import './Hero.css';
 import FormModal from '../../../components/modal/modal';
+import Hero1 from '../../../images/hero/c1.jpeg';
+import Hero2 from '../../../images/hero/c3.jpeg';
 const Hero = () => {
-    const [imgA,setimgA] = useState("/images/hero/c1.jpeg");
-    const [imgB,setimgB] = useState("/images/hero/c3.jpeg");
+    const [imgA,setimgA] = useState(Hero1);
+    const [imgB,setimgB] = useState(Hero2);
     const [showM,setShow] = useState(false);
     const showModal = ()=>{
         setShow(true);

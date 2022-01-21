@@ -4,6 +4,7 @@ import './Header.css';
 import { List } from "react-bootstrap-icons";
 import { useNavigate } from "react-router-dom";
 import SampleModal from "../sample/sample";
+import logo from "../../images/common/elixir_logo.png"
 const Header = ({home}) => {
     const nav = useNavigate();
     const changePage = useCallback((path)=>{
@@ -24,7 +25,7 @@ const Header = ({home}) => {
                     <Navbar bg={"light"} expand="lg" id="navbar" sticky="top" collapseOnSelect>
             <Container fluid>
                 <Navbar.Brand onClick={()=>{changePage("/#home")}} style={{cursor: "all-scroll"}}>
-                    <img style={{cursor: "all-scroll"}} src="/images/common/elixir_logo.png" width="50" height="40"/>
+                    <img style={{cursor: "all-scroll"}} src={logo} width="50" height="40"/>
                     &nbsp;&nbsp;Elixir
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll"><List style={{color:"white"}}/></Navbar.Toggle>

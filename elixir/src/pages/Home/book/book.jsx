@@ -4,6 +4,7 @@ import './book.css';
 import { useEffect, useState } from "react";
 import FormModal from "../../../components/modal/modal";
 import React from "react";
+import bImg from "../../../images/book/widehome.jpg";
 const Book = () => {
     const [paralaxProp,setParallaxProp] = useState({
         width:"100vw",
@@ -31,7 +32,7 @@ const Book = () => {
         <FormModal show={showM} handleClose={hideModal}/>
         <section style={{overflowX:"hidden"}}>
         <Row style={{height:"60vh"}}>
-                <Parallax className="border d-flex align-items-center justify-content-center par" bgImageStyle={{width:paralaxProp.width,height:paralaxProp.height, filter: "brightness(80%)"}}	 blur={0} bgImage="/images/book/widehome.jpg" bgImageAlt="the cat" strength={paralaxProp.strength}>
+                <Parallax className="border d-flex align-items-center justify-content-center par" bgImageStyle={{width:paralaxProp.width,height:paralaxProp.height, filter: "brightness(80%)"}}	 blur={0} bgImage={bImg} bgImageAlt="the cat" strength={paralaxProp.strength}>
                 <Container fluid  className="text-center book-wrap" >
                     <Row>
                         <Col>

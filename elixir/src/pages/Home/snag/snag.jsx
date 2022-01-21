@@ -5,6 +5,9 @@ import Animate from 'animate.css-react'
 import { isInViewport } from "../../../common/common";
 import 'animate.css/animate.css' 
 import FormModal from "../../../components/modal/modal";
+import a1 from '../../../images/snag/a1.jpg';
+import a2 from '../../../images/snag/a2.jpg';
+import a3 from '../../../images/snag/a3.jpeg';
 const Snag = () => {
     const [showM,setShow] = React.useState(false);
     const showModal = ()=>{
@@ -19,7 +22,7 @@ const Snag = () => {
         <section id="snag">
             <Row>
                 <Col lg={4} xs={{ span: 12, order: 2 }}  lg={{ span: 4, order: 1 }}>
-                    <img src="/images/snag/a1.jpg" alt="what-is-snagging" width={"100%"}/>
+                    <img src={a1} alt="what-is-snagging" width={"100%"}/>
                 </Col>
                 <Col lg={8} className="snag-content" xs={{ span: 12, order: 1 }}  lg={{ span: 8, order: 2 }} >
                     <h2 >What is snagging?</h2>
@@ -39,12 +42,12 @@ const Snag = () => {
                     <Button variant="primary" size="lg" onClick={showModal}>Enquire now</Button>
                 </Col>
                 <Col lg={4} xs={{ span: 12, order: 2 }}>
-                    <img src="/images/snag/a2.jpg" alt="who-needs-snagging"  width={"100%"}/>
+                    <img src={a2} alt="who-needs-snagging"  width={"100%"}/>
                 </Col>
             </Row>
             <Row>
                 <Col lg={4} xs={{ span: 12, order: 2 }} lg={{ span: 4, order: 1 }}>
-                    <img src="/images/snag/a3.jpeg" alt="is-snagging-necessary"  width={"100%"}/>
+                    <img src={a3} alt="is-snagging-necessary"  width={"100%"}/>
                 </Col>
                 <Col lg={8}  className="snag-content animate__animated animate__bounceInLeft" xs={{ span: 12, order: 1 }} lg={{ span: 8, order: 2 }}>
                     <h2 >Why elixir snagging?</h2>
