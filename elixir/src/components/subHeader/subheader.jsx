@@ -20,7 +20,7 @@ const SubHeader = () => {
             <Nav className="ms-auto">
                 <Row>
                     <Col xs={9}>
-                    <Button variant="primary">Book now</Button>
+                    <Button variant="primary">Get free quote</Button>
 
                     </Col>
                     <Col xs={3}>
