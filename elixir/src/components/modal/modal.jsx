@@ -1,7 +1,8 @@
-import { Form, Modal } from "react-bootstrap";
+import { useState } from "react";
+import { Form, Modal,Button,FormControl } from "react-bootstrap";
 
-const FormModal = ({show}) => {
-    const handleClose = ()=>{show=false;}
+const FormModal = ({show,handleClose}) => {
+
     return ( 
         <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
