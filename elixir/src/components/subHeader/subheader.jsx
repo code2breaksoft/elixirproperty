@@ -5,6 +5,7 @@ import { Arrow90degLeft } from "react-bootstrap-icons";
 import { useNavigate } from "react-router-dom";
 import FormModal from "../modal/modal";
 import React from "react";
+import logo from '../../images/common/elixir_logo.png';
 const SubHeader = () => {
     const nav = useNavigate();
     const changePage = useCallback((path)=>{
@@ -25,7 +26,7 @@ const SubHeader = () => {
                     <Navbar bg={"light"} expand="lg" sticky="top" id="navbarSub">
         <Container fluid>
             <Navbar.Brand onClick={()=>{changePage("/")}} style={{cursor: "all-scroll"}}>
-                <img src="/images/common/elixir_logo.png" width="50" height="40"/>
+                <img src={logo} width="50" height="40"/>
                 &nbsp;&nbsp;Elixir
             </Navbar.Brand>
             <Nav className="ms-auto">

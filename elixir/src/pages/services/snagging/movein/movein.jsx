@@ -1,5 +1,6 @@
 import "./movein.css";
 import { Row } from "react-bootstrap";
+import img1 from "../../../../images/services/p4.jpeg";
 const MoveIn = () => {
     return (  
 
@@ -13,7 +14,7 @@ const MoveIn = () => {
 
 
 <Row>
-        <img src="/images/services/p4.jpeg" className="snag-props-image"/>
+        <img src={img1} className="snag-props-image"/>
 </Row>
 <Row className="snag-props-list">
         <h6>Are you a Landlord and Requires Sign Acceptance of Property by Tenant/Guest?</h6>

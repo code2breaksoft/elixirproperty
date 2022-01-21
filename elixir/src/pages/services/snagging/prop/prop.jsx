@@ -1,5 +1,6 @@
 import { Row ,Col} from "react-bootstrap";
 import "./prop.css";
+import img1 from "../../../../images/services/p1.jpg";
 
 const Prop = () => {
     return ( 
@@ -13,7 +14,7 @@ const Prop = () => {
 
 
             <Row>
-                    <img src="/images/services/p1.jpg" className="snag-props-image"/>
+                    <img src={img1} className="snag-props-image"/>
             </Row>
             <Row className="snag-props-list box-content">
                 <h6>Why propety snagging?</h6>
