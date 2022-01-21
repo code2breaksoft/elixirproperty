@@ -43,7 +43,7 @@ const Header = ({home}) => {
 </NavDropdown.Item>
         </NavDropdown>                    
                     <Nav.Link  eventKey="6" onClick={()=>{changePage("/#tools")}}>Tools</Nav.Link>
-                    <Nav.Link  eventKey="7" onClick={()=>{changePage("/inspection-scope")}}>Inpection scope</Nav.Link>
+                    <Nav.Link  eventKey="7" onClick={()=>{changePage("/inspection-scope")}}>Inspection scope</Nav.Link>
                     <Nav.Link  eventKey="8" onClick={()=>{changePage("/#contact")}}>Contact&nbsp;&nbsp;</Nav.Link>
                     <Button variant="primary" onClick={showModal}>Sample report</Button>
                 </Nav>

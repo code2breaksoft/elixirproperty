@@ -3,8 +3,8 @@ import { Button, Carousel } from "react-bootstrap";
 import './Hero.css';
 import FormModal from '../../../components/modal/modal';
 const Hero = () => {
-    const [imgA,setimgA] = useState("/images/hero/h3.jpg");
-    const [imgB,setimgB] = useState("/images/hero/h2.jpg");
+    const [imgA,setimgA] = useState("/images/hero/c1.jpeg");
+    const [imgB,setimgB] = useState("/images/hero/c3.jpeg");
     const [showM,setShow] = useState(false);
     const showModal = ()=>{
         setShow(true);
@@ -43,7 +43,7 @@ const Hero = () => {
                 <Carousel.Caption>
                 <h1 class="animate__animated animate__bounceInLeft">
                 Best snagging & inspection services in UAE</h1>
-                <p class="animate__animated animate__bounceInRight">Best snagging, inspection & maintenance services in UAE</p>
+                <p class="animate__animated animate__bounceInRight">Best snagging & inspection services in UAE</p>
                 <Button  variant="primary" size="lg" onClick={showModal}>Enquire now</Button>
                 </Carousel.Caption>
             </Carousel.Item>

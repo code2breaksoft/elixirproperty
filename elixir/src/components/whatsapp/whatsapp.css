@@ -3,7 +3,6 @@
     position: fixed;
     top: 20rem !important;
     z-index: 10000;
-    border-radius: 50px 0px 0px 50px;
     width: 4rem;
     color: white;
     height: 3rem !important;
@@ -11,12 +10,14 @@
     font-size: 1.5rem;
     padding-bottom: 0.5rem;
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.3);
+    border-radius: 0px 50px 50px 0px;
 }
 @media only screen and (max-width: 768px) {
     #chatIcon{
         background-color: #4FCE5D;
         position: fixed;
-        top: 85vh !important;
+        top: 80vh !important;
         right: 0rem !important;
+        border-radius: 50px 0px 0px 50px;
     }
 }
