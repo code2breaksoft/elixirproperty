@@ -1,6 +1,7 @@
 import { Row ,Col} from "react-bootstrap";
 import "./prop.css";
 import img1 from "../../../../images/services/p1.jpg";
+import { useEffect } from "react";
 function importAll() {
     let ar = [];
     for(let i=1;i<=18;i++){

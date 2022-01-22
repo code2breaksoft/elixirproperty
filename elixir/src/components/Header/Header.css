@@ -1,7 +1,7 @@
 .nav-link{
     color: var(--fColor) !important;
     font-weight: bold;
-
+    font-size: 0.9rem !important;
 }
 .nav-brand{
     color: var(--fColor) !important;
@@ -12,16 +12,26 @@
     padding: 0.5rem;
     color: var(--fColor) !important;
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2) !important;
+    background-color: white !important;
 }
 .navbar-toggler{
     border-color: var(--pink) !important;
     border-width: 2px !important;
     background-color: var(--pink) !important;
 }
-
+.under:after{
+    display:block;
+    content: '';
+    border-bottom: solid 3px var(--pink);  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+  }
+  .nav-link:hover:after { transform: scaleX(1); }
+  .nav-link:active:after { transform: scaleX(1); }
 @media only screen and (max-width: 786px) {
     #navbar{
         padding: 0.5rem;
         padding-top: 1;
     }
+
 }

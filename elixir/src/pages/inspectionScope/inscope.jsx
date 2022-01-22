@@ -1,13 +1,16 @@
 import { Container, Row,Col } from "react-bootstrap";
 import Footer from "../../components/footer/footer";
-import SubHeader from "../../components/subHeader/subheader";
 import Whatsappicon from "../../components/whatsapp/whatsapp";
 import "./inspection.css";
-
+import Header from "../../components/Header/Header";
+import { useEffect } from "react";
 const InspectionScope = () => {
+    useEffect(()=>{
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+    },[])
     return ( 
         <>
-            <SubHeader/>
+            <Header/>
             <Whatsappicon/>
             <section className="inspection-wrapper">
             <Container>

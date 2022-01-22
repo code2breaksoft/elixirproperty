@@ -1,5 +1,5 @@
 .carousel{
-    margin-top: 0% !important;
+    margin-top: -10% !important;
 }
 .carousel-item>img {
     height: 100% !important;
@@ -9,7 +9,7 @@
 
 .carousel-caption {
     top: 35%;
-    transform: translateY(-20%);
+    transform: translateY(0%);
 }
 
 .btn-primary,
@@ -18,6 +18,8 @@
 .btn-primary:visited {
     background-color: var(--pink) !important;
     border-color: var(--pink) !important;
+    font-family: var(--hFont) !important;
+    font-weight: normal !important;
 }
 
 .btn-primary:hover {

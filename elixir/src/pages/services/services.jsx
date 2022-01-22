@@ -6,7 +6,6 @@ import { useEffect } from "react";
 import Prop from "./snagging/prop/prop";
 import "./snagging/snagging.css";
 import MoveIn from "./snagging/movein/movein";
-import SubHeader from "../../components/subHeader/subheader";
 import Whatsappicon from "../../components/whatsapp/whatsapp";
 
 const Services = () => {
@@ -18,7 +17,7 @@ const Services = () => {
     },[]);
     return ( 
         <>
-        <SubHeader/>
+        <Header/>
         <Whatsappicon/>
         <Container>
             <Routes>

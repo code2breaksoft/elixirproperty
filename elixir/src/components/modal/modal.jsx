@@ -37,7 +37,7 @@ const FormModal = ({show,handleClose}) => {
             Close
           </Button>
           <Button variant="primary" onClick={handleClose}>
-            Book a free qoute
+            Submit
           </Button>
         </Modal.Footer>
       </Modal>
