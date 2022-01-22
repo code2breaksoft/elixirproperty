@@ -36,7 +36,7 @@ const Achievements = () => {
         <>
           <section id="ach-wrapper">
                 <div id="ach-header">
-                  <h2>Our Achievements</h2>
+                  <h2>Recent Communities Encountered</h2>
                    <p>We have proudly worked and consistently delivered high quality inspections in leadings communities and luxury properties; We act as Investor eyes and make sure the property is received in immaculate condition.</p>
                 </div>
                 <Carousel responsive={responsive}

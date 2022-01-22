@@ -42,6 +42,9 @@
 .box-content>p{
     font-size: 1.2rem !important;
     font-family: var(--bFont) !important;
+    text-align: justify !important;
+    word-wrap: break-word !important;
+    word-spacing: -0.3rem !important;
 }
 .box-ul{
     list-style-type:none;
@@ -51,12 +54,37 @@
     border-left: 0.3rem solid white;
     margin-bottom: 1rem;
     padding-left: 1rem;
+    list-style-type: none !important;
 }
 .snag-props-list p{
     font-family: var(--hFont);
     font-size: 1.2rem !important;
+    text-align: center;
 }
+.snag-props-list img{
+    width: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.snag-props-list{
+    margin-bottom: 3rem !important;
+}
+.snag-props-list ul{
+    list-style-type: none;
+}
+.snag-props-list  ul li::before {
+    content: "\2714";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: var(--pink); /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
 @media only screen and (max-width: 1200px) {
+    .snag-props-list{
+        margin-bottom: 2rem !important;
+    }
     .headerh>p{
         font-size: 1.2rem;
         text-align: justify;
@@ -86,5 +114,11 @@
         text-align: justify;
         word-wrap: break-word;
         margin-right: 1rem !important;
+    }
+    .snag-props-list img{
+        width: 30%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

@@ -1,8 +1,16 @@
 import { Row ,Col} from "react-bootstrap";
 import "./prop.css";
 import img1 from "../../../../images/services/p1.jpg";
-
+function importAll() {
+    let ar = [];
+    for(let i=1;i<=18;i++){
+        ar.push(require(`../../../../images/scope/${i}.png`));
+    }
+    return ar;
+}
 const Prop = () => {
+
+      let images = importAll();
     return ( 
         <>
         <section className=" animate__animated animate__fadeIn">
@@ -18,6 +26,7 @@ const Prop = () => {
             </Row>
             <Row className="snag-props-list box-content">
                 <h6>Why propety snagging?</h6>
+                
                 <p>Many experts will say that snagging is more important now than ever before. New house building is at record levels – and developers are under pressure to complete every house quickly – but there’s a shortage of many skilled trades. So there’s more potential for things to go wrong.
                 Snagging is the process of comprehensive inspection before purchasing a New Property from the Developer.
                 </p>
@@ -41,6 +50,7 @@ const Prop = () => {
                     <p >Scopes of Inspection</p>
                 </Row>
             <Row>
+                <img src={images[0]}/>
                 <p>Check for Paint, wall covering, and paneling in good condition</p>
                 <ul>
                     <li>    Check for wall undulation and straightness</li>
@@ -53,6 +63,7 @@ const Prop = () => {
                 </ul>
                 </Row>
                 <Row className="snag-props-list">
+                <img src={images[1]}/>
                     <p>Gypsum False Ceiling and Bulkheads -</p>
                     <ul>
                         <li>    Check for ceiling undulation and sagging</li>
@@ -66,6 +77,7 @@ const Prop = () => {
                     </ul>
                 </Row>
                 <Row className="snag-props-list">
+                <img src={images[2]}/>
                     <p>Flooring and Skirting - Applies to Villa, Townhomes, Apartments, Offices</p>
                 <ul>
                     <li>Check for Paint, wall covering, and paneling in good condition</li>
@@ -79,6 +91,7 @@ const Prop = () => {
                 </ul>
                 </Row>
                 <Row className="snag-props-list">
+                <img src={images[3]}/>
                     <p>Windows</p>
                     <ul>
                         <li>Check for Paint, wall covering, and paneling in good condition</li>
@@ -92,6 +105,7 @@ const Prop = () => {
                     </ul>
                 </Row>
                 <Row className="snag-props-list">
+                <img src={images[4]}/>
                     <p>Carpentry / Joinery</p>
                     <ul>
                     <li> Check for Paint, wall covering, and paneling in good condition</li>
@@ -105,6 +119,7 @@ const Prop = () => {
                 </ul>
                 </Row>
                 <Row className="snag-props-list">
+                <img src={images[5]}/>
                     <p>Doors</p>
                     <ul>
 	<li>Shutter, Frames, & Architraves</li>
@@ -118,6 +133,7 @@ const Prop = () => {
 </ul>
                 </Row>
                 <Row className="snag-props-list">
+                <img src={images[6]}/>
                     <p>Iron mongeries</p>
                     <ul>
 	<li> Check latches, bolts, locks & hinges if working properly & free from any damages or defects</li>
@@ -128,6 +144,7 @@ const Prop = () => {
 </ul>
                 </Row>
                 <Row className="snag-props-list">
+                <img src={images[7]}/>
                     <p>Sanitary and Plumbing</p>
                     <ul>
 	<li> Check overall condition of sanitary wares, fittings and accessories if installed properly and securely.</li>
@@ -148,6 +165,7 @@ const Prop = () => {
 </ul>
                 </Row>
                 <Row className="snag-props-list">
+                <img src={images[8]}/>
                     <p>Electrical</p>
                     <ul>
 	<li> Switched on and check all light fixtures if working properly, check for flickering light.</li>
@@ -169,6 +187,7 @@ const Prop = () => {
 </ul>
                 </Row>
                 <Row className="snag-props-list">
+                <img src={images[9]}/>
                     <p>Air Conditioning & Ventilation -</p>
                     <ul>
 	<li> Check if air conditioning is cooling to desired setting</li>
@@ -184,6 +203,7 @@ const Prop = () => {
 </ul>
                 </Row>
                 <Row className="snag-props-list">
+                <img src={images[10]}/>
                     <p>Fire Protection System – (where applicable)</p>
                     <ul>
 	<li> Check for provision of fire sprinkler system</li>
@@ -198,6 +218,7 @@ const Prop = () => {
 </ul>
                 </Row>
                 <Row className="snag-props-list">
+                <img src={images[11]}/>
                     <p>Thermal Inspection</p>
                     <ul>
 	<li> Thermal Inspection around the window frames.</li>
@@ -207,7 +228,8 @@ const Prop = () => {
 </ul>
                 </Row>
                 <Row className="snag-props-list">
-                    <p>Appliance (where applicable) -</p>
+                <img src={images[12]}/>
+                    <p>Appliance (where applicable)</p>
                     <ul>
 	<li> Check all provided electrical appliances if powering on</li>
 	<li>     Check general condition of appliances if clean inside and out</li>
@@ -216,6 +238,7 @@ const Prop = () => {
 </ul>
                 </Row>
                 <Row className="snag-props-list">
+                <img src={images[13]}/>
                     <p>Miscellaneous</p>
                     <ul>
 	<li> Check doorbell if working properly and installed securely and neatly</li>
@@ -224,6 +247,7 @@ const Prop = () => {
 </ul>
                 </Row>
                 <Row className="snag-props-list">
+                <img src={images[14]}/>
                     <p>External / Facade</p>
                     <ul>
 	<li> Check finishing condition, check for cracks, chipping and gaps.</li>
@@ -236,6 +260,7 @@ const Prop = () => {
 </ul>
                 </Row>
                 <Row className="snag-props-list">
+                <img src={images[15]}/>
                     <p>Gate and Boundary Wall</p>
                     <ul>
 	<li> Check overall condition of boundary wall, check for cracks, damage, obvious marks and stains</li>
@@ -247,6 +272,7 @@ const Prop = () => {
 </ul>
                 </Row>
                 <Row className="snag-props-list">
+                <img src={images[16]}/>
                     <p>Lawn / Landscaping: (Applies to Villas & Townhouses)</p>
                     <ul>
 	<li> (If applicable) Check if there is existing landscaping, check the condition</li>
@@ -254,6 +280,7 @@ const Prop = () => {
 </ul>
                 </Row>
                 <Row className="snag-props-list">
+                <img src={images[17]}/>
                     <p>Utility Services: (Applies to Villas & Townhouses)</p>
                     <ul>
 	<li> Check if DEWA (Electrical and water) Meter is installed and securely fitted in the Meter Box</li>
