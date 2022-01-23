@@ -8,6 +8,12 @@ import FormModal from "../../../components/modal/modal";
 import a1 from '../../../images/snag/a1.jpg';
 import a2 from '../../../images/snag/a2.jpg';
 import a3 from '../../../images/snag/a3.jpeg';
+import i1 from "../../../images/why/1.png";
+import i2 from "../../../images/why/2.png";
+import i3 from "../../../images/why/3.png";
+import i4 from "../../../images/why/4.png";
+import i5 from "../../../images/why/5.png";
+import i6 from "../../../images/why/6.png";
 const Snag = () => {
     const [showM,setShow] = React.useState(false);
     const showModal = ()=>{
@@ -33,7 +39,7 @@ const Snag = () => {
                     <Button variant="primary" size="lg" onClick={showModal}>Book now</Button>
                 </Col>
             </Row>
-            <Row>
+            <Row >
                 <Col lg={8} className="snag-content" xs={{ span: 12, order: 1 }}>
                     <h2 >Who needs snagging?</h2>
                     <p>
@@ -45,20 +51,22 @@ const Snag = () => {
                     <img src={a2} alt="who-needs-snagging"  width={"100%"}/>
                 </Col>
             </Row>
-            <Row>
-                <Col lg={4} xs={{ span: 12, order: 2 }} lg={{ span: 4, order: 1 }}>
-                    <img src={a3} alt="is-snagging-necessary"  width={"100%"}/>
+            <Row className="why-container">
+                <h2>Why Elixir snagging?</h2>
+                <Col lg={6} xs={12}>
+                    <ul id="why-first">
+                        <li><img src={i4}/>&nbsp;&nbsp;&nbsp;&nbsp;<span className="why-header-li">Report within 48hours hours</span><br/>All the Reports are been Delivered within 48 hours of inspection so as to facilitate you to enjoy and get benefits from your investment at the earliest.</li>
+                        <li><img src={i1}/>&nbsp;&nbsp;&nbsp;&nbsp;<span className="why-header-li">Engineer's Inspection</span><br/>All our inspection claims are with photos and  are quantifiable with readings from our sophisticated Inspection Tools.</li>
+                        <li><img src={i2}/>&nbsp;&nbsp;&nbsp;&nbsp;<span className="why-header-li">Desnagging</span><br/>After completion of snags our team carries out 2nd inspection for Densnagging to make sure all the snags are completed as per acceptable standards.</li>
+                    </ul>
                 </Col>
-                <Col lg={8}  className="snag-content animate__animated animate__bounceInLeft" xs={{ span: 12, order: 1 }} lg={{ span: 8, order: 2 }}>
-                    <h2 >Why elixir snagging?</h2>
-                    <p>Our Property Snagging service is at par 
-                        where we focus on quality of our Snagging
-                         Report as per Engineering standards which 
-                         differentiates us from the other players in
-                          the market who only focus on number of snags;
-                           We always believe is quality which in turns 
-                           generates us a referral client..</p>
-                           <Button variant="primary" size="lg"onClick={showModal} >Get free consultation</Button>
+                <Col lg={6} xs={12}>
+                    <ul>
+                        <li><img src={i6}/>&nbsp;&nbsp;&nbsp;&nbsp;<span className="why-header-li">Work Experience</span><br/>Our Inspectors are qualified Engineers and worked in contracting ,Maintenance and Real Estate industry and in real time have understood the issues faced in property and helped clients manage their property well.</li>
+                        <li><img src={i3}/>&nbsp;&nbsp;&nbsp;&nbsp;<span className="why-header-li">Key Points</span><br/>Our Inspection report are Qualitative and focus on the details and in return add value to the clients investment.</li>
+                        <li><img src={i5}/>&nbsp;&nbsp;&nbsp;&nbsp;<span className="why-header-li">Technical Advise</span><br/>After the Move IN/Handover we can be contacted for Free Technical Consultation.
+Feel Free to Join our mailing list and get tips and tricks to manage maintenance related issues in your Property.</li>
+                    </ul>
                 </Col>
             </Row>
         </section>
