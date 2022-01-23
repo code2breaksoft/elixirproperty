@@ -1,5 +1,5 @@
 import "./movein.css";
-import { Row } from "react-bootstrap";
+import { Row,Tabs ,Tab} from "react-bootstrap";
 import img1 from "../../../../images/services/p4.jpeg";
 const MoveIn = () => {
     return (  
@@ -16,7 +16,10 @@ const MoveIn = () => {
 <Row>
         <img src={img1} className="snag-props-image"/>
 </Row>
-<Row className="snag-props-list">
+        <Row>
+        <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example" className="mb-3">
+  <Tab eventKey="home" title="Property move in">
+  <Row className="snag-props-list">
         <h6>Are you a Landlord and Requires Sign Acceptance of Property by Tenant/Guest?</h6>
         <ul>
             <li>Property Move In Inspection is a service which is opted by the Real Estate Agents, Homeowners and investors during the Move IN of the Property i.e Villa,Townhouse,Apartment or any commercial Property.</li>
@@ -45,7 +48,10 @@ const MoveIn = () => {
 </li>
     </ul>
 </Row>
-<Row  className="snag-props-list">
+
+  </Tab>
+  <Tab eventKey="profile" title="Propety move out">
+  <Row  className="snag-props-list">
 <h6>Are you a Landlord and Require a Move Out Report?
 
 
@@ -82,6 +88,9 @@ const MoveIn = () => {
     </li>
         </ul>
 </Row>
+  </Tab>
+</Tabs>
+        </Row>
 </section>
 </section>
 </>
