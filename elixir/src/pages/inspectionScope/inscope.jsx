@@ -4,10 +4,18 @@ import Whatsappicon from "../../components/whatsapp/whatsapp";
 import "./inspection.css";
 import Header from "../../components/Header/Header";
 import { useEffect } from "react";
+function importAll() {
+    let ar = [];
+    for(let i=1;i<=9;i++){
+        ar.push(require(`../../images/detail/${i}.png`));
+    }
+    return ar;
+}
 const InspectionScope = () => {
     useEffect(()=>{
         window.scrollTo({ top: 0, behavior: 'smooth' })
     },[])
+    let images = importAll();
     return ( 
         <>
             <Header/>
@@ -23,6 +31,29 @@ const InspectionScope = () => {
                     <Col className="inspection-snag">
                     <h4>Why Property snagging?</h4>
                         <p>Many experts will say that snagging is more important now than ever before. New house building is at record levels – and developers are under pressure to complete every house quickly – but there’s a shortage of many skilled trades. So there’s more potential for things to go wrong. Snagging is the process of comprehensive inspection before purchasing a New Property from the Developer.</p>
+                    </Col>
+                </Row>
+                <Row className="detail-header">
+                    <h4>Detailed scope of 
+                        provided services
+                    </h4>
+                </Row>
+                <Row className="detail-list">
+                    <Col>
+                        <ul>
+                        <li><img src={images[0]}/>&nbsp;&nbsp;&nbsp;&nbsp;Inspection of Air conditioning units</li>
+                        <li><img src={images[1]}/>&nbsp;&nbsp;&nbsp;&nbsp;Inspection of fixed electrical units</li>
+                        <li><img src={images[8]}/>&nbsp;&nbsp;&nbsp;&nbsp;Visual inspection of external balcony</li>
+                        <li><img src={images[3]}/>&nbsp;&nbsp;&nbsp;&nbsp;Thermal Inspection</li>
+                        </ul>
+                    </Col>
+                    <Col>
+                        <ul id="second-list">
+                        <li><img src={images[4]}/>&nbsp;&nbsp;&nbsp;&nbsp;Rooftop Inspection of Mechanical Equipments</li>
+                        <li><img src={images[5]}/>&nbsp;&nbsp;&nbsp;&nbsp;Water Tank System and Pump Systems</li>
+                        <li><img src={images[6]}/>&nbsp;&nbsp;&nbsp;&nbsp;Power Socket Checking</li>
+                        <li><img src={images[7]}/>&nbsp;&nbsp;&nbsp;&nbsp;Visual Inspection of Interior Elements & Finishes</li>
+                        </ul>
                     </Col>
                 </Row>
                 <Row>

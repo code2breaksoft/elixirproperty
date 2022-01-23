@@ -28,3 +28,18 @@
     font-family: var(--hFont);
     text-align: center;
 }
+.detail-list ul>li{
+    list-style-type: none;
+    margin-bottom: 1.5rem;
+}
+#second-list>li{
+    margin-bottom: 2rem;
+}
+.detail-header{
+    text-align: center;
+    font-family: var(--hFont);
+    margin: 2rem 0rem;
+}
+.detail-list{
+    margin-bottom: 2rem;
+}

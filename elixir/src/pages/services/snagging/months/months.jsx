@@ -1,9 +1,10 @@
 import { Row } from "react-bootstrap";
 import img from "../../../../images/services/p3.jpg"
+import "./months.css"
 const Months = () => {
     return ( 
-        <section className="Months">
-            <Row>
+        <section className="months">
+            <Row className="header">
             <h2>11 month defect liability inspection</h2>
 
             </Row>
