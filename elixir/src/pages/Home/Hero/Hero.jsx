@@ -4,7 +4,7 @@ import './Hero.css';
 import FormModal from '../../../components/modal/modal';
 import Hero1 from '../../../images/hero/c1.jpeg';
 import Hero2 from '../../../images/hero/c3.jpeg';
-const Hero = () => {
+const Hero = ({country}) => {
     const [imgA,setimgA] = useState(Hero1);
     const [imgB,setimgB] = useState(Hero2);
     const [showM,setShow] = useState(false);
@@ -23,7 +23,7 @@ const Hero = () => {
     return ( 
         <>
         <section id="home">
-        <FormModal show={showM} handleClose={hideModal} />
+        <FormModal show={showM} handleClose={hideModal} countries={country} />
         <Carousel  fade controls={!mobView}>
                         <Carousel.Item interval={3000}>
                 <img

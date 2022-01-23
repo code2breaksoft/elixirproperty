@@ -14,7 +14,7 @@ import i3 from "../../../images/why/3.png";
 import i4 from "../../../images/why/4.png";
 import i5 from "../../../images/why/5.png";
 import i6 from "../../../images/why/6.png";
-const Snag = () => {
+const Snag = ({country}) => {
     const [showM,setShow] = React.useState(false);
     const showModal = ()=>{
         setShow(true);
@@ -24,7 +24,7 @@ const Snag = () => {
     }
     return ( 
         <>
-        <FormModal show={showM} handleClose={hideModal}/>
+        <FormModal show={showM} handleClose={hideModal} countries={country}/>
         <section id="snag">
             <Row>
                 <Col lg={4} xs={{ span: 12, order: 2 }}  lg={{ span: 4, order: 1 }}>

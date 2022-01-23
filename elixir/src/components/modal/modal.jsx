@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Form, Modal,Button,FormControl } from "react-bootstrap";
+import axios from "axios";
 
-const FormModal = ({show,handleClose}) => {
+const FormModal = ({show,handleClose,countries}) => {
 
     return ( 
         <Modal show={show} onHide={handleClose}>

@@ -4,8 +4,18 @@ import Services from "./pages/services/services";
 import Faq from "./pages/faq/faq";
 import Blog from "./pages/blog/blog";
 import InspectionScope from "./pages/inspectionScope/inscope";
-
+import { useEffect, useState } from "react";
+import axios from "axios";
 function App() {
+  const [countries,setCountries] = useState([]);
+
+  useEffect(async()=>{
+    let res = await axios.get("https://restcountries.com/v2/all");
+    let data =  res.data.map((item)=>{
+      return ({short:item.alpha3Code,name:item.name,code:item.callingCodes[0],flag:item.flag});
+    });
+    setCountries(data);
+  },[]);
     return ( 
     < div className = "App" >
             <Router>
