@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
-import { Form, Modal,Button,FormControl } from "react-bootstrap";
-import axios from "axios";
+import { Form, Modal,Button,FormControl, Row, Col } from "react-bootstrap";
+import data from '../../data/country.json';
 
-const FormModal = ({show,handleClose,countries}) => {
-
+const FormModal = ({show,handleClose,countrie}) => {
     return ( 
         <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
@@ -24,8 +23,23 @@ const FormModal = ({show,handleClose,countries}) => {
                 </Form.Text>
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Phone</Form.Label>
-                <Form.Control type="tel" placeholder="Enter phone number" />
+            <Row>
+                <Col lg={4} xs={4}>
+                <Form.Label>Code</Form.Label>
+                <Form.Select title="code">
+                  {
+                    data.countries.map((item)=>(
+                      <option value={item.code}>{item.code}  &nbsp;          {item.name}</option>
+                    ))
+                  }
+                  </Form.Select>
+
+                </Col>
+                <Col>
+                  <Form.Label>Phone</Form.Label>
+                  <Form.Control type="tel" placeholder="Enter phone number" />
+                </Col>
+            </Row>
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Property details</Form.Label>

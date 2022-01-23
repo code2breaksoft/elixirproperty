@@ -21,12 +21,12 @@ const Home = ({country}) => {
             <Container fluid>
                 <About id="about"/>
             </Container>
-            <Snag/>
+            <Snag countries={country}/>
             <Container>
                 <Services id="services"/>
                 <Tools/>
             </Container>
-            <Book/>
+            <Book countries={country}/>
 
             <Container fluid>
             <Achievements/>
