@@ -55,7 +55,7 @@ const Snag = () => {
                 <h2>Why Elixir snagging?</h2>
                 <Col lg={6} xs={12}>
                     <ul id="why-first">
-                        <li><img src={i4}/>&nbsp;&nbsp;&nbsp;&nbsp;<span className="why-header-li">Report within 48hours hours</span><br/>All the Reports are been Delivered within 48 hours of inspection so as to facilitate you to enjoy and get benefits from your investment at the earliest.</li>
+                        <li><img src={i4}/><span className="why-header-li">Report within 48hours hours</span><br/>All the Reports are been Delivered within 48 hours of inspection so as to facilitate you to enjoy and get benefits from your investment at the earliest.</li>
                         <li><img src={i1}/>&nbsp;&nbsp;&nbsp;&nbsp;<span className="why-header-li">Engineer's Inspection</span><br/>All our inspection claims are with photos and  are quantifiable with readings from our sophisticated Inspection Tools.</li>
                         <li><img src={i2}/>&nbsp;&nbsp;&nbsp;&nbsp;<span className="why-header-li">Desnagging</span><br/>After completion of snags our team carries out 2nd inspection for Densnagging to make sure all the snags are completed as per acceptable standards.</li>
                     </ul>
