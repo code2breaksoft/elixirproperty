@@ -1,0 +1,26 @@
+.resale>.header>h2{
+    text-align: center;
+    font-family: var(--hFont);
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.resale img{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+.resale p{
+    font-size: 1.2rem;
+}
+@media only screen and (max-width: 1200px){
+    .resale img{
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+    }
+}

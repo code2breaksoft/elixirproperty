@@ -7,6 +7,8 @@ import Prop from "./snagging/prop/prop";
 import "./snagging/snagging.css";
 import MoveIn from "./snagging/movein/movein";
 import Whatsappicon from "../../components/whatsapp/whatsapp";
+import Resale from "./snagging/resale/resale";
+import Months from "./snagging/months/months";
 
 const Services = () => {
     useEffect(()=>{
@@ -22,8 +24,8 @@ const Services = () => {
         <Container>
             <Routes>
                 <Route path="/property-handover-inspection" element={<Prop/>}></Route>
-                <Route path="/property-resale-inpection" element={<Prop/>}></Route>
-                <Route path="/11-month-defect-liablity-inspection" element={<Prop/>}></Route>
+                <Route path="/property-resale-inpection" element={<Resale/>}></Route>
+                <Route path="/11-month-defect-liablity-inspection" element={<Months/>}></Route>
                 <Route path="/property-move-in-out-inspection" element={<MoveIn/>}></Route>
             </Routes>
         </Container>
