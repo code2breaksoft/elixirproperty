@@ -3,7 +3,7 @@ import Footer from "../../components/footer/footer";
 import Whatsappicon from "../../components/whatsapp/whatsapp";
 import "./inspection.css";
 import Header from "../../components/Header/Header";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 function importAll() {
     let ar = [];
     for(let i=1;i<=9;i++){
@@ -24,12 +24,18 @@ const InspectionScope = () => {
     },[])
     let images = importAll();
     let img = importAll2();
+    const [mob,setMobile] = useState(false);
+    useEffect(()=>{
+        if(window.innerWidth<787){
+            setMobile(true);
+        }
+    },[])
     return ( 
         <>
             <Header/>
             <Whatsappicon/>
             <section className="inspection-wrapper">
-            <Container>
+            <Container fluid>
                 <Row>
                     <Col>
                         <h2>Property Inspection scope</h2>
@@ -64,6 +70,7 @@ const InspectionScope = () => {
                         </ul>
                     </Col>
                 </Row>
+                <div className="scope-list">
                 <Row className="snag-props-list">
 
                     <p>Air Conditioning & Ventilation </p>
@@ -301,6 +308,7 @@ const InspectionScope = () => {
 	<li>     Check condition of stair thread, riser and handrail. Check for sign of damage, permanent marks and stains, scratches. check handrail if installed securely. Check finishing at joints and terminations, (where applicable)</li>
 </ul>
                 </Row>
+                </div>
             </Container>
         </section>
             <Footer/>

@@ -14,7 +14,7 @@ const Prop = () => {
       let img = importAll();
     return ( 
         <>
-        <section className=" animate__animated animate__fadeIn">
+        <section className="prop animate__animated animate__fadeIn">
                     <Row className="headerh">
                 <h2>Property handover inspection</h2>
                 <p>Property Snagging is a service which is opted by the homeowners and investors after purchase of the any new Property i.e Villa, Townhouse, Apartment or any commercial Property.</p>

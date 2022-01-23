@@ -11,7 +11,7 @@
 }
 .inspection-wrapper{
     margin-bottom: 5rem;
-    padding: 0rem 2rem;
+    padding: 0rem 1.5rem;
 }
 .inspection-snag{
     background-color: var(--pink);
@@ -42,4 +42,22 @@
 }
 .detail-list{
     margin-bottom: 2rem;
+}
+@media only screen and (max-width: 786px){
+    .detail-list{
+        margin-left: -1rem !important;
+        text-align: center;
+        padding-right: 2.5rem;
+    }
+    #second-list>li{
+        margin-bottom: 1.5rem;
+    }
+
+    .scope-list{
+        padding: 1.5rem !important;
+    }
+    .inspection-wrapper{
+        margin-bottom: 5rem;
+        padding: 0rem 0rem;
+    }
 }
