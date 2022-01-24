@@ -30,7 +30,8 @@
     padding: 1rem 0rem;
 }
 #whats{
-    border-bottom: 2px solid white !important;
+    background-color: #4FCE5D !important;
+    color: white !important;
 }
 @media only screen and (max-width: 768px) {
     #contact-fixed{
