@@ -45,7 +45,7 @@ const Hero = ({country}) => {
                 />
                 <Carousel.Caption>
                 <h1 class="animate__animated animate__bounceInLeft">
-                Best snagging & inspection services in UAE</h1>
+                Best Snagging & Inspection services in UAE</h1>
                 <p class="animate__animated animate__bounceInRight">Best Snagging & Inspection services in UAE</p>
                 <Button  variant="primary" size="lg" onClick={showModal}>Enquire now</Button>
                 </Carousel.Caption>

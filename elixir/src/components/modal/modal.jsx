@@ -1,8 +1,12 @@
 import { useEffect, useState } from "react";
 import { Form, Modal,Button,FormControl, Row, Col } from "react-bootstrap";
 import data from '../../data/country.json';
+import Select from 'react-select'
 
 const FormModal = ({show,handleClose,countrie}) => {
+  const options = data.countries.map((item)=>(
+    {value:item.code,label:item.name+" "+item.code}
+  ))
     return ( 
         <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
@@ -24,15 +28,9 @@ const FormModal = ({show,handleClose,countrie}) => {
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicEmail">
             <Row>
-                <Col lg={4} xs={4}>
+                <Col lg={5} xs={5}>
                 <Form.Label>Code</Form.Label>
-                <Form.Select title="code">
-                  {
-                    data.countries.map((item)=>(
-                      <option value={item.code}>{item.code}  &nbsp;          {item.name}</option>
-                    ))
-                  }
-                  </Form.Select>
+                  <Select options={options} />
 
                 </Col>
                 <Col>
