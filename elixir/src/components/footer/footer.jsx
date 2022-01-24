@@ -1,6 +1,6 @@
 import { Col ,Row} from "react-bootstrap";
 import "./Footer.css";
-import { GeoAltFill,TelephoneFill,Facebook,Instagram,Twitter,Youtube } from "react-bootstrap-icons";
+import { GeoAltFill,TelephoneFill,Facebook,Instagram,Twitter,Youtube,PhoneFill } from "react-bootstrap-icons";
 import logo from "../../images/common/elixir_logo.png";
 
 const Footer = () => {
@@ -14,7 +14,8 @@ const Footer = () => {
                 <Col lg={4} className="footer-contact-wrapper">
                     <h4>Contact us</h4>
                     <p><GeoAltFill/>&nbsp;&nbsp;101, Al Mehri Building, Ras Al Khor, Dubai, UAE</p>
-                    <p><TelephoneFill/>&nbsp;&nbsp;+971 501438975</p>
+                    <p><PhoneFill/>&nbsp;&nbsp;+971501438975</p>
+                    <p><TelephoneFill/>&nbsp;&nbsp;+97143302605</p>
                 </Col>
                 <Col lg={4} className="footer-social">
                     <h4>Follow us</h4>

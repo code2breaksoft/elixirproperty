@@ -31,7 +31,7 @@ const Snag = ({country}) => {
                     <img src={a1} alt="what-is-snagging" width={"100%"}/>
                 </Col>
                 <Col lg={8} className="snag-content" xs={{ span: 12, order: 1 }}  lg={{ span: 8, order: 2 }} >
-                    <h2 >What is snagging?</h2>
+                    <h2 >What is Snagging?</h2>
                     <p>Property Snagging is a service which is opted by the homeowners and investors after purchase of the any new Property i.e Villa, Townhouse, Apartment or any commercial Property.
 
                     Snagging is the process of comprehensive inspection before purchasing a New Property from the Developer.
@@ -41,7 +41,7 @@ const Snag = ({country}) => {
             </Row>
             <Row >
                 <Col lg={8} className="snag-content" xs={{ span: 12, order: 1 }}>
-                    <h2 >Who needs snagging?</h2>
+                    <h2 >Who needs Snagging?</h2>
                     <p>
                     Individuals or institutions buying a brand new construct home or a home within the secondary marketplace have to bear in mind a snagging inspection. you can argue that if you’re spending some thing it’s loopy no longer to! A snagging inspection also can be useful for buying geared up built houses or on the 11 month assurance duration. additionally, if you’ve already moved in and are having snagging issues with your developer then a expert snagging record can assist provide weight on your case.
                     </p>
@@ -52,7 +52,7 @@ const Snag = ({country}) => {
                 </Col>
             </Row>
             <Row className="why-container">
-                <h2>Why Elixir snagging?</h2>
+                <h2>Why Elixir Snagging?</h2>
                 <Col lg={6} xs={12}>
                     <ul id="why-first">
                         <li><img src={i4}/><span className="why-header-li">Report within 48hours hours</span><br/>All the Reports are been Delivered within 48 hours of inspection so as to facilitate you to enjoy and get benefits from your investment at the earliest.</li>
