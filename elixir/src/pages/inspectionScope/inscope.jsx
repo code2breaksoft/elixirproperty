@@ -55,18 +55,18 @@ const InspectionScope = () => {
                 <Row className="detail-list">
                     <Col>
                         <ul>
-                        <li><img src={images[0]}/>&nbsp;&nbsp;&nbsp;&nbsp;Inspection of Air conditioning units</li>
-                        <li><img src={images[1]}/>&nbsp;&nbsp;&nbsp;&nbsp;Inspection of fixed electrical units</li>
-                        <li><img src={images[8]}/>&nbsp;&nbsp;&nbsp;&nbsp;Visual inspection of external balcony</li>
-                        <li><img src={images[3]}/>&nbsp;&nbsp;&nbsp;&nbsp;Thermal Inspection</li>
+                        <li><img src={images[0]}/><br/>Inspection of Air conditioning units</li>
+                        <li><img src={images[1]}/><br/>Inspection of fixed electrical units</li>
+                        <li><img src={images[8]}/><br/>Visual inspection of external balcony</li>
+                        <li><img src={images[3]}/><br/>Thermal Inspection</li>
                         </ul>
                     </Col>
                     <Col>
                         <ul id="second-list">
-                        <li><img src={images[4]}/>&nbsp;&nbsp;&nbsp;&nbsp;Rooftop Inspection of Mechanical Equipments</li>
-                        <li><img src={images[5]}/>&nbsp;&nbsp;&nbsp;&nbsp;Water Tank System and Pump Systems</li>
-                        <li><img src={images[6]}/>&nbsp;&nbsp;&nbsp;&nbsp;Power Socket Checking</li>
-                        <li><img src={images[7]}/>&nbsp;&nbsp;&nbsp;&nbsp;Visual Inspection of Interior Elements & Finishes</li>
+                        <li><img src={images[4]}/><br/>Rooftop Inspection of Mechanical Equipments</li>
+                        <li><img src={images[5]}/><br/>Water Tank System and Pump Systems</li>
+                        <li><img src={images[6]}/><br/>Power Socket Checking</li>
+                        <li><img src={images[7]}/><br/>Visual Inspection of Interior Elements & Finishes</li>
                         </ul>
                     </Col>
                 </Row>

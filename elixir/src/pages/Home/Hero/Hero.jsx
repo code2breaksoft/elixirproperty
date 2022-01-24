@@ -4,6 +4,8 @@ import './Hero.css';
 import FormModal from '../../../components/modal/modal';
 import Hero1 from '../../../images/hero/c1.jpeg';
 import Hero2 from '../../../images/hero/c3.jpeg';
+import h3 from '../../../images/hero/h3.jpg';
+import h2 from '../../../images/hero/h2.jpg';
 const Hero = ({country}) => {
     const [imgA,setimgA] = useState(Hero1);
     const [imgB,setimgB] = useState(Hero2);
@@ -17,7 +19,8 @@ const Hero = ({country}) => {
     const [mobView,setMobView] = useState(false);
     useEffect(()=>{
         if(window.innerWidth<786){
-            setMobView(true);
+            setimgA(h2);
+            setimgB(h3);
         }
     },[])
     return ( 

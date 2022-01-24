@@ -42,10 +42,19 @@
 }
 .detail-list{
     margin-bottom: 2rem;
+    text-align: center;
+}
+.detail-list img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.detail-list{
+    margin-left: -7rem !important;
 }
 @media only screen and (max-width: 786px){
     .detail-list{
-        margin-left: -1rem !important;
+        margin-left: 0rem !important;
         text-align: center;
         padding-right: 3rem;
     }
