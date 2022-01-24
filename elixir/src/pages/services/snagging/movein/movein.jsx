@@ -17,8 +17,8 @@ const MoveIn = () => {
         <img src={img1} className="snag-props-image"/>
 </Row>
         <Row>
-        <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example" className="mb-3">
-  <Tab eventKey="home" title="Property move in">
+        <Tabs variant="pills" defaultActiveKey="home" className="mb-3">
+  <Tab eventKey="home" title="Property move in" className="x">
   <Row className="snag-props-list">
         <h6>Are you a Landlord and Requires Sign Acceptance of Property by Tenant/Guest?</h6>
         <ul>

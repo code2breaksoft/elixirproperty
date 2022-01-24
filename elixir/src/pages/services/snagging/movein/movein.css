@@ -27,6 +27,10 @@
     font-family: var(--hFont);
     font-size: 1.5rem;
 }
+.nav-link.active {
+    color:white !important;
+    background-color: var(--pink) !important;
+}
 @media only screen and (max-width: 1200px) {
     .headerh>p{
         font-size: 1.2rem;
