@@ -2,7 +2,6 @@ import { Row ,Col} from "react-bootstrap";
 import "./prop.css";
 import img1 from "../../../../images/services/p1.jpg";
 import { useEffect } from "react";
-import Scope from "../../../../components/scope/scope";
 function importAll() {
     let ar = [];
     for(let i=1;i<=18;i++){
@@ -15,12 +14,12 @@ const Prop = () => {
       let img = importAll();
     return ( 
         <>
-        <section className="x prop animate__animated animate__fadeIn">
+        <section className="prop animate__animated animate__fadeIn">
                     <Row className="headerh">
                 <h2>Property handover inspection</h2>
                 <p>Property Snagging is a service which is opted by the homeowners and investors after purchase of the any new Property i.e Villa, Townhouse, Apartment or any commercial Property.</p>
             </Row>
-        <section className="snag-props-wrapper5">
+        <section className="snag-props-wrapper">
 
 
             <Row>
