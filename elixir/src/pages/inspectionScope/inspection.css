@@ -33,7 +33,7 @@
     margin-bottom: 1.5rem;
 }
 #second-list>li{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem !important;
 }
 .detail-header{
     text-align: center;
