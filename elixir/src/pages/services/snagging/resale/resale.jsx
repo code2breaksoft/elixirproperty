@@ -1,6 +1,7 @@
 import img from "../../../../images/services/p2.jpg"
 import { Row } from "react-bootstrap";
 import "./resale.css"
+import Scope from "../../../../components/scope/scope";
 const Resale = () => {
     return ( 
         <section className="resale">
@@ -8,9 +9,11 @@ const Resale = () => {
             <h2>Property Resale Inspection</h2>
 
             </Row>
+            <section className="snag-props-wrapper5">
             <Row>
                 <img src={img}/>
             </Row>
+            <Scope/>
             <Row>
             <p>Are you looking to buy an used Property in UAE and want us to conduct a detailed Technical inspection to avoid any issues in future. The inspection is to make sure you get what you are paying for. Our team inspects the Property on your behalf and provides a technical report on the present state of the Property to help you make informed decision.
 
@@ -19,7 +22,7 @@ The Report contains details about Electrical, Civil, Plumbing and Mechanical def
 
 Thus engaging Snagging company ensures you have peace of mind with professional opinion and helps in making informed decisions and thereby your Investments are well protected.</p>
             </Row>
-            
+            </section>
         </section>
      );
 }
