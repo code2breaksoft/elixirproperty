@@ -5,6 +5,7 @@ import "./inspection.css";
 import Header from "../../components/Header/Header";
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
+import SubHeader from "../../components/subheader/subheader";
 function importAll() {
     let ar = [];
     for(let i=1;i<=9;i++){
@@ -34,7 +35,7 @@ const InspectionScope = () => {
     },[])
     return ( 
         <>
-            <Header/>
+            <SubHeader/>
             <Whatsappicon/>
             <section className="inspection-wrapper">
             <Container fluid>

@@ -5,7 +5,7 @@ import { List } from "react-bootstrap-icons";
 import { useNavigate } from "react-router-dom";
 import logo from "../../images/common/elixir_logo.png"
 import { useLocation } from "react-router-dom";
-const Header = ({home}) => {
+const SubHeader = ({home}) => {
     const location = useLocation();
     const [drop,setDrop] = useState(false);
     const nav = useNavigate();
@@ -42,8 +42,8 @@ const Header = ({home}) => {
                 <Navbar.Toggle aria-controls="navbarScroll"><List style={{color:"white"}}/></Navbar.Toggle>
                 <Navbar.Collapse id="navbarScroll">
                 <Nav className="ms-auto">
-                    <Nav.Link className="under" eventKey="0" onClick={()=>{changePageH("home")}} >HOME</Nav.Link>
-                    <Nav.Link className="under" eventKey="1" onClick={()=>{changePageH("about")}}>ABOUT US</Nav.Link>
+                    <Nav.Link className="under" eventKey="0" onClick={()=>{changePage("/#home")}} >HOME</Nav.Link>
+                    <Nav.Link className="under" eventKey="1" onClick={()=>{changePage("/#about")}}>ABOUT US</Nav.Link>
                     <NavDropdown show={open} onClick={()=>setOpen(!open)} title="OUR SERVICES" id="basic-nav-dropdown">
                             <NavDropdown.Item eventKey="2"  onClick={()=>{changePage("/services/property-handover-inspection");setDrop(false);}}>Property Handover Inspection
                     </NavDropdown.Item>
@@ -54,9 +54,9 @@ const Header = ({home}) => {
                             <NavDropdown.Item  eventKey="5"  onClick={()=>{changePage("/services/property-move-in-out-inspection");setDrop(false);}}>Property move in/out inspection
                     </NavDropdown.Item>
                             </NavDropdown>                    
-                    <Nav.Link className="under" eventKey="6" onClick={()=>{changePageH("tools")}}>TOOLS</Nav.Link>
+                    <Nav.Link className="under" eventKey="6" onClick={()=>{changePage("/#ools")}}>TOOLS</Nav.Link>
                     <Nav.Link className="under" eventKey="7" onClick={()=>{changePage("/inspection-scope")}}>INSPECTION SCOPE</Nav.Link>
-                    <Nav.Link className="under" eventKey="8" onClick={()=>{changePageH("contact")}}>CONTACT&nbsp;&nbsp;</Nav.Link>
+                    <Nav.Link className="under" eventKey="8" onClick={()=>{changePage("/#contact")}}>CONTACT&nbsp;&nbsp;</Nav.Link>
                     <Button variant="primary" >Sample report</Button>
                 </Nav>
                 </Navbar.Collapse>
@@ -66,4 +66,4 @@ const Header = ({home}) => {
      );
 }
  
-export default Header;
+export default SubHeader;

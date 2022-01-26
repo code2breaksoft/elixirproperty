@@ -9,6 +9,7 @@ import MoveIn from "./snagging/movein/movein";
 import Whatsappicon from "../../components/whatsapp/whatsapp";
 import Resale from "./snagging/resale/resale";
 import Months from "./snagging/months/months";
+import SubHeader from "../../components/subheader/subheader";
 
 const Services = () => {
     useEffect(()=>{
@@ -19,7 +20,7 @@ const Services = () => {
     },[]);
     return ( 
         <>
-        <Header/>
+        <SubHeader/>
         <Whatsappicon/>
         <Container>
             <Routes>
