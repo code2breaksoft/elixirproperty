@@ -2,7 +2,14 @@ import img from "../../../../images/services/p2.jpg"
 import { Row } from "react-bootstrap";
 import "./resale.css"
 import Scope from "../../../../components/scope/scope";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 const Resale = () => {
+    const location = useLocation();
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [location]);
     return ( 
         <section className="resale">
             <Row className="header">

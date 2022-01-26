@@ -12,18 +12,13 @@ function App() {
     return ( 
     < div className = "App" >
             <Router>
-              <ScrollToTop>
               <Routes>
-              <Route path="/" element={<Home country={countries}/>}></Route>
-              <Route path="/#about" element={<Home country={countries}/>}></Route>
-              <Route path="/#tools" element={<Home country={countries}/>}></Route>
-              <Route path="/#contact" element={<Home country={countries}/>}></Route>
+                <Route path="/" element={<Home country={countries}/>}></Route>
                 <Route path="/services/*" element={<Services/>}></Route>
                 <Route path="/faq" element={<Faq/>}></Route>
                 <Route path="/blog" element={<Blog/>}></Route>
                 <Route path="/inspection-scope" element={<InspectionScope/>}></Route>
               </Routes>
-              </ScrollToTop>
             </Router>
         </div>
     );

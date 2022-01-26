@@ -1,7 +1,14 @@
 import "./movein.css";
 import { Row,Tabs ,Tab} from "react-bootstrap";
 import img1 from "../../../../images/services/p4.jpeg";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 const MoveIn = () => {
+        const location = useLocation();
+        useEffect(() => {
+          window.scrollTo(0, 0);
+        }, [location]);
     return (  
 
         <>

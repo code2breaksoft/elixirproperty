@@ -1,8 +1,14 @@
+import { useEffect } from "react";
 import { Row } from "react-bootstrap";
 import Scope from "../../../../components/scope/scope";
 import img from "../../../../images/services/p3.jpg"
 import "./months.css"
+import { useLocation } from "react-router-dom";
 const Months = () => {
+    const location = useLocation();
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [location]);
     return ( 
         <section className="months">
             <Row className="header">

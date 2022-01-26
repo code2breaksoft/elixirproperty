@@ -2,6 +2,8 @@ import { Row ,Col} from "react-bootstrap";
 import "./prop.css";
 import img1 from "../../../../images/services/p1.jpg";
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 function importAll() {
     let ar = [];
     for(let i=1;i<=18;i++){
@@ -10,7 +12,10 @@ function importAll() {
     return ar;
 }
 const Prop = () => {
-
+    const location = useLocation();
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [location]);
       let img = importAll();
     return ( 
         <>

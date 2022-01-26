@@ -3,6 +3,7 @@ import Footer from "../../components/footer/footer";
 import Whatsappicon from "../../components/whatsapp/whatsapp";
 import "./inspection.css";
 import Header from "../../components/Header/Header";
+import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 function importAll() {
     let ar = [];
@@ -19,9 +20,10 @@ function importAll2() {
     return ar;
 }
 const InspectionScope = () => {
-    useEffect(()=>{
-        window.scrollTo({ top: 0, behavior: 'smooth' })
-    },[])
+    const location = useLocation();
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [location]);
     let images = importAll();
     let img = importAll2();
     const [mob,setMobile] = useState(false);
