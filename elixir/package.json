@@ -5,8 +5,8 @@
   "engines": {
     "node": "14.x"
   },
-  "homepage": "http://thesnagging.com",
-  "build_staging": "PUBLIC_URL=http://thesnagging.com react-scripts build",
+  "homepage": "http://thesnagging.com/",
+  "build_staging": "PUBLIC_URL=http://thesnagging.com/ react-scripts build",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",

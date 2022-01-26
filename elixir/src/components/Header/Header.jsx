@@ -5,6 +5,10 @@ import { List } from "react-bootstrap-icons";
 import { useNavigate } from "react-router-dom";
 import logo from "../../images/common/elixir_logo.png"
 import { useLocation } from "react-router-dom";
+function scrollToTestDiv(el){
+    const divElement = document.getElementById(el);
+    divElement.scrollIntoView({ behavior: 'smooth' });
+  }
 const Header = ({home}) => {
     const location = useLocation();
     const [drop,setDrop] = useState(false);

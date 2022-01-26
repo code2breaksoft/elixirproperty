@@ -67,7 +67,7 @@ const About = () => {
 With extensive knowledge acquired working continuously in Construction,Maintenance,Property Management and Property Snagging the Snagging Business model was developed to help the Investors Protect their investments.
 </p>
 <p className="about-text">All our inspectors are experienced and trained to give you the best Technical report of your property;The generated snag Report is not only made considering the present condition but also by keeping  in mind the future condition of the Property by incorporating the years of industry experience.</p>
-<p className="about-text">Elixir Property Inspect is the product of in-depth over 10 years of  experience and knowledge in Property;it is directed towards New Home Owners and Investors who are looking to buy a property and help them to have a informed decision which yields in high Return on Investment.                </p>
+<p className="about-text">Elixir Property Inspect is the product of in-depth knowledge of over  10 years of  experience and knowledge in Property;it is directed towards New Home Owners and Investors who are looking to buy a property and help them to have a informed decision which yields in high Return on Investment.                </p>
           <Row className="inspect-types">
                   <h5>What do we Inspect?</h5>
                   <Col lg={4} xs={6}>
