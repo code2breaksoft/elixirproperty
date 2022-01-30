@@ -24,12 +24,11 @@ const Months = () => {
             <Scope/>
 
             <Row>
-            <p>Every developer provides a 11 month warranty period for new property; Is your warranty due to expire and you want to make sure your all the issues are addressed prior to End of DLP Period
+            <p>
+            Every developer provides an 11 month warranty period for the new property; Is your warranty due to expire and do you want to make sure all the issues are addressed prior to the End of the DLP Period Our Team of experts conducts a technical inspection for the property and provide you with the photographic report to present to the developer prior to Expire of DLP. These make sure you don’t have to pay for any costly repair at any immediate or later stage and the DLP warranty service is utilized to the full extent for the benefit of the owner. Thus engaging a Professional Snagging company in Dubai, ensures you have peace of mind with a professional opinion and helps to present the report to developers prior to the expiry of the DLP Period.
 
-Our Team of experts conducts a technical inspection for the property and provide you with photographic report to present to the developer prior to Expire of DLP. These make sure you don’t have to pay for any costly repair at any immediate or later stage and the DLP warranty service is utilised to the full extent for the benefit of the owner.
-
-Thus engaging Snagging company ensures you have peace of mind with professional opinion and helps to present the report to developer prior to expiry of DLP Period.</p>
-            </Row>
+              </p>
+              </Row>
             </section>
         </section>
      );

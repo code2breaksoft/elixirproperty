@@ -2,7 +2,7 @@ import { useCallback } from "react";
 import { Col,Card, Button, Row, Container } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import './ServiceCardMod.css';
-const ServiceCardMod = ({image,title,text,path}) => {
+const ServiceCardMod = ({image,title,text,path,alt}) => {
     const nav = useNavigate();
     const changePage = useCallback((path)=>{
         nav(path);
@@ -13,7 +13,7 @@ const ServiceCardMod = ({image,title,text,path}) => {
             <Container className="service-container">
                 <Row>
                     <Col xs={12} lg={4}>
-                        <Card.Img variant="top" src={image} className="servicecard-image" />
+                        <Card.Img variant="top" alt={alt} src={image} className="servicecard-image" />
                     </Col>
                     <Col xs={12} lg={8}>
                     <Card.Body>

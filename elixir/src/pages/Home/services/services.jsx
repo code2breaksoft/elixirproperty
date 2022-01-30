@@ -18,6 +18,7 @@ const Services = () => {
         <Row>
         <ServiceCardMod 
             path="/services/property-handover-inspection"
+            alt="Property Handover Inspection"
             image={img1}
             title="Property Handover Inspection" 
             text="Property Snagging is a service which is opted by the homeowners and investors after purchase of the any new Property i.e Villa, Townhouse, Apartment or any commercial Property."/>
@@ -28,12 +29,14 @@ const Services = () => {
                 path="/services/property-resale-inpection"
             />
             <ServiceCardMod
+                alt="Property Resale Inspection"
                 image={img3}
                 title="11 Month-Defect Liability Inspection"
                 text="We as professionals provide specialized services to manage any break downs and repair works in concern to electrical, mechanical and plumbing areas.It’s the simpler things that make the difference."
                 path="/services/11-month-defect-liablity-inspection"
             />
             <ServiceCardMod
+            alt="Defect Liability Inspection "
                 image={img4}
                 title="Property move in/out inspection"
                 text="An Engineer inspects the Property with use of Right Tools necessary for Snagging; With the Right Tools and Non Invasive methods our Engineers. Make sure Moisture is detected by Moisture Meter and Thermal Inspections."

@@ -28,13 +28,14 @@ const Snag = ({country}) => {
         <section id="snag">
             <Row>
                 <Col lg={4} xs={{ span: 12, order: 2 }}  lg={{ span: 4, order: 1 }}>
-                    <img src={a1} alt="what-is-snagging" width={"100%"}/>
+                    <img src={a1} alt="Snagging Company in Dubai" width={"100%"}/>
                 </Col>
                 <Col lg={8} className="snag-content" xs={{ span: 12, order: 1 }}  lg={{ span: 8, order: 2 }} >
                     <h2 >What is Snagging?</h2>
-                    <p>Property Snagging is a service which is opted by the homeowners and investors after purchase of the any new Property i.e Villa, Townhouse, Apartment or any commercial Property.
+                    <p>
 
-                    Snagging is the process of comprehensive inspection before purchasing a New Property from the Developer.
+                    Property Snagging is a service that is opted by the homeowners and investors after purchase of any new Property i.e Villa, townhouses, Apartments, or any commercial property. Snagging is the process of comprehensive inspection before purchasing a New Property from the Developer. We at Elixir property Inspect, provide you with the best snagging Inspect services in Dubai.
+
                     </p>
                     <Button variant="primary" size="lg" onClick={showModal}>Book now</Button>
                 </Col>
@@ -43,12 +44,13 @@ const Snag = ({country}) => {
                 <Col lg={8} className="snag-content" xs={{ span: 12, order: 1 }}>
                     <h2 >Who needs Snagging?</h2>
                     <p>
-                    Individuals or institutions buying a brand new construct home or a home within the secondary marketplace have to bear in mind a snagging inspection. you can argue that if you’re spending some thing it’s loopy no longer to! A snagging inspection also can be useful for buying geared up built houses or on the 11 month assurance duration. additionally, if you’ve already moved in and are having snagging issues with your developer then a expert snagging record can assist provide weight on your case.
+                    Individuals or institutions buying a brand-new constructed home or a home within the secondary marketplace have to bear in mind a snagging inspection. you can argue that if you’re spending something it’s loopy no longer! A snagging inspection also can be useful for buying geared-up built houses or on the 11-month assurance duration. Additionally, if you’ve already moved in and are having snagging issues with your developer then an expert snagging record can assist provide weight on your case. We established ourselves as the best snagging company in Dubai. Reach us now, for snagging services at a very affordable price.
+
                     </p>
                     <Button variant="primary" size="lg" onClick={showModal}>Enquire now</Button>
                 </Col>
                 <Col lg={4} xs={{ span: 12, order: 2 }}>
-                    <img src={a2} alt="who-needs-snagging"  width={"100%"}/>
+                    <img src={a2} alt=" Professional Snagging Company in Dubai"  width={"100%"}/>
                 </Col>
             </Row>
             <Row className="why-container">
