@@ -40,11 +40,11 @@ const Header = ({home}) => {
                     &nbsp;&nbsp;Elixir Property Inspect
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll"><List style={{color:"white"}}/></Navbar.Toggle>
-                <Navbar.Collapse id="navbarScroll">
-                <Nav className="ms-auto">
+                <Navbar.Collapse >
+                <Nav className="ms-auto"  >
                     <Nav.Link className="under" eventKey="0" onClick={()=>{changePageH("home")}} >HOME</Nav.Link>
                     <Nav.Link className="under" eventKey="1" onClick={()=>{changePageH("about")}}>ABOUT US</Nav.Link>
-                    <NavDropdown show={open} onClick={()=>setOpen(!open)} title="OUR SERVICES" id="basic-nav-dropdown">
+                    <NavDropdown onSelect={() => null} show={open} onClick={()=>setOpen(!open)} title="OUR SERVICES" id="basic-nav-dropdown">
                             <NavDropdown.Item eventKey="2"  onClick={()=>{changePage("/services/property-handover-inspection");setDrop(false);}}>Property Handover Inspection
                     </NavDropdown.Item>
                             <NavDropdown.Item   eventKey="3"  onClick={()=>{changePage("/services/property-resale-inpection");setDrop(false);}}>Property Resale Inspection
