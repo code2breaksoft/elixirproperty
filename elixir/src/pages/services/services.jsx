@@ -20,16 +20,12 @@ const Services = () => {
     },[]);
     return ( 
         <>
-        <SubHeader/>
-        <Whatsappicon/>
-        <Container>
             <Routes>
                 <Route path="/property-handover-inspection" element={<Prop/>}></Route>
                 <Route path="/property-resale-inpection" element={<Resale/>}></Route>
                 <Route path="/11-month-defect-liablity-inspection" element={<Months/>}></Route>
                 <Route path="/property-move-in-out-inspection" element={<MoveIn/>}></Route>
             </Routes>
-        </Container>
         <Footer/>
         </>
      );

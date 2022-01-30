@@ -1,9 +1,11 @@
 import { useEffect } from "react";
-import { Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import Scope from "../../../../components/scope/scope";
 import img from "../../../../images/services/p3.jpg"
 import "./months.css"
 import { useLocation } from "react-router-dom";
+import SubHeader from "../../../../components/subheader/subheader"
+import Whatsappicon from "../../../../components/whatsapp/whatsapp";
 const Months = () => {
   const desc = "Our Company not only provides the Property Handover Services but also Property Defect Liability Inspection In Dubai. All you need to do is visit our website and contact us to proceed."
     const location = useLocation();
@@ -13,7 +15,11 @@ const Months = () => {
       document.querySelector('meta[name="description"]').setAttribute("content", desc);
     }, [location]);
     return ( 
-        <section className="months">
+      <>
+      <SubHeader/>
+      <Whatsappicon/>
+      <Container>
+      <section className="months">
             <Row className="header">
             <h2>11 month defect liability inspection</h2>
 
@@ -34,6 +40,8 @@ const Months = () => {
               </Row>
             </section>
         </section>
+      </Container>
+      </>
      );
 }
  

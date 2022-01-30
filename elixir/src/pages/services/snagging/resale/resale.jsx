@@ -1,10 +1,11 @@
 import img from "../../../../images/services/p2.jpg"
-import { Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import "./resale.css"
 import Scope from "../../../../components/scope/scope";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-
+import SubHeader from "../../../../components/subheader/subheader"
+import Whatsappicon from "../../../../components/whatsapp/whatsapp";
 const Resale = () => {
     const location = useLocation();
     const desc = "We at Elixir Property Inspect provide one of the best Property Realstate inspections in Dubai. For more information visit our website or give a us call."
@@ -14,6 +15,10 @@ const Resale = () => {
       document.querySelector('meta[name="description"]').setAttribute("content", desc);
     }, [location]);
     return ( 
+        <>
+        <SubHeader/>
+        <Whatsappicon/>
+        <Container>
         <section className="resale">
             <Row className="header">
             <h2>Property Resale Inspection</h2>
@@ -34,6 +39,8 @@ Thus engaging Snagging company ensures you have peace of mind with professional 
             </Row>
             </section>
         </section>
+        </Container>
+        </>
      );
 }
  

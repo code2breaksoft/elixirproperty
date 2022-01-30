@@ -1,8 +1,10 @@
-import { Row ,Col} from "react-bootstrap";
+import { Row ,Col, Container} from "react-bootstrap";
 import "./prop.css";
 import img1 from "../../../../images/services/p1.jpg";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import SubHeader from "../../../../components/subheader/subheader"
+import Whatsappicon from "../../../../components/whatsapp/whatsapp";
 
 function importAll() {
     let ar = [];
@@ -22,6 +24,9 @@ const Prop = () => {
       let img = importAll();
     return ( 
         <>
+                <SubHeader/>
+        <Whatsappicon/>
+        <Container>
         <section className="prop animate__animated animate__fadeIn">
                     <Row className="headerh">
                 <h2>Property handover inspection</h2>
@@ -312,6 +317,7 @@ const Prop = () => {
             </Row>
             </section>
         </section>
+        </Container>
         </>
      );
 }

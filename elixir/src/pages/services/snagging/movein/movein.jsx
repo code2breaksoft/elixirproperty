@@ -1,9 +1,10 @@
 import "./movein.css";
-import { Row,Tabs ,Tab} from "react-bootstrap";
+import { Row,Tabs ,Tab, Container} from "react-bootstrap";
 import img1 from "../../../../images/services/p4.jpeg";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-
+import SubHeader from "../../../../components/subheader/subheader"
+import Whatsappicon from "../../../../components/whatsapp/whatsapp";
 const MoveIn = () => {
         const location = useLocation();
         const desc = "The Elixir Inspect also Provides Move in & Move Out Services in Dubai, looking at issues and reporting on deficiencies. Contact us for more information."
@@ -15,6 +16,9 @@ const MoveIn = () => {
     return (  
 
         <>
+        <SubHeader/>
+        <Whatsappicon/>
+        <Container>
         <section className=" animate__animated animate__fadeIn">
         <Row className="headerh">
     <h2>Property move in/out inspection</h2>
@@ -103,6 +107,7 @@ const MoveIn = () => {
         </Row>
 </section>
 </section>
+        </Container>
 </>
     );
 }
