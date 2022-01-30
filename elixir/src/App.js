@@ -4,9 +4,7 @@ import Services from "./pages/services/services";
 import Faq from "./pages/faq/faq";
 import Blog from "./pages/blog/blog";
 import InspectionScope from "./pages/inspectionScope/inscope";
-import { useEffect, useState } from "react";
-import axios from "axios";
-import ScrollToTop from "./components/scrollToTop/scrollToTop";
+import { useState } from "react";
 function App() {
   const [countries,setCountries] = useState();
     return ( 

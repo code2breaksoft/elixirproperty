@@ -23,7 +23,7 @@ const MoveIn = () => {
 <Row>
         <img src={img1} className="snag-props-image"/>
 </Row>
-        <Row>
+        <Row className="mtabs">
         <Tabs variant="pills" defaultActiveKey="home" className="mb-3">
   <Tab eventKey="home" title="Property move in" className="x">
   <Row className="snag-props-list">
