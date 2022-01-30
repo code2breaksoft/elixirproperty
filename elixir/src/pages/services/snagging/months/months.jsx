@@ -5,9 +5,12 @@ import img from "../../../../images/services/p3.jpg"
 import "./months.css"
 import { useLocation } from "react-router-dom";
 const Months = () => {
+  const desc = "Our Company not only provides the Property Handover Services but also Property Defect Liability Inspection In Dubai. All you need to do is visit our website and contact us to proceed."
     const location = useLocation();
     useEffect(() => {
       window.scrollTo(0, 0);
+      document.title="Professional in Dubai UAE"
+      document.querySelector('meta[name="description"]').setAttribute("content", desc);
     }, [location]);
     return ( 
         <section className="months">

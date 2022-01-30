@@ -6,8 +6,11 @@ import { useLocation } from "react-router-dom";
 
 const MoveIn = () => {
         const location = useLocation();
+        const desc = "The Elixir Inspect also Provides Move in & Move Out Services in Dubai, looking at issues and reporting on deficiencies. Contact us for more information."
         useEffect(() => {
           window.scrollTo(0, 0);
+          document.title="Top Property move in/out inspection in Dubai UAE"
+          document.querySelector('meta[name="description"]').setAttribute("content", desc);
         }, [location]);
     return (  
 

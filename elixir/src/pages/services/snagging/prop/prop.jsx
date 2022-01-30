@@ -11,10 +11,13 @@ function importAll() {
     }
     return ar;
 }
+const desc = "Finding property Handover Services in Dubai can be difficult. We at Elixir Property Inspect provide one of the best handover services in Dubai. For more information check our website"
 const Prop = () => {
     const location = useLocation();
     useEffect(() => {
       window.scrollTo(0, 0);
+      document.title="Top Property snagging and handover services in Dubai"
+      document.querySelector('meta[name="description"]').setAttribute("content", desc);
     }, [location]);
       let img = importAll();
     return ( 

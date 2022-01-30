@@ -7,8 +7,11 @@ import { useLocation } from "react-router-dom";
 
 const Resale = () => {
     const location = useLocation();
+    const desc = "We at Elixir Property Inspect provide one of the best Property Realstate inspections in Dubai. For more information visit our website or give a us call."
     useEffect(() => {
       window.scrollTo(0, 0);
+      document.title="Best Property Resale Inspection services in UAE"
+      document.querySelector('meta[name="description"]').setAttribute("content", desc);
     }, [location]);
     return ( 
         <section className="resale">
