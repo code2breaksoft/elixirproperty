@@ -63,9 +63,10 @@ const About = () => {
             <Col lg={6} xs={12} className="about-outer-wrap" >
                 <h2>About us</h2>
                 <p className="about-text">
-                Our CEO is an Engineer by profession with knowledge about construction and understands  the construction process well and common issues encountered after the Handover of Property.
+                Our CEO is an Engineer by profession with knowledge about construction and understands the construction process well and common issues encountered after the Handover of Property. With extensive knowledge acquired working continuously in Construction, Maintenance, Property Management, and Property Snagging the Snagging Business model was developed to help the Investors Protect their investments.
+All our inspectors are experienced and trained to give you the best technical report of your property; The generated snag Report is not only made considering the present condition but also by keeping in mind the future condition of the Property by incorporating the years of industry experience.
+Elixir Property Inspect is known for the best property inspection services in Dubai. Our team has in-depth knowledge of over 10 years of experience and knowledge in Property; it is directed towards New Home Owners and Investors who are looking to buy a property and help them to have an informed decision that yields a high Return on Investment.
 
-With extensive knowledge acquired working continuously in Construction,Maintenance,Property Management and Property Snagging the Snagging Business model was developed to help the Investors Protect their investments.
 </p>
 <p className="about-text">All our inspectors are experienced and trained to give you the best Technical report of your property;The generated snag Report is not only made considering the present condition but also by keeping  in mind the future condition of the Property by incorporating the years of industry experience.</p>
 <p className="about-text">Elixir Property Inspect is the product of in-depth knowledge of over  10 years of  experience and knowledge in Property;it is directed towards New Home Owners and Investors who are looking to buy a property and help them to have a informed decision which yields in high Return on Investment.                </p>
