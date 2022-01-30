@@ -57,9 +57,10 @@ const About = () => {
       });
       const nav = useNavigate();
     return ( 
-      <section id="about">
+      <>
+              <section id="about">
                 <Row className="gx-5">
-            <Col lg={6} xs={12} className="about-outer-wrap">
+            <Col lg={6} xs={12} className="about-outer-wrap" >
                 <h2>About us</h2>
                 <p className="about-text">
                 Our CEO is an Engineer by profession with knowledge about construction and understands  the construction process well and common issues encountered after the Handover of Property.
@@ -78,7 +79,7 @@ With extensive knowledge acquired working continuously in Construction,Maintenan
                       <img src={therm} className="inspect-types-img"/>
                       <p>Thermal Inspection</p>
                   </Col>
-                  <Col lg={4} xs={6}>
+                  <Col lg={4} xs={6}    id="contact">
                       <img src={civil} className="inspect-types-img"/>
                       <p>Civil Inspection</p>
                   </Col>
@@ -90,7 +91,7 @@ With extensive knowledge acquired working continuously in Construction,Maintenan
                   <img src={elec}  className="inspect-types-img"/>
                       <p>Electrical Inspection</p>
                   </Col>
-                  <Col lg={4} xs={6}>
+                  <Col lg={4} xs={6} >
                   <img src={mech}  className="inspect-types-img"/>
                       <p>Mechanical Inspection</p>
                   </Col>
@@ -104,9 +105,9 @@ With extensive knowledge acquired working continuously in Construction,Maintenan
                   </Col>
                 </Row>
             </Col>
-            <Col lg={6} xs={12} id="contact">
-              <section id="form-section">
-              <div id="form-header">
+            <Col lg={6} xs={12}>
+              <section id="form-section" >
+              <div id="form-header" >
                       <h2>Get in touch with us</h2>
                       <p>Learn More About Inspection & Snagging Today!</p>
                     </div>
@@ -149,6 +150,7 @@ With extensive knowledge acquired working continuously in Construction,Maintenan
             </Col>
         </Row>
       </section>
+      </>
      );
 }
  
