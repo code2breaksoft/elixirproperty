@@ -48,7 +48,7 @@
     width: 85%;
     margin-left: 5rem;
     border-radius: 10px;
-    margin-top: 10rem;
+    margin-top: 0rem;
 }
 #form-warning{
     margin-top: 0.7rem;
@@ -98,7 +98,7 @@
     }
     #about{
         padding: 0.5rem;
-        margin-top: -50rem !important;
+        margin-top: -40rem !important;
     }
     .about-outer-wrap{
         padding-right: 0rem;
@@ -106,7 +106,7 @@
     #form-section{
         width: 100%;
         margin-left: 0rem;
-        margin-top: 3rem;
+        margin-top: 25rem;
     }
     #form-header{
         padding: 1rem 0.5rem;
