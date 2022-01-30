@@ -25,6 +25,5 @@
   --fColor:#0f2637;
 }
 *{
-  scroll-behavior: smooth !important;
   font-family: var(--bFont); 
 }

@@ -12,21 +12,21 @@ import Services from "./services/services";
 import Snag from "./snag/snag";
 import Tools from "./Tools/Tools";
 
-const Home = () => {
+const Home = ({country}) => {
     return ( 
         <>
             <Header home={true}/>
             <Whatsappicon/>
-            <Hero/>
+            <Hero countries={country}/>
             <Container fluid>
                 <About id="about"/>
             </Container>
-            <Snag/>
+            <Snag countries={country}/>
             <Container>
                 <Services id="services"/>
                 <Tools/>
             </Container>
-            <Book/>
+            <Book countries={country}/>
 
             <Container fluid>
             <Achievements/>

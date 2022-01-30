@@ -1,19 +1,21 @@
 import { Col ,Row} from "react-bootstrap";
 import "./Footer.css";
-import { GeoAltFill,TelephoneFill,Facebook,Instagram,Twitter,Youtube } from "react-bootstrap-icons";
+import { GeoAltFill,TelephoneFill,Facebook,Instagram,Twitter,Youtube,PhoneFill } from "react-bootstrap-icons";
+import logo from "../../images/common/elixir_logo.png";
 
 const Footer = () => {
     return ( 
         <footer className="footer">
             <Row>
                 <Col lg={4} className="company-wrapper" style={{fontWeight:"bold"}}>
-                    <img alt="footer-logo" src="/images/common/elixir_logo.png" width="60" height="50"/>&nbsp;&nbsp;Elixir Property Inspect
-                    <p>&nbsp;&nbsp;We deliver only quality</p>
+                    <img alt="footer-logo" src={logo} width="60" height="50"/>&nbsp;&nbsp;Elixir Property Inspect
+                    <p>&nbsp;&nbsp;Delivers as promised</p>
                 </Col>  
                 <Col lg={4} className="footer-contact-wrapper">
                     <h4>Contact us</h4>
                     <p><GeoAltFill/>&nbsp;&nbsp;101, Al Mehri Building, Ras Al Khor, Dubai, UAE</p>
-                    <p><TelephoneFill/>&nbsp;&nbsp;+971 4 3302605</p>
+                    <p><PhoneFill/>&nbsp;&nbsp;+971501438975</p>
+                    <p><TelephoneFill/>&nbsp;&nbsp;+97143302605</p>
                 </Col>
                 <Col lg={4} className="footer-social">
                     <h4>Follow us</h4>
@@ -26,7 +28,6 @@ const Footer = () => {
             <Row>
                 <section className="copyright-wrapper">
                     <p>Copyright © 2022 Elixir Property Snagging. All rights reserved.</p>
-                    <a href="https://code2break.com">Developed by Code2Break software solutions</a>
                 </section>
             </Row>
         </footer>

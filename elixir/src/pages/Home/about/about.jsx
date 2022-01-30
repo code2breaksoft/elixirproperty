@@ -3,6 +3,12 @@ import { useFormik } from 'formik';
 import "./about.css";
 import { ShieldLockFill } from "react-bootstrap-icons";
 import { useNavigate } from "react-router-dom";
+import civil from "../../../images/about/civil.png";
+import mech from "../../../images/about/mech.png";
+import elec from "../../../images/about/elec.png";
+import roof from "../../../images/about/roof.png";
+import therm from "../../../images/about/therm.png";
+import water from "../../../images/about/water.png";
 const validate = values => {
     const errors = {};
     if (!values.name) {
@@ -51,37 +57,43 @@ const About = () => {
       });
       const nav = useNavigate();
     return ( 
-      <section id="about">
+      <>
+              <section id="about">
                 <Row className="gx-5">
-            <Col lg={6} xs={12} className="about-outer-wrap">
+            <Col lg={6} xs={12} className="about-outer-wrap" >
                 <h2>About us</h2>
-                <p>
-                Elixir Property Management is a team of young dynamic people with a fresh Mindset, Promoting agility, convenience and quality Property Snagging, Inspections and Maintenance services. Our Property Snagging service is at par where we focus on quality of our Snagging Report as per Engineering standards which differentiates us from the other players in the market who only focus on number of snags. We always believe is quality which in turns generates us a referral client.
-                </p>
-                <Row className="inspect-types">
-                  <h5>What do we inspect?</h5>
+                <p className="about-text">
+                Our CEO is an Engineer by profession with knowledge about construction and understands the construction process well and common issues encountered after the Handover of Property. With extensive knowledge acquired working continuously in Construction, Maintenance, Property Management, and Property Snagging the Snagging Business model was developed to help the Investors Protect their investments.
+All our inspectors are experienced and trained to give you the best technical report of your property; The generated snag Report is not only made considering the present condition but also by keeping in mind the future condition of the Property by incorporating the years of industry experience.
+Elixir Property Inspect is known for the best property inspection services in Dubai. Our team has in-depth knowledge of over 10 years of experience and knowledge in Property; it is directed towards New Home Owners and Investors who are looking to buy a property and help them to have an informed decision that yields a high Return on Investment.
+
+</p>
+<p className="about-text">All our inspectors are experienced and trained to give you the best Technical report of your property;The generated snag Report is not only made considering the present condition but also by keeping  in mind the future condition of the Property by incorporating the years of industry experience.</p>
+<p className="about-text">Elixir Property Inspect is the product of in-depth knowledge of over  10 years of  experience and knowledge in Property;it is directed towards New Home Owners and Investors who are looking to buy a property and help them to have a informed decision which yields in high Return on Investment.                </p>
+          <Row className="inspect-types">
+                  <h5>What do we Inspect?</h5>
                   <Col lg={4} xs={6}>
-                    <img src="/images/about/roof.png" className="inspect-types-img"/>
+                    <img src={roof} className="inspect-types-img"/>
                     <p>Roof Top Inspection</p>
                   </Col>
                   <Col lg={4} xs={6}>
-                      <img src="/images/about/therm.png"  className="inspect-types-img"/>
+                      <img src={therm} className="inspect-types-img"/>
                       <p>Thermal Inspection</p>
                   </Col>
-                  <Col lg={4} xs={6}>
-                      <img src="/images/about/civil.png"  className="inspect-types-img"/>
+                  <Col lg={4} xs={6}    id="contact">
+                      <img src={civil} className="inspect-types-img"/>
                       <p>Civil Inspection</p>
                   </Col>
                   <Col lg={4} xs={6}>
-                    <img src="/images/about/water.png"  className="inspect-types-img"/>
+                    <img src={water}  className="inspect-types-img"/>
                       <p>Water Tank System Inspection</p>
                   </Col>
                   <Col lg={4} xs={6}>
-                  <img src="/images/about/elec.png"  className="inspect-types-img"/>
+                  <img src={elec}  className="inspect-types-img"/>
                       <p>Electrical Inspection</p>
                   </Col>
-                  <Col lg={4} xs={6}>
-                  <img src="/images/about/mech.png"  className="inspect-types-img"/>
+                  <Col lg={4} xs={6} >
+                  <img src={mech}  className="inspect-types-img"/>
                       <p>Mechanical Inspection</p>
                   </Col>
                 </Row>
@@ -94,9 +106,9 @@ const About = () => {
                   </Col>
                 </Row>
             </Col>
-            <Col lg={6} xs={12} id="contact">
-              <section id="form-section">
-              <div id="form-header">
+            <Col lg={6} xs={12}>
+              <section id="form-section" >
+              <div id="form-header" >
                       <h2>Get in touch with us</h2>
                       <p>Learn More About Inspection & Snagging Today!</p>
                     </div>
@@ -139,6 +151,7 @@ const About = () => {
             </Col>
         </Row>
       </section>
+      </>
      );
 }
  

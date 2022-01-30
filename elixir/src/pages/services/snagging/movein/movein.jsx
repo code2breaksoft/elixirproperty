@@ -1,10 +1,25 @@
 import "./movein.css";
-import { Row } from "react-bootstrap";
+import { Row,Tabs ,Tab, Container} from "react-bootstrap";
+import img1 from "../../../../images/services/p4.jpeg";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import SubHeader from "../../../../components/subheader/subheader"
+import Whatsappicon from "../../../../components/whatsapp/whatsapp";
 const MoveIn = () => {
+        const location = useLocation();
+        const desc = "The Elixir Inspect also Provides Move in & Move Out Services in Dubai, looking at issues and reporting on deficiencies. Contact us for more information."
+        useEffect(() => {
+          window.scrollTo(0, 0);
+          document.title="Top Property move in/out inspection in Dubai UAE"
+          document.querySelector('meta[name="description"]').setAttribute("content", desc);
+        }, [location]);
     return (  
 
         <>
-        <section className=" animate__animated animate__lightSpeedInRight">
+        <SubHeader/>
+        <Whatsappicon/>
+        <Container>
+        <section className=" animate__animated animate__fadeIn">
         <Row className="headerh">
     <h2>Property move in/out inspection</h2>
     <p>Property Snagging is a service which is opted by the homeowners and investors after purchase of the any new Property i.e Villa, Townhouse, Apartment or any commercial Property.</p>
@@ -13,9 +28,12 @@ const MoveIn = () => {
 
 
 <Row>
-        <img src="/images/services/p4.jpeg" className="snag-props-image"/>
+        <img src={img1} className="snag-props-image"/>
 </Row>
-<Row className="snag-props-list">
+        <Row className="mtabs">
+        <Tabs variant="pills" defaultActiveKey="home" className="mb-3">
+  <Tab eventKey="home" title="Property move in" className="x">
+  <Row className="snag-props-list">
         <h6>Are you a Landlord and Requires Sign Acceptance of Property by Tenant/Guest?</h6>
         <ul>
             <li>Property Move In Inspection is a service which is opted by the Real Estate Agents, Homeowners and investors during the Move IN of the Property i.e Villa,Townhouse,Apartment or any commercial Property.</li>
@@ -44,7 +62,10 @@ const MoveIn = () => {
 </li>
     </ul>
 </Row>
-<Row  className="snag-props-list">
+
+  </Tab>
+  <Tab eventKey="profile" title="Propety move out">
+  <Row  className="snag-props-list">
 <h6>Are you a Landlord and Require a Move Out Report?
 
 
@@ -81,8 +102,12 @@ const MoveIn = () => {
     </li>
         </ul>
 </Row>
+  </Tab>
+</Tabs>
+        </Row>
 </section>
 </section>
+        </Container>
 </>
     );
 }

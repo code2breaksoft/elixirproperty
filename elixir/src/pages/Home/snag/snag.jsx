@@ -4,61 +4,75 @@ import "./snag.css";
 import Animate from 'animate.css-react'
 import { isInViewport } from "../../../common/common";
 import 'animate.css/animate.css' 
-const Snag = () => {
+import FormModal from "../../../components/modal/modal";
+import a1 from '../../../images/snag/a1.jpg';
+import a2 from '../../../images/snag/a2.jpg';
+import a3 from '../../../images/snag/a3.jpeg';
+import i1 from "../../../images/why/1.png";
+import i2 from "../../../images/why/2.png";
+import i3 from "../../../images/why/3.png";
+import i4 from "../../../images/why/4.png";
+import i5 from "../../../images/why/5.png";
+import i6 from "../../../images/why/6.png";
+const Snag = ({country}) => {
+    const [showM,setShow] = React.useState(false);
+    const showModal = ()=>{
+        setShow(true);
+    }
+    const hideModal = ()=>{
+        setShow(false);
+    }
     return ( 
+        <>
+        <FormModal show={showM} handleClose={hideModal} countries={country}/>
         <section id="snag">
             <Row>
                 <Col lg={4} xs={{ span: 12, order: 2 }}  lg={{ span: 4, order: 1 }}>
-                    <img src="/images/snag/a1.jpg" alt="what-is-snagging" width={"100%"}/>
+                    <img src={a1} alt="Snagging Company in Dubai" width={"100%"}/>
                 </Col>
                 <Col lg={8} className="snag-content" xs={{ span: 12, order: 1 }}  lg={{ span: 8, order: 2 }} >
-                    <h2 >What is snagging?</h2>
-                    <p>Property Snagging is a service which is opted by the homeowners and investors after purchase of the any new Property i.e Villa, Townhouse, Apartment or any commercial Property.
+                    <h2 >What is Snagging?</h2>
+                    <p>
 
-                    Snagging is the process of comprehensive inspection before purchasing a New Property from the Developer.
+                    Property Snagging is a service that is opted by the homeowners and investors after purchase of any new Property i.e Villa, townhouses, Apartments, or any commercial property. Snagging is the process of comprehensive inspection before purchasing a New Property from the Developer. We at Elixir property Inspect, provide you with the best snagging Inspect services in Dubai.
+
                     </p>
-                    <Button variant="primary" size="lg">Book now</Button>
+                    <Button variant="primary" size="lg" onClick={showModal}>Book now</Button>
                 </Col>
             </Row>
-            <Row>
+            <Row >
                 <Col lg={8} className="snag-content" xs={{ span: 12, order: 1 }}>
-                    <h2 >Who needs snagging?</h2>
+                    <h2 >Who needs Snagging?</h2>
                     <p>
-                    Anyone buying a new build home
-                     or a home in the secondary market
-                      should consider a snagging inspection. 
-                      You could argue that if you’re spending
-                       anything it’s crazy not to!
-                        A snagging inspection can also be useful for
-                         buying ready built homes or at the 11 month
-                          warranty period. Also, if you’ve already moved 
-                          in and are having snagging issues with your
-                           developer then a professional snagging 
-                           report can help give weight to your case.
+                    Individuals or institutions buying a brand-new constructed home or a home within the secondary marketplace have to bear in mind a snagging inspection. you can argue that if you’re spending something it’s loopy no longer! A snagging inspection also can be useful for buying geared-up built houses or on the 11-month assurance duration. Additionally, if you’ve already moved in and are having snagging issues with your developer then an expert snagging record can assist provide weight on your case. We established ourselves as the best snagging company in Dubai. Reach us now, for snagging services at a very affordable price.
+
                     </p>
-                    <Button variant="primary" size="lg">Enquire now</Button>
+                    <Button variant="primary" size="lg" onClick={showModal}>Enquire now</Button>
                 </Col>
                 <Col lg={4} xs={{ span: 12, order: 2 }}>
-                    <img src="/images/snag/a2.jpg" alt="who-needs-snagging"  width={"100%"}/>
+                    <img src={a2} alt=" Professional Snagging Company in Dubai"  width={"100%"}/>
                 </Col>
             </Row>
-            <Row>
-                <Col lg={4} xs={{ span: 12, order: 2 }} lg={{ span: 4, order: 1 }}>
-                    <img src="/images/snag/a3.jpeg" alt="is-snagging-necessary"  width={"100%"}/>
+            <Row className="why-container">
+                <h2>Why Elixir Snagging?</h2>
+                <Col lg={6} xs={12}>
+                    <ul id="why-first">
+                        <li><img src={i4}/><span className="why-header-li">Report within 48hours hours</span><br/>All the Reports are been Delivered within 48 hours of inspection so as to facilitate you to enjoy and get benefits from your investment at the earliest.</li>
+                        <li><img src={i1}/>&nbsp;&nbsp;&nbsp;&nbsp;<span className="why-header-li">Engineer's Inspection</span><br/>All our inspection claims are with photos and  are quantifiable with readings from our sophisticated Inspection Tools.</li>
+                        <li><img src={i2}/>&nbsp;&nbsp;&nbsp;&nbsp;<span className="why-header-li">Desnagging</span><br/>After completion of snags our team carries out 2nd inspection for Densnagging to make sure all the snags are completed as per acceptable standards.</li>
+                    </ul>
                 </Col>
-                <Col lg={8}  className="snag-content animate__animated animate__bounceInLeft" xs={{ span: 12, order: 1 }} lg={{ span: 8, order: 2 }}>
-                    <h2 >Why elixir snagging?</h2>
-                    <p>Our Property Snagging service is at par 
-                        where we focus on quality of our Snagging
-                         Report as per Engineering standards which 
-                         differentiates us from the other players in
-                          the market who only focus on number of snags;
-                           We always believe is quality which in turns 
-                           generates us a referral client..</p>
-                           <Button variant="primary" size="lg">Get free consultation</Button>
+                <Col lg={6} xs={12}>
+                    <ul>
+                        <li><img src={i6}/>&nbsp;&nbsp;&nbsp;&nbsp;<span className="why-header-li">Work Experience</span><br/>Our Inspectors are qualified Engineers and worked in contracting ,Maintenance and Real Estate industry and in real time have understood the issues faced in property and helped clients manage their property well.</li>
+                        <li><img src={i3}/>&nbsp;&nbsp;&nbsp;&nbsp;<span className="why-header-li">Key Points</span><br/>Our Inspection report are Qualitative and focus on the details and in return add value to the clients investment.</li>
+                        <li><img src={i5}/>&nbsp;&nbsp;&nbsp;&nbsp;<span className="why-header-li">Technical Advise</span><br/>After the Move IN/Handover we can be contacted for Free Technical Consultation.
+Feel Free to Join our mailing list and get tips and tricks to manage maintenance related issues in your Property.</li>
+                    </ul>
                 </Col>
             </Row>
         </section>
+        </>
      );
 }
  

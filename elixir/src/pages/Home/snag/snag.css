@@ -18,6 +18,26 @@
 #snag>.row{
     margin-bottom: 5rem !important;
 }
+.why-container{
+    padding: 0rem 5rem !important;
+    margin-top: -5rem;
+}
+.why-container h2{
+    text-align: center;
+    font-family: var(--hFont);
+    margin-bottom: 2rem;
+}
+.why-container ul>li{
+    list-style-type: none;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+.why-header-li{
+    font-weight: bold;
+}
+#why-first>li{
+    margin-bottom: 2.3rem;
+}
 @media only screen and (max-width: 786px) {
     .snag-content{
         padding: 2rem !important;
@@ -30,5 +50,14 @@
     }
     .snag-content>h2{
         font-size: 1.8rem;
+    }
+    .why-container{
+        padding: 0rem 2rem !important;
+        margin-left: -3rem !important;
+        margin-top: 0rem;
+    }
+    .why-container ul>li{
+        text-align: justify;
+        word-wrap: break-word;
     }
 }

@@ -40,11 +40,15 @@
 #form-header>h2{
     font-family: var(--hFont);
 }
+.about-text{
+    text-indent: 5rem;
+}
 #form-section{
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.3);
     width: 85%;
     margin-left: 5rem;
     border-radius: 10px;
+    margin-top: 0rem;
 }
 #form-warning{
     margin-top: 0.7rem;
@@ -94,7 +98,7 @@
     }
     #about{
         padding: 0.5rem;
-        margin-top: 5rem;
+        margin-top: -50rem !important;
     }
     .about-outer-wrap{
         padding-right: 0rem;
