@@ -41,7 +41,7 @@ const Header = ({home}) => {
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll"><List style={{color:"white"}}/></Navbar.Toggle>
                 <Navbar.Collapse >
-                <Nav className="ms-auto"  >
+                <Nav className="ms-auto">
                     <Nav.Link className="under" eventKey="0" onClick={()=>{changePageH("home")}} >HOME</Nav.Link>
                     <Nav.Link className="under" eventKey="1" onClick={()=>{changePageH("about")}}>ABOUT US</Nav.Link>
                     <NavDropdown onSelect={() => null} show={open} onClick={()=>setOpen(!open)} title="OUR SERVICES" id="basic-nav-dropdown">
