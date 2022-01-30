@@ -29,7 +29,7 @@ const Services = () => {
                 path="/services/property-resale-inpection"
             />
             <ServiceCardMod
-                alt="Property Resale Inspection"
+                alt="Property Move In/Out Inspection"
                 image={img3}
                 title="11 Month-Defect Liability Inspection"
                 text="We as professionals provide specialized services to manage any break downs and repair works in concern to electrical, mechanical and plumbing areas.It’s the simpler things that make the difference."

@@ -12,11 +12,11 @@ import i9 from '../../../images/tools/9.jpg';
 import i10 from '../../../images/tools/10.jpg';
 import i11 from '../../../images/tools/11.jpg';
 import i12 from '../../../images/tools/12.jpg';
-const ToolCard = ({text,image}) => {
+const ToolCard = ({text,image,alt}) => {
     return ( 
         <Col xs={6} lg={3}  className="toolCard-col">
             <Card className="tools">
-                <Card.Img variant="top" src={image} />
+                <Card.Img variant="top" src={image} alt={alt}/>
                 <Card.Body>
                 <Card.Text style={{textAlign:"center"}}>
                 {
@@ -39,19 +39,19 @@ const Tools = () => {
             <p>We apply latest techniques and updated tools for property snagging to know each and every detail.</p>
         </Row>
         <Row xs={5} md={4} className="g-4">
-        <ToolCard image={i9} text="Moisture meter"/>
-            <ToolCard image={i10}  text="Infrared thermometer"/>
-            <ToolCard image={i11} text="Thermal camera"/>
-            <ToolCard image={i12} text="Endoscope camera"/>
+        <ToolCard image={i9} text="Moisture meter" alt={"Moisture meter"}/>
+            <ToolCard image={i10} alt={"Infrared Thermometer"}  text="Infrared thermometer"/>
+            <ToolCard image={i11} alt={"Thermal Camera"} text="Thermal camera"/>
+            <ToolCard image={i12} alt={"Endoscope Camera"} text="Endoscope camera"/>
             
-            <ToolCard image={i1} text="Voltage detector"/>
-            <ToolCard image={i2} text="Socket tester"/>
-            <ToolCard image={i3} text="Anemometer"/>
-            <ToolCard image={i4} text="Sound meter"/>
-            <ToolCard image={i5} text="Humidity meter"/>
-            <ToolCard image={i6} text="Gas Leak detector"/>
-            <ToolCard image={i7} text="Tile tapping rod"/>
-            <ToolCard image={i8} text="Spirit level"/>
+            <ToolCard image={i1} alt={"Voltage Detector"} text="Voltage detector"/>
+            <ToolCard image={i2} alt={"Socket Tester"} text="Socket tester"/>
+            <ToolCard image={i3} alt={"Anemometer"} text="Anemometer"/>
+            <ToolCard image={i4}  alt={"Sound Meter"} text="Sound meter"/>
+            <ToolCard image={i5} alt={"Humidity Meter"} text="Humidity meter"/>
+            <ToolCard image={i6} alt={"Gas Leak Detector"} text="Gas Leak detector"/>
+            <ToolCard image={i7} alt={"Tile Tapping Rod"} text="Tile tapping rod"/>
+            <ToolCard image={i8} alt={""} text="Spirit level"/>
 
         </Row>
             </section>
