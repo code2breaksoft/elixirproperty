@@ -9,6 +9,7 @@ import elec from "../../../images/about/elec.png";
 import roof from "../../../images/about/roof.png";
 import therm from "../../../images/about/therm.png";
 import water from "../../../images/about/water.png";
+import {useEffect, useState} from 'react';
 const validate = values => {
     const errors = {};
     if (!values.name) {
@@ -56,10 +57,16 @@ const About = () => {
         },
       });
       const nav = useNavigate();
+      const [mob,setMob] = useState(false);
+      useEffect(()=>{
+        if(window.innerWidth<786){
+          setMob(true);
+        }
+      },[])
     return ( 
       <>
-              <section id="about">
-                <Row className="gx-5">
+              <section id="about" >
+                <Row className="gx-5"  id={!mob?"contact":""}>
             <Col lg={6} xs={12} className="about-outer-wrap" >
                 <h2>About us</h2>
                 <p className="about-text">
@@ -80,7 +87,7 @@ Elixir Property Inspect is known for the best property inspection services in Du
                       <img src={therm} className="inspect-types-img"/>
                       <p>Thermal Inspection</p>
                   </Col>
-                  <Col lg={4} xs={6}    id="contact">
+                  <Col lg={4} xs={6}    id={mob?"contact":""}>
                       <img src={civil} className="inspect-types-img"/>
                       <p>Civil Inspection</p>
                   </Col>
