@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Container } from "react-bootstrap";
 import Footer from "../../components/footer/footer";
 import Header from "../../components/Header/Header";
@@ -13,6 +14,11 @@ import Snag from "./snag/snag";
 import Tools from "./Tools/Tools";
 
 const Home = ({country}) => {
+    const desc="Looking for the best property snagging company in Dubai? Check out our Property Snagging services today! Give us a call or visit our website."
+    useEffect(()=>{
+        document.title="Best Snagging Company in Dubai"
+        document.querySelector('meta[name="description"]').setAttribute("content", desc);
+    },[])
     return ( 
         <>
             <Header home={true}/>

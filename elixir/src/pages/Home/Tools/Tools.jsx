@@ -35,7 +35,7 @@ const Tools = () => {
         <>
             <section id="tools">
             <Row>
-            <h2>Tools used</h2>
+            <h2>Tools Utilized</h2>
             <p>We apply latest techniques and updated tools for property snagging to know each and every detail.</p>
         </Row>
         <Row xs={5} md={4} className="g-4">

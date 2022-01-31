@@ -21,7 +21,7 @@ const Months = () => {
       <Container>
       <section className="months">
             <Row className="header">
-            <h2>11 month defect liability inspection</h2>
+            <h2>11 Month Defect Liability Inspection</h2>
 
             </Row>
             

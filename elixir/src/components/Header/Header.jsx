@@ -51,7 +51,7 @@ const Header = ({home}) => {
                     </NavDropdown.Item>
                             <NavDropdown.Item   eventKey="4"  onClick={()=>{changePage("/services/11-month-defect-liablity-inspection");setDrop(false);}} >11 Month-Defect Liability Inspection
                     </NavDropdown.Item>
-                            <NavDropdown.Item  eventKey="5"  onClick={()=>{changePage("/services/property-move-in-out-inspection");setDrop(false);}}>Property move in/out inspection
+                            <NavDropdown.Item  eventKey="5"  onClick={()=>{changePage("/services/property-move-in-out-inspection");setDrop(false);}}>Property Move In/Out Inspection
                     </NavDropdown.Item>
                             </NavDropdown>                    
                     <Nav.Link className="under" eventKey="6" onClick={()=>{changePageH("tools")}}>TOOLS</Nav.Link>
