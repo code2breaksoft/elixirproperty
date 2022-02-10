@@ -35,7 +35,7 @@ const Hero = ({country}) => {
                 alt="Second slide"
                 />
                 <Carousel.Caption >
-                <h1 class="animate__animated animate__bounceInLeft">We see beyond Visual Inspection</h1>
+                <h2 class="animate__animated animate__bounceInLeft">We see beyond Visual Inspection</h2>
                 <p class="animate__animated animate__bounceInRight">UAE's most trusted Property Snagging  services provider.</p>
                 <Button variant="primary" size="lg"  onClick={showModal}>Enquire now</Button>
                 </Carousel.Caption>
@@ -47,8 +47,8 @@ const Hero = ({country}) => {
                 alt="First slide"
                 />
                 <Carousel.Caption>
-                <h1 class="animate__animated animate__bounceInLeft">
-                Best Snagging & Inspection services in UAE</h1>
+                <h2 class="animate__animated animate__bounceInLeft">
+                Best Snagging & Inspection services in UAE</h2>
                 <p class="animate__animated animate__bounceInRight">Best Snagging & Inspection services in UAE</p>
                 <Button  variant="primary" size="lg" onClick={showModal}>Enquire now</Button>
                 </Carousel.Caption>
