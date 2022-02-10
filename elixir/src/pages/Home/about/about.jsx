@@ -59,13 +59,13 @@ const About = () => {
       const nav = useNavigate();
       const [mob,setMob] = useState(false);
       useEffect(()=>{
-        if(window.innerWidth<786){
+        if(window.innerWidth<996){
           setMob(true);
         }
       },[])
     return ( 
       <>
-              <section id="about" >
+              <section id={!mob?"about":""} className="about-section">
                 <Row className="gx-5"  id={!mob?"contact":""}>
             <Col lg={6} xs={12} className="about-outer-wrap" >
                 <h2>About us</h2>

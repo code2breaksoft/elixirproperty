@@ -53,7 +53,6 @@ const Hero = ({country}) => {
                 <Button  variant="primary" size="lg" onClick={showModal}>Enquire now</Button>
                 </Carousel.Caption>
             </Carousel.Item>
-
             </Carousel>
         </section>
             </>
