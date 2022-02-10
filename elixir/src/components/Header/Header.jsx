@@ -56,7 +56,8 @@ const Header = ({home}) => {
                             </NavDropdown>                    
                     <Nav.Link className="under" eventKey="6" onClick={()=>{changePageH("tools")}}>TOOLS</Nav.Link>
                     <Nav.Link className="under" eventKey="7" onClick={()=>{changePage("/inspection-scope")}}>INSPECTION SCOPE</Nav.Link>
-                    <Nav.Link className="under" eventKey="8" onClick={()=>{changePageH("contact")}}>CONTACT&nbsp;&nbsp;</Nav.Link>
+                    <Nav.Link className="under" eventKey="8" onClick={()=>{changePage("/blog")}}>BLOG</Nav.Link>
+                    <Nav.Link className="under" eventKey="9" onClick={()=>{changePageH("contact")}}>CONTACT&nbsp;&nbsp;</Nav.Link>
                     <Button variant="primary" >Sample report</Button>
                 </Nav>
                 </Navbar.Collapse>
