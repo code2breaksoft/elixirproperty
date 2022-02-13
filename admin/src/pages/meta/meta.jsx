@@ -14,7 +14,6 @@ const Meta = () => {
     });
     const onSubmit = async(data)=>{
         try{
-            console.log(qs.stringify(data))
             await axios.post("http://localhost:5000/submitMeta.php",data)
 
             alert("Updated values!")
