@@ -7,6 +7,9 @@ const Blog = () => {
     const [title,setTitle] = useState("");
     const [body,setBody] = useState("");
     const [img,setImg] = useState("");
+    const [showDel,setDel] = useState(false);
+    const [bData,setBData] = useState();
+    const [did,setDid] = useState();
     const submitBlog = async()=>{
         try{
             if(title!==''){
@@ -34,6 +37,9 @@ const Blog = () => {
         catch(e){
             alert("Error occurred!");
         }
+    }
+    const deleteBlog =async()=>{
+        console.log(did);
     }
     return ( 
         <Container fluid>
@@ -64,6 +70,25 @@ const Blog = () => {
                 </Button>
                 </Modal.Footer>
             </Modal>
+            <Modal show={showDel} onHide={()=>{setDel(!showDel)}} size="lg">
+                <Modal.Header closeButton>
+                <Modal.Title>Delete blog post</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <Form.Group className="mb-3" >
+                        <Form.Label>Title</Form.Label>
+                        <Form.Control onChange={(e)=>setTitle(e.target.value)} type="text" placeholder="Enter title" />
+                    </Form.Group>
+                </Modal.Body>
+                <Modal.Footer>
+                <Button variant="secondary" onClick={()=>{setDel(!showDel)}}>
+                    Close
+                </Button>
+                <Button variant="primary" onClick={deleteBlog}>
+                    Save Changes
+                </Button>
+                </Modal.Footer>
+            </Modal>
             <Row>
                 <Col lg={12}>
                     <h1>Blog</h1>
@@ -74,7 +99,7 @@ const Blog = () => {
                     <Button variant="primary" onClick={()=>{setAdd(!showAdd)}}>Add blog</Button>
                 </Col>
                 <Col lg={12}>
-                    <Button variant="primary">Delete blog</Button>
+                    <Button variant="primary" onClick={()=>{setDel(true)}}>Delete blog</Button>
                 </Col>
             </Row>
         </Container>

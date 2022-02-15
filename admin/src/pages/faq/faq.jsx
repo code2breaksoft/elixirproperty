@@ -8,12 +8,17 @@ const Faq = () => {
     const [ans,setAns] = useState('');
     const submitFaq = async()=>{
         try{
-            const data = new FormData();
-            data.append("qus",qus);
-            data.append("ans",ans);
-            await axios.post("http://localhost:5000/addfaq.php",data);
-            alert("added faq");
-            ()=>setAdd(false)
+            if(qus!==''&&ans!==''){
+                const data = new FormData();
+                data.append("qus",qus);
+                data.append("ans",ans);
+                await axios.post("http://localhost:5000/addfaq.php",data);
+                alert("added faq");
+                setAdd(false)
+            }
+            else{
+                alert("Fields cant be empty!")
+            }
         }
         catch(e){
             alert("Failed to add faq")
