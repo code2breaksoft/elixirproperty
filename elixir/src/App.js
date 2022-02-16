@@ -6,10 +6,12 @@ import Blog from "./pages/blog/blog";
 import InspectionScope from "./pages/inspectionScope/inscope";
 import { useState } from "react";
 import Admin from "./pages/admin/home";
+import ScrollToTop from "react-scroll-to-top";
 function App() {
   const [countries,setCountries] = useState();
     return ( 
-    < div className = "App" >
+    <div className = "App" >
+      <ScrollToTop smooth color='white' style={{backgroundColor:"#f85359"}}/>
             <Router>
               <Routes>
                 <Route path="/" element={<Home country={countries}/>}></Route>
