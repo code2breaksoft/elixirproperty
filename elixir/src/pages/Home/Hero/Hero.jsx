@@ -27,7 +27,7 @@ const Hero = ({country}) => {
                 alt="Second slide"
                 />
                 <Carousel.Caption >
-                <h1 class="animate__animated animate__bounceInLeft">We see beyond Visual Inspection</h1>
+                <h1 class="animate__animated animate__bounceInLeft heroh">We see beyond Visual Inspection</h1>
                 <p class="animate__animated animate__bounceInRight">UAE's most trusted Property Snagging  services provider.</p>
                 <Button variant="primary" size="lg"  onClick={showModal}>Enquire now</Button>
                 </Carousel.Caption>

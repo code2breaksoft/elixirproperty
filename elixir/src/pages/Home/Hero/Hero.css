@@ -11,7 +11,10 @@
     top: 35%;
     transform: translateY(0%);
 }
-
+.heroh{
+    font-family: var(--hFont);
+    font-size: 3.5rem !important;
+}
 .btn-primary,
 .btn-primary:hover,
 .btn-primary:active,
