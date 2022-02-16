@@ -5,7 +5,6 @@ import Header from "../../components/Header/Header";
 import Whatsappicon from "../../components/whatsapp/whatsapp";
 import About from "./about/about";
 import Achievements from "./achievements/achievements";
-import Book from "./book/book";
 import Hero from "./Hero/Hero";
 import Reviews from "./reviews/reviews";
 import Sample from "./sample/sample";
@@ -37,7 +36,6 @@ const Home = ({country}) => {
                 <Services id="services"/>
                 <Tools/>
             </Container>
-            <Book countries={country}/>
 
             <Container fluid>
             <Achievements/>

@@ -5,6 +5,7 @@ import Faq from "./pages/faq/faq";
 import Blog from "./pages/blog/blog";
 import InspectionScope from "./pages/inspectionScope/inscope";
 import { useState } from "react";
+import Admin from "./pages/admin/home";
 function App() {
   const [countries,setCountries] = useState();
     return ( 
@@ -15,6 +16,7 @@ function App() {
                 <Route path="/services/*" element={<Services/>}></Route>
                 <Route path="/faq" element={<Faq/>}></Route>
                 <Route path="/blog" element={<Blog/>}></Route>
+                <Route  path="/admin" element={<Admin/>}></Route>
                 <Route path="/inspection-scope" element={<InspectionScope/>}></Route>
               </Routes>
             </Router>
