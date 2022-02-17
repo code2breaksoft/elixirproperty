@@ -1,8 +1,8 @@
 .months>.header>h2{
     text-align: center;
     font-family: var(--hFont);
-    font-size: 2rem;
-    margin-top: 2rem;
+    font-size: 2.2rem;
+    margin-top: 0rem;
     margin-bottom: 1rem;
 }
 .months img{

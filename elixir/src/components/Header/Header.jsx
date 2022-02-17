@@ -5,10 +5,18 @@ import { List } from "react-bootstrap-icons";
 import { useNavigate } from "react-router-dom";
 import logo from "../../images/common/elixir_logo.png"
 import { useLocation } from "react-router-dom";
+import SampleForm from "../sampleForm/sampleForm";
 const Header = ({home}) => {
     const location = useLocation();
     const [drop,setDrop] = useState(false);
     const nav = useNavigate();
+    const [show,setShow] = useState(false)
+    const showModal = ()=>{
+        setShow(true);
+    }
+    const hideModal = ()=>{
+        setShow(false);
+    }
     const changePage = useCallback((path)=>{
         nav(path);
         var elmnt = document.getElementById(path.split('#').pop());
@@ -33,6 +41,7 @@ const Header = ({home}) => {
 
     return ( 
         <>
+        <SampleForm show={show}handleClose={hideModal} />
                     <Navbar bg={"light"} expand="lg" id="navbar" sticky="top" collapseOnSelect>
             <Container fluid>
                 <Navbar.Brand onClick={()=>{changePage("/#home")}} style={{cursor: "all-scroll"}}>
@@ -51,13 +60,14 @@ const Header = ({home}) => {
                     </NavDropdown.Item>
                             <NavDropdown.Item   eventKey="4"  onClick={()=>{changePage("/services/11-month-defect-liablity-inspection");setDrop(false);}} >11 Month-Defect Liability Inspection
                     </NavDropdown.Item>
-                            <NavDropdown.Item  eventKey="5"  onClick={()=>{changePage("/services/property-move-in-out-inspection");setDrop(false);}}>Property move in/out inspection
+                            <NavDropdown.Item  eventKey="5"  onClick={()=>{changePage("/services/property-move-in-out-inspection");setDrop(false);}}>Property Move In/Out Inspection
                     </NavDropdown.Item>
                             </NavDropdown>                    
                     <Nav.Link className="under" eventKey="6" onClick={()=>{changePageH("tools")}}>TOOLS</Nav.Link>
                     <Nav.Link className="under" eventKey="7" onClick={()=>{changePage("/inspection-scope")}}>INSPECTION SCOPE</Nav.Link>
-                    <Nav.Link className="under" eventKey="8" onClick={()=>{changePageH("contact")}}>CONTACT&nbsp;&nbsp;</Nav.Link>
-                    <Button variant="primary" >Sample report</Button>
+                    <Nav.Link className="under" eventKey="8" onClick={()=>{changePage("/blog")}}>BLOG</Nav.Link>
+                    <Nav.Link className="under" eventKey="9" onClick={()=>{changePageH("contact")}}>CONTACT&nbsp;&nbsp;</Nav.Link>
+                    <Button variant="primary" onClick={showModal}>Sample report</Button>
                 </Nav>
                 </Navbar.Collapse>
             </Container>

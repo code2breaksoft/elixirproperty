@@ -38,7 +38,7 @@ const Services = () => {
             <ServiceCardMod
             alt="Defect Liability Inspection "
                 image={img4}
-                title="Property move in/out inspection"
+                title="Property Move In/Out Inspection"
                 text="An Engineer inspects the Property with use of Right Tools necessary for Snagging; With the Right Tools and Non Invasive methods our Engineers. Make sure Moisture is detected by Moisture Meter and Thermal Inspections."
                 path="/services/property-move-in-out-inspection"
             />
